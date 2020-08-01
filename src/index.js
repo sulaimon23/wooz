@@ -3,6 +3,12 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+// import '../node_modules/font-awesome/css/font-awesome.min.css';
+import 'font-awesome/css/font-awesome.min.css';
+
+// import ReactBootstrapCarousel from "react-bootstrap-carousel";
+// import "bootstrap/dist/css/bootstrap.css";
+// import "react-bootstrap-carousel/dist/react-bootstrap-carousel.css";
 
 ReactDOM.render(
   <React.StrictMode>
