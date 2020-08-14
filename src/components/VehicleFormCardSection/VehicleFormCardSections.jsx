@@ -20,19 +20,14 @@ class VehicleFormCardSections extends Component {
                     <Col lg={12}>
                         <Row>
                             <Col md={8}>
-                                <Card>
-                                    <div style={{ backgroundColor: '#ffffff', padding: '20px'}}>
-                                        <p style={{color: '#389aff'}}> <b>Additional Vehicle Information</b> </p>
-                                        <hr style={{color: '#389aff'}}/>
-                                        
-                                        <VehicleForm />
-                                        {/* <FormSection /> */}
-                                    </div>
-                                </Card>
+                                {/* <Card>
+                                    <VehicleForm />
+                                </Card> */}
+                                <VehicleForm />
                                 <br/>
                                 <Card>
                                     <div style={{ backgroundColor: '#ffffff', padding: '20px'}}>
-                                        <p style={{color: '#389aff'}}> <b>Additional Cover</b> </p>
+                                        <p style={{color: '#043f7c'}}> <b>Additional Cover</b> </p>
                                         <hr/>
                                         
                                         <AdditionalCover />
@@ -47,9 +42,9 @@ class VehicleFormCardSections extends Component {
 
                             <Col md={4}>
                                 
-                                {/* <p> <i style={{color: '#389aff'}} className="fa fa-shield "></i> <b>Summary of your Insurance</b> </p> */}
+                                {/* <p> <i style={{color: '#043f7c'}} className="fa fa-shield "></i> <b>Summary of your Insurance</b> </p> */}
                                 <div style={{ backgroundColor: '#ffffff', padding: '20px'}}>
-                                    <h6 style={{fontSizexx: '14px', color: '#389aff'}}> <b>Policy Information</b> </h6>
+                                    <h6 style={{fontSizexx: '14px', color: '#043f7c'}}> <b>Policy Information</b> </h6>
                                     <hr/>
                                     <p><span> <b>Cover Type:</b> Third Party </span></p>
                                     <p><span> <b>Vehicle Category:</b> Private </span></p>
@@ -58,7 +53,7 @@ class VehicleFormCardSections extends Component {
                                 </div>
                                 <br/>
                                 <div style={{ backgroundColor: '#ffffff', padding: '20px'}}>
-                                    {/* <h6 style={{fontSizexx: '14px', color: '#389aff'}}> <b>Vehicle Details</b> </h6> */}
+                                    {/* <h6 style={{fontSizexx: '14px', color: '#043f7c'}}> <b>Vehicle Details</b> </h6> */}
                                     <p><span> <b>Insurance Premium:</b> &#8358;199,145 </span></p>
                                     <br/>
                                     {/* <p><span> <b>Make:</b> Accord </span></p> */}
@@ -66,12 +61,12 @@ class VehicleFormCardSections extends Component {
                                 </div>
                                 {/* <br/>
                                 <div style={{ backgroundColor: '#f2f2f2', padding: '20px'}}>
-                                    <h6 style={{fontSizexx: '14px', color: '#389aff'}}> <b>Policy Type</b> </h6>
+                                    <h6 style={{fontSizexx: '14px', color: '#043f7c'}}> <b>Policy Type</b> </h6>
                                     <p><span> <b>Type:</b> Third Party </span></p>
                                 </div>
                                 <br/>
                                 <div style={{ backgroundColor: '#f2f2f2', padding: '20px'}}>
-                                    <h6 style={{fontSizexx: '14px', color: '#389aff'}}> <b>Total Price</b> </h6>
+                                    <h6 style={{fontSizexx: '14px', color: '#043f7c'}}> <b>Total Price</b> </h6>
                                     <hr/>
                                     <p><span> <b><i className="fa fa-percent "></i></b> Best Price Guarantee </span></p>
                                     <p><span> <b><i className="fa fa-lock "></i></b> 100% Secure Purchase </span></p>

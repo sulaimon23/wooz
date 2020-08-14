@@ -11,7 +11,7 @@ class FooterSection extends Component {
         return (
             <div>
                 
-                <Container className='' style={{ maxWidth: '100%', backgroundColor: '#389aff'}}>
+                <Container className='' style={{ maxWidth: '100%', backgroundColor: '#043f7c'}}>
                     <Col lg={12}>
                         <Row>
                             <Col md={2} style={{marginTop: '50px'}}>

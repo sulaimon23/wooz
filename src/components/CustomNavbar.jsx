@@ -4,17 +4,30 @@ import { Link } from 'react-router-dom';
 // import Icon from '@material-ui/icons';
 // import { Icon } from '@material-ui/core';
 
-import Logo from '../assets/img/wooz.png'
+import Logo from '../assets/img/woozeee.png'
 import img from '../assets/img/avatar.jpg'
 import ReactCountryFlag from "react-country-flag"
-
+// import DropdownMenu from "./DropdownMenu/DropdownMenu";
+import DropdownMenuComp from './DropdownMenu/DropdownMenu'
 
 class CustomNavbar extends Component {
+    constructor() {
+        super();
+        this.state = {
+          isTrue: false
+        }
+    }
+  
+    toggle () {
+        const {isTrue} = this.state
+        this.setState({isTrue: !isTrue})
+    }
+    
     render() {
         return (
-            <Navbar style={{backgroundColor: 'white'}}  collapseOnSelect>
+            <Navbar style={{backgroundColor: 'white'}} collapseOnSelect>
                 {/* start menu icon */}
-                <Nav.Link style={{backgroundColor: '#389aff', borderRadius: '3px', paddingLeft: '13px', paddingRight: '13px'}}>
+                <Nav.Link onClick={() => this.toggle()} style={{backgroundColor: '#043f7c', borderRadius: '3px', paddingLeft: '13px', paddingRight: '13px'}} >
                     <i style={{color: '#ffffff'}} className="fa fa-bars fa-lg"></i>
                 </Nav.Link>
                 {/* end menu icon */}
@@ -22,7 +35,7 @@ class CustomNavbar extends Component {
                 {/* start brand logo */}
                 <Navbar.Brand className='ml-3'>
                     <a href="/">
-                        <img src={Logo} style={{width: '100px'}} alt=""/>
+                        <img src={Logo} style={{width: '170px'}} alt=""/>
                     </a>
                 </Navbar.Brand>
                 {/* end brand logo */}
@@ -106,7 +119,7 @@ class CustomNavbar extends Component {
                             <NavDropdown.Divider />
                             <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
                         </NavDropdown> */}
-                        <Nav.Link href="#deets"><i className="fa fa-shopping-cart fa-lg" style={{color: "#389aff"}}></i></Nav.Link>
+                        <Nav.Link href="#deets"><i className="fa fa-shopping-cart fa-lg" style={{color: "#043f7c"}}></i></Nav.Link>
                         <Nav.Link eventKey={2} href="#memes">
                             Hello, Ayodeji
                             {/* <FontAwesomeIcon icon={['far', 'search']} /> */}
@@ -147,6 +160,7 @@ class CustomNavbar extends Component {
                         </NavItem>
                     </Nav> */}
                 </Navbar.Collapse>
+                {this.state.isTrue ? <DropdownMenuComp /> : null}
             </Navbar>
             // <div>
             //     tfuygihoj;

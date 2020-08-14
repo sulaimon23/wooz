@@ -5,6 +5,7 @@ import InsuranceThumbnailSection from '../InsuranceThumbnailSection/InsuranceThu
 import TabFormSection from '../TabFormSection/TabFormSections';
 import './Insurance.css';
 import DealsSections from '../DealsSection/DealsSections';
+import FooterSection from '../FooterSection/FooterSection'
 
 class Insurance extends Component {
     render() {
@@ -26,6 +27,9 @@ class Insurance extends Component {
                 
                 <br/>
                 <DealsSections />
+
+                <br/>
+                <FooterSection />
                 
                 {/* <InsuranceThumbnailSection /> */}
             </div>

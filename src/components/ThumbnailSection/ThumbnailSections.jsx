@@ -77,7 +77,7 @@ class ThumbnailSections extends Component {
                                         <Card.Title style={{fontSize: 15, marginTop: '10px'}}>
                                             {/* <i className="fa fa-credit-card fa-lg" style={{color: 'blue'}}></i> &nbsp; */}
                                             <img src={billpay} style={{width: '30px'}} alt=""/> &nbsp;
-                                            Bill Pay
+                                            <a style={{textDecoration: 'none'}} href="utilities">Bill Pay</a>
                                         </Card.Title>
                                     </Card.Body>
                                 </Card>

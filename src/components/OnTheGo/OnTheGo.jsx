@@ -9,15 +9,7 @@ class OnTheGo extends Component {
     render() {
         return (
             <div>
-                <Container className='' style={{ maxWidth: '100%'}}>
-                    {/* <p></p>
-                    <Col lg={12}>
-                        <Breadcrumb style={{backgroundColor: 'white'}}>
-                            <Breadcrumb.Item href="/"> Home </Breadcrumb.Item>
-                            <Breadcrumb.Item active href="/OnTheGo"> On The Go </Breadcrumb.Item>
-                        </Breadcrumb>
-                    </Col> */}
-                </Container>
+                {/* <Container className='' style={{ maxWidth: '100%'}}></Container> */}
                 <OnTheGoBanner />
                 <OnTheGoTab />
                 <br/>

@@ -1,14 +1,19 @@
-import React, { useState, Sonnet } from 'react'
-import { Col, Image, Button, ButtonGroup, Card, InputGroup, Form, FormControl, FormCheck, Nav, TabContent } from 'react-bootstrap';
+import React, { useState, Fragment, Sonnet } from 'react'
+import { Options, Col, Image, Button, ButtonGroup, Card, InputGroup, Form, FormControl, FormCheck, Nav, TabContent } from 'react-bootstrap';
 // import {render} from 'react-dom';
 import { Tabs, Tab } from 'react-bootstrap';
 import img from '../../assets/img/icons/home/charity.png'
 import './OnTheGoTabForm.css'
-import DatePicker from '../Calendar'
+import './OnTheGoTabs.css'
+// import DatePicker from '../Calendar'
+import { Typeahead } from 'react-bootstrap-typeahead'; // ES2015
+// var Typeahead = require('react-bootstrap-typeahead').Typeahead; // CommonJS
+import fromdata from '../DatePicker/DatePicker'
+
 
 
 const divStyle = {
-    color: 'white',
+    // color: 'white', display: 'block', padding: '.5rem 1rem', color: 'rgb(255, 255, 255);', textAlign: 'center'
 }
 
 function OnTheGoTabForm() {
@@ -46,32 +51,66 @@ function OnTheGoTabForm() {
   
     return (
         // <Tabs id='controlled-tab-example' activeKey={key} onSelect={(k) => setKey(k)} >
-        <Card>
+        <Card style={{borderRadius: '.01rem'}}>
             <Card.Body style={{marginTop: '-63px'}}>
-                <Tabs style={{backgroundColor: '#389aff', width: '323px', marginLeft: '-20px', borderTopLeftRadius: '5px', borderTopRightRadius: '5px'}} defaultActiveKey="flights" transition={false} id="noanim-tab-example">
-                    <Tab style={{divStyle}} src={img} eventKey='flights' src='img' title='Flights'>
+                <Tabs style={{  divStyle, backgroundColor: '#043f7c', width: '847px', height: '60px', marginTop: '-18px', borderTop: 'none', borderColor: 'none' , marginLeft: '-21px' , borderTopLeftRadius: '15px', borderTopRightRadius: '15px'}} defaultActiveKey="flights" transition={false} id="noanim-tab-example">
+                    <Tab style={{divStyle}} src={img} eventKey='flights' title='Flights'>
                         <br/>
                         <br/>
-                        <Form noValidate validated={validated} onSubmit={handleSubmit}>
+                        <Form style={{}} noValidate validated={validated} onSubmit={handleSubmit}>
                             
                             <Form.Row>
-                                <Form.Group as={Col} md="2" controlId="validationCustom02">
-                                    {/* <Form.Label>Residential Address <span style={{color: 'red'}}>*</span></Form.Label> */}
-                                    <Form.Control required type="text" placeholder="From" defaultValuexx="Mark" />
+                                <InputGroup className="mb-5" as={Col} md="3" >
+                                    <InputGroup.Prepend>
+                                        <InputGroup.Text>
+                                        <i class='fa fa-map-marker'></i>
+                                        </InputGroup.Text>
+                                    </InputGroup.Prepend>
+                                    {/* <fromdata /> */}
+                                    <FormControl style={{borderTopRightRadius: '4px', borderBottomRightRadius: '4px'}} id="inlineFormInputGroup" placeholder="From:" required type='text' defaultValue='Murtala Mohammed Airport' />
                                     <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
-                                </Form.Group>
+                                </InputGroup>
+                                <InputGroup className="mb-5" as={Col} md="3" >
+                                    <InputGroup.Prepend>
+                                        <InputGroup.Text>
+                                        <i class='fa fa-map-marker'></i>
+                                        </InputGroup.Text>
+                                    </InputGroup.Prepend>
+                                    <FormControl style={{borderTopRightRadius: '4px', borderBottomRightRadius: '4px'}} id="inlineFormInputGroup" placeholder="To:" required type='text' defaultValue='London, England' />
+                                    <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
+                                </InputGroup>
+                                {/* <Form.Group as={Col} md="2" controlId="validationCustom02">
+                                    <Form.Control required type="text" placeholder="From:" defaultValuexx="Mark" />
+                                    <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
+                                </Form.Group> */}
+                                {/* <Form.Group as={Col} md="3" controlId="validationCustom02">
+                                    <InputGroup.Prepend>
+                                        <InputGroup.Text>@</InputGroup.Text>
+                                        <Form.Control required type="text" placeholder="To:" defaultValuexx="Mark" />
+                                        <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
+                                    </InputGroup.Prepend>
+                                </Form.Group> */}
                                 <Form.Group as={Col} md="3" controlId="validationCustom02">
                                     {/* <Form.Label>State <span style={{color: 'red'}}>*</span></Form.Label> */}
-                                    <Form.Control required type="text" placeholder="To" defaultValuexx="Mark" />
+                                    {/* <Form.Control required type="text" placeholder="To" defaultValuexx="Mark" /> */}
+                                    <InputGroup className="mb-3">
+                                        <FormControl placeholder='Depature Date' />
+                                        <FormControl placeholder='+ Add Return' />
+                                    </InputGroup>
                                     <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
                                 </Form.Group>
-                                <Form.Group as={Col} md="4" controlId="validationCustom02">
+                                <Form.Group as={Col} md="2" controlId="validationCustom02">
+                                    {/* <Form.Label>Residential Address <span style={{color: 'red'}}>*</span></Form.Label> */}
+                                    <Form.Control required type="text" placeholder="Passengers" defaultValuexx="Mark" />
+                                    <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
+                                </Form.Group>
+                                
+                                {/* <Form.Group as={Col} md="4" controlId="validationCustom02">
                                     <DatePicker />
                                     <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
                                 </Form.Group>
                                 
                                 <Form.Group as={Col} md="2" controlId="validationCustom02">
-                                    {/* <Form.Label>State <span style={{color: 'red'}}>*</span></Form.Label> */}
                                     <Form.Control as="select">
                                         <option>Vehicle Estimated Value</option>
                                         <option>Abia</option>
@@ -85,8 +124,8 @@ function OnTheGoTabForm() {
                                         <option>Cross River</option>
                                     </Form.Control>
                                     <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
-                                </Form.Group>
-                                <Form.Group as={Col} md="2">
+                                </Form.Group> */}
+                                <Form.Group as={Col} md="1">
                                     <Button href='onthego/flightsearch' variant='danger' style={{width: '100%'}} type="submit"> Search </Button>
                                 </Form.Group>
                             </Form.Row>

@@ -18,7 +18,7 @@ import TrainIcon from '@material-ui/icons/Train';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 import { Col } from 'react-bootstrap';
-import InnerTabContent from './InnerTabContent'
+import TicketInnerTabContent from './TicketInnerTabContent'
 import Covid19Content from './Covid19Content'
 import PriceAlertContent from './PriceAlertContent'
 
@@ -77,15 +77,8 @@ export default function ScrollableTabsButtonPrevent() {
       <TicketInnerTabPanel value={value} index={0}>
         <Covid19Content />
         <br/>
-        <InnerTabContent />
-        <br/>
-        <InnerTabContent />
-        <br/>
-        <InnerTabContent />
-        <br/>
-        <InnerTabContent />
-        <br/>
-        <PriceAlertContent />
+        <TicketInnerTabContent />
+        
       </TicketInnerTabPanel>
       <TicketInnerTabPanel value={value} index={1}>
         Item Two

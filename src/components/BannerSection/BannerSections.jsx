@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 // import Carousel from 'react-bootstrap/Carousel';
 // import ReactBootstrapCarousel from "react-bootstrap-carousel";
 import { Jumbotron, Container, Row, Col, Image, Button, Card } from 'react-bootstrap';
-import bannerimage from '../../assets/img/bannerimg/insurance.jpg'
+import bannerimage from '../../assets/img/bannerimg/insurance.png'
 
 class BannerSections extends Component {
     render() {

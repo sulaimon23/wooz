@@ -18,30 +18,34 @@ function VehicleFormSections() {
     };
     return (
         <div>
-            <Form noValidate validated={validated} onSubmit={handleSubmit}>
-                <Form.Row>
-                    <Form.Group as={Col} md="4" controlId="validationCustom01">
-                        <Form.Label>License Plate Number <span style={{color: 'red'}}>*</span></Form.Label>
-                        <Form.Control required type="text" placeholder="Enter License Plate Number" defaultValuexx="Mark" />
-                        <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
-                    </Form.Group>
-                    <Form.Group as={Col} md="4" controlId="validationCustom02">
-                        <Form.Label>Chasis Number <span style={{color: 'red'}}>*</span></Form.Label>
-                        <Form.Control required type="text" placeholder="Enter Chasis Number" defaultValuexx="Otto" />
-                        <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
-                    </Form.Group>
-                    <Form.Group as={Col} md="4" controlId="validationCustom02">
-                        <Form.Label>Engine Number <span style={{color: 'red'}}>*</span></Form.Label>
-                        <Form.Control required type="text" placeholder="Enter Engine Number" defaultValuexx="Otto" />
-                        <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
-                    </Form.Group>
-                    
-                </Form.Row>
-                {/* <Button variant='danger' style={{width: '100%'}} type="submit">Review Details </Button> */}
-                
-                {/* <Button type="submit">Proceed <i className="fa fa-arrow-right"></i></Button> */}
-            </Form>
+            <Card>
+                <div style={{ backgroundColor: '#ffffff', padding: '20px'}}>
+                    <p style={{color: '#043f7c'}}> <b>Additional Vehicle Information</b> </p>
+                    <hr style={{color: '#043f7c'}}/>
+                    <Form noValidate validated={validated} onSubmit={handleSubmit}>
+                        <Form.Row>
+                            <Form.Group as={Col} md="4" controlId="validationCustom01">
+                                <Form.Label> <h6>License Plate Number <span style={{color: 'red'}}>*</span></h6></Form.Label>
+                                <Form.Control required type="text" placeholder="Enter License Plate Number" defaultValuexx="Mark" />
+                                <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
+                            </Form.Group>
+                            <Form.Group as={Col} md="4" controlId="validationCustom02">
+                                <Form.Label> <h6>Chasis Number <span style={{color: 'red'}}>*</span></h6></Form.Label>
+                                <Form.Control required type="text" placeholder="Enter Chasis Number" defaultValuexx="Otto" />
+                                <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
+                            </Form.Group>
+                            <Form.Group as={Col} md="4" controlId="validationCustom02">
+                                <Form.Label> <h6>Engine Number <span style={{color: 'red'}}>*</span></h6></Form.Label>
+                                <Form.Control required type="text" placeholder="Enter Engine Number" defaultValuexx="Otto" />
+                                <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
+                            </Form.Group>
+                            
+                        </Form.Row>
+                    </Form>
+                </div>
+            </Card>
         </div>
+        
     )
 }
 

@@ -13,9 +13,6 @@ class Covid19Content extends Component {
                         <Col md='12'>
                             <Image src={exclamationcircle} alt=""/><span style={{fontSize: '13.4px'}}>&nbsp;&nbsp;Due to the Coronavirus (COVID-19) outbreak, there are currently disruptions and cancellations to transport services. For more information, please click <a href="#">here</a></span>
                         </Col>
-                        <Col xs='10'>
-                            
-                        </Col>
                     </Row>
                     
                     

@@ -6,11 +6,11 @@ import StepLabel from '@material-ui/core/StepLabel';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import FlightSelectTab from '../SearchTabFormSection/FlightSelectTab'
-import TicketOptionTab from '../SearchTabFormSection/TicketOptionTab'
+import TicketOptionsTab from '../SearchTabFormSection/TicketOptionsTab'
 import FormCardSection from '../FormCardSection/FormCardSections'
-import VehicleCardSection from '../VehicleFormCardSection/VehicleFormCardSections'
+import PassengerDetailsTab from '../SearchTabFormSection/PassengerDetailsTab'
 // import FormSections from '../FormSection/FormSections';
-import ConfirmationCardSection from '../ConfirmationCardSection/ConfirmationCardSections'
+import ConfirmationTab from '../SearchTabFormSection/ConfirmationTab'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -33,15 +33,14 @@ function getSteps() {
 function getStepContent(stepIndex) {
     switch (stepIndex) {
         case 0:
-            return (<FlightSelectTab />);
+            return ( <FlightSelectTab /> );
         case 1:
-            return (<TicketOptionTab />                                                                                                                                                                     );
+            return ( <TicketOptionsTab /> );
         case 2:
-            return (<VehicleCardSection />);
+            return ( <PassengerDetailsTab /> );
         case 3:
-            return (<FormCardSection />);
-        case 4:
-            return (<ConfirmationCardSection />);
+            return ( <ConfirmationTab /> );
+        
         default:
             return 'Error Unknown';
     }

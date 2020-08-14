@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { Jumbotron, Container, Row, Col, Image, Breadcrumb, Button, Card } from 'react-bootstrap';
 import BannerSectionFinancialServices from '../BannerSectionFinancialServices/BannerSectionFinancialServicess';
 import FinancialThumbnailSection from '../FinancialThumbnailSection/FinancialThumbnailSections'
+import DealsSections from '../DealsSection/DealsSections';
+import FooterSection from '../FooterSection/FooterSection'
 
 class MoneyMatters extends Component {
     render() {
@@ -19,6 +21,17 @@ class MoneyMatters extends Component {
                 </Container>
                 <BannerSectionFinancialServices />
                 <FinancialThumbnailSection />
+                <br/>
+                <br/>
+                <DealsSections />
+                <br/>
+                <br/>
+                <DealsSections />
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <FooterSection />
             </div>
         );
     }

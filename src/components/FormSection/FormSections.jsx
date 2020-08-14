@@ -21,22 +21,22 @@ function FormSections() {
             <Form noValidate validated={validated} onSubmit={handleSubmit}>
                 <Form.Row>
                     <Form.Group as={Col} md="4" controlId="validationCustom01">
-                        <Form.Label>Title <span style={{color: 'red'}}>*</span></Form.Label>
+                        <Form.Label> <h6>Title <span style={{color: 'red'}}>*</span></h6></Form.Label>
                         <Form.Control required type="text" placeholder="Mr" defaultValuexx="Mark" />
                         <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
                     </Form.Group>
                     <Form.Group as={Col} md="4" controlId="validationCustom01">
-                        <Form.Label>Surname <span style={{color: 'red'}}>*</span></Form.Label>
+                        <Form.Label> <h6>Surname <span style={{color: 'red'}}>*</span></h6></Form.Label>
                         <Form.Control required type="text" placeholder="Enter Surname" defaultValuexx="Mark" />
                         <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
                     </Form.Group>
                     <Form.Group as={Col} md="4" controlId="validationCustom02">
-                        <Form.Label>First name <span style={{color: 'red'}}>*</span></Form.Label>
+                        <Form.Label> <h6>First name <span style={{color: 'red'}}>*</span></h6></Form.Label>
                         <Form.Control required type="text" placeholder="Enter Firstname" defaultValuexx="Otto" />
                         <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
                     </Form.Group>
                     <Form.Group as={Col} md="4" controlId="validationCustom02">
-                        <Form.Label>State <span style={{color: 'red'}}>*</span></Form.Label>
+                        <Form.Label> <h6>State <span style={{color: 'red'}}>*</span></h6></Form.Label>
                         <Form.Control as="select">
                             <option>Gender</option>
                             <option>Male</option>
@@ -46,17 +46,107 @@ function FormSections() {
                         <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
                     </Form.Group>
                     <Form.Group as={Col} md="4" controlId="validationCustom02">
-                        <Form.Label>Email Address <span style={{color: 'red'}}>*</span></Form.Label>
+                        <Form.Label> <h6>Email Address <span style={{color: 'red'}}>*</span></h6></Form.Label>
                         <Form.Control required type="text" placeholder="amoshood@fczmedia.com" defaultValuexx="Otto" />
                         <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
                     </Form.Group>
                     <Form.Group as={Col} md="4" controlId="validationCustom02">
-                        <Form.Label>Date of Birth <span style={{color: 'red'}}>*</span></Form.Label>
-                        <DatePicker />
+                        <Form.Label> <h6>Date of Birth <span style={{color: 'red'}}>*</span></h6></Form.Label>
+                        <Row>
+                            <Col md='3'>
+                                <Form.Control as='select'>
+                                    <option>Day</option>
+                                    <option>01</option>
+                                    <option>02</option>
+                                    <option>03</option>
+                                    <option>04</option>
+                                    <option>05</option>
+                                    <option>06</option>
+                                    <option>07</option>
+                                    <option>08</option>
+                                    <option>09</option>
+                                    <option>10</option>
+                                    <option>11</option>
+                                    <option>12</option>
+                                    <option>13</option>
+                                    <option>14</option>
+                                    <option>15</option>
+                                    <option>16</option>
+                                    <option>17</option>
+                                    <option>18</option>
+                                    <option>19</option>
+                                    <option>20</option>
+                                    <option>21</option>
+                                    <option>22</option>
+                                    <option>23</option>
+                                    <option>24</option>
+                                    <option>25</option>
+                                    <option>26</option>
+                                    <option>27</option>
+                                    <option>28</option>
+                                    <option>29</option>
+                                    <option>30</option>
+                                    <option>31</option>
+                                </Form.Control>
+                            </Col>
+                            <Col md='5'>
+                                <Form.Control as='select'>
+                                    <option>Month</option>
+                                    <option>January</option>
+                                    <option>February</option>
+                                    <option>March</option>
+                                    <option>April</option>
+                                    <option>May</option>
+                                    <option>June</option>
+                                    <option>July</option>
+                                    <option>August</option>
+                                    <option>September</option>
+                                    <option>October</option>
+                                    <option>November</option>
+                                    <option>December</option>
+                                </Form.Control>
+                            </Col>
+                            <Col md='4'>
+                                <Form.Control as='select'>
+                                    <option>Year</option>
+                                    <option>2005</option>
+                                    <option>2004</option>
+                                    <option>2003</option>
+                                    <option>2002</option>
+                                    <option>2001</option>
+                                    <option>2000</option>
+                                    <option>1999</option>
+                                    <option>1998</option>
+                                    <option>1997</option>
+                                    <option>1996</option>
+                                    <option>1995</option>
+                                    <option>1994</option>
+                                    <option>1993</option>
+                                    <option>1992</option>
+                                    <option>1991</option>
+                                    <option>1990</option>
+                                    <option>1989</option>
+                                    <option>1988</option>
+                                    <option>1987</option>
+                                    <option>1986</option>
+                                    <option>1985</option>
+                                    <option>1984</option>
+                                    <option>1983</option>
+                                    <option>1982</option>
+                                    <option>1981</option>
+                                    <option>1980</option>
+                                    <option>1979</option>
+                                    <option>1978</option>
+                                    <option>1977</option>
+                                    <option>1976</option>
+                                    <option>1975</option>
+                                </Form.Control>
+                            </Col>
+                        </Row>
                         <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
                     </Form.Group>
                     <Form.Group as={Col} md="4" controlId="validationCustomUsername">
-                        <Form.Label>Phone Number <span style={{color: 'red'}}>*</span></Form.Label>
+                        <Form.Label> <h6>Phone Number <span style={{color: 'red'}}>*</span></h6></Form.Label>
                         <InputGroup>
                             <InputGroup.Prepend>
                                 <PhoneInput style={{width: '700px'}} inputProps={{ name: 'phone', required: true, autoFocus: false }} />
@@ -68,13 +158,13 @@ function FormSections() {
                     </Form.Group>
                     
                     <Form.Group as={Col} md="8" controlId="validationCustom02">
-                        <Form.Label>Residential Address <span style={{color: 'red'}}>*</span></Form.Label>
+                        <Form.Label> <h6>Residential Address <span style={{color: 'red'}}>*</span></h6></Form.Label>
                         <Form.Control required type="text" placeholder="Enter Address" defaultValuexx="Otto" />
                         <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
                     </Form.Group>
                     
                     <Form.Group as={Col} md="4" controlId="validationCustom02">
-                        <Form.Label>State <span style={{color: 'red'}}>*</span></Form.Label>
+                        <Form.Label> <h6>State <span style={{color: 'red'}}>*</span></h6></Form.Label>
                         <Form.Control as="select">
                             <option>Abia</option>
                             <option>Adamawa</option>
@@ -117,13 +207,13 @@ function FormSections() {
                     </Form.Group>
 
                     <Form.Group as={Col} md="4" controlId="validationCustom02">
-                        <Form.Label>ID Type <span style={{color: 'red'}}>*</span></Form.Label>
+                        <Form.Label> <h6>ID Type <span style={{color: 'red'}}>*</span></h6></Form.Label>
                         <Form.Control required type="text" placeholder="Enter Type" defaultValuexx="Otto" />
                         <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
                     </Form.Group>
 
                     <Form.Group as={Col} md="4" controlId="validationCustom02">
-                        <Form.Label>ID Number <span style={{color: 'red'}}>*</span></Form.Label>
+                        <Form.Label> <h6>ID Number <span style={{color: 'red'}}>*</span></h6></Form.Label>
                         <Form.Control required type="text" placeholder="Enter ID Number" defaultValuexx="Otto" />
                         <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
                     </Form.Group>

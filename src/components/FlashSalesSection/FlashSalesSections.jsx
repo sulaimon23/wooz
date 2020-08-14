@@ -6,6 +6,10 @@ import cardimg13 from '../../assets/img/cardimg/13.jpg'
 import cardimg4 from '../../assets/img/cardimg/4.jpg'
 import cardimg14 from '../../assets/img/cardimg/14.jpg'
 // import slider3 from '../../assets/img/slider/3.jpg'
+import clickandshop from '../../assets/img/icons/home/click-shop-w.png'
+import moneymatters from '../../assets/img/icons/home/money-matters-w.png'
+import utilities from '../../assets/img/icons/home/utilities-w.png'
+import askdoc from '../../assets/img/icons/home/ask-doc-w.png'
 
 class FlashSalesSections extends Component {
     render() {
@@ -18,8 +22,25 @@ class FlashSalesSections extends Component {
                         <CardDeck>
                             <Card style={{height: '-webkit-min-content', boxShadow: '7px 3px 10px #e1e1e1', border: 'none'}}>
                                 <Card.Img variant="top" src={cardimg11} />
+                                <span align='center' style={{backgroundColor: '#043f7c', marginTop: '-20px', marginLeft: '240px', padding: '10px', borderRadius: '250px', color: 'white', width: '45px'}}><i align='center' class="fa fa-plane"/></span>
                                 <Card.Body>
                                     <Card.Title><h6>On The Go</h6></Card.Title>
+                                    <br/>
+                                    <Row style={{marginTop: '-17px'}}>
+                                        <Col md='3' align='center' style={{color: '#043f7c'}}>
+                                            <span style={{fontSize: '15px'}} class="material-icons">flight_takeoff</span>
+                                            <p style={{fontSize: '8px'}}>Abuja</p>
+                                        </Col>
+                                        <Col md='6' align='center' style={{marginTop: '2px'}}>
+                                            {/* <span style={{fontSize: '12px'}}>22h 30m</span> */}
+                                            <hr style={{color: '#043f7c'}} className='dot'/>
+                                            {/* <span style={{fontSize: '12px'}}>1 Stop - DOH</span> */}
+                                        </Col>
+                                        <Col md='3' align='center' style={{color: '#043f7c'}}>
+                                            <span style={{fontSize: '15px'}} class="material-icons">flight_land</span>
+                                            <p style={{fontSize: '8px'}}>London</p>
+                                        </Col>
+                                    </Row>
                                     <Card.Text>
                                         <h6><b>&#8358;291,000.00</b></h6>
                                     </Card.Text>
@@ -39,8 +60,10 @@ class FlashSalesSections extends Component {
                             </Card>
                             <Card style={{height: '-webkit-min-content', boxShadow: '7px 3px 10px #e1e1e1', border: 'none'}}>
                                 <Card.Img variant="top" src={cardimg12} />
+                                <span align='center' style={{backgroundColor: '#043f7c', marginTop: '-20px', marginLeft: '240px', padding: '10px', borderRadius: '250px', color: 'white', width: '45px'}}> <img align='center' style={{width: '20px', marginTop: '-6px'}} src={clickandshop} alt=""/></span>
                                 <Card.Body>
                                     <Card.Title><h6>Click &amp; Shop</h6></Card.Title>
+                                    <br/>
                                     <Card.Text>
                                         <p style={{fontSize: '13px'}}>Inverter Battery 12V/200Ah</p>
                                         <h6><b>&#8358;100,000.00</b></h6>
@@ -61,8 +84,10 @@ class FlashSalesSections extends Component {
                             </Card>
                             <Card style={{height: '-webkit-min-content', boxShadow: '7px 3px 10px #e1e1e1', border: 'none'}}>
                                 <Card.Img variant="top" src={cardimg13} />
+                                <span align='center' style={{backgroundColor: '#043f7c', marginTop: '-20px', marginLeft: '240px', padding: '10px', borderRadius: '250px', color: 'white', width: '45px'}}> <img align='center' style={{width: '15px', marginTop: '-6px'}} src={utilities} alt=""/></span>
                                 <Card.Body>
                                     <Card.Title><h6>Utilities</h6></Card.Title>
+                                    <br/>
                                     <Card.Text>
                                         <p style={{fontSize: '13px'}}>DSTV Family Plan (Valid For 30days)</p>
                                         <h6><b>&#8358;291,000.00</b></h6>
@@ -83,8 +108,10 @@ class FlashSalesSections extends Component {
                             </Card>
                             <Card style={{height: '-webkit-min-content', boxShadow: '7px 3px 10px #e1e1e1', border: 'none'}}>
                                 <Card.Img variant="top" src={cardimg4} />
+                                <span align='center' style={{backgroundColor: '#043f7c', marginTop: '-20px', marginLeft: '240px', padding: '10px', borderRadius: '250px', color: 'white', width: '45px'}}> <img align='center' style={{width: '15px', marginTop: '-6px'}} src={moneymatters} alt=""/></span>
                                 <Card.Body>
                                     <Card.Title><h6>Money Matters</h6></Card.Title>
+                                    <br/>
                                     <Card.Text>
                                         <p style={{fontSize: '13px'}}>2% Interest Rate Monthly</p>
                                         <h6><b>&#8358;10,000.00</b> - <b>&#8358;200,000.00</b></h6>
@@ -105,8 +132,10 @@ class FlashSalesSections extends Component {
                             </Card>
                             <Card style={{height: '-webkit-min-content', boxShadow: '7px 3px 10px #e1e1e1', border: 'none'}}>
                                 <Card.Img variant="top" src={cardimg14} />
+                                <span align='center' style={{backgroundColor: '#043f7c', marginTop: '-20px', marginLeft: '240px', padding: '10px', borderRadius: '250px', color: 'white', width: '45px'}}> <img align='center' style={{width: '20px', marginTop: '-6px'}} src={askdoc} alt=""/></span>
                                 <Card.Body>
                                     <Card.Title><h6>Ask A Doc</h6></Card.Title>
+                                    <br/>
                                     <Card.Text>
                                         <p style={{fontSize: '13px'}}>Consultancy Valid For 30days </p>
                                         <h6><b>&#8358;21,000.00</b></h6>

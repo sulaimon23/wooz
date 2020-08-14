@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { Jumbotron, Container, Row, Col, Image, Breadcrumb, Button, Card } from 'react-bootstrap';
-import AboutSection from '../AboutSection/AboutSections';
-import ButtonGroup from '../ButtonGroup/ButtonGroups'
-import FormCardSection from '../FormCardSection/FormCardSections'
-import SearchTabFormSection from '../SearchTabFormSection/SearchTabFormSections';
+import AboutSection from '../../AboutSection/AboutSections';
+import ButtonGroup from '../../ButtonGroup/ButtonGroups'
+import FormCardSection from '../../FormCardSection/FormCardSections'
+import SearchTabFormSection from '../../SearchTabFormSection/SearchTabFormSections';
 // import BannerSection from '../BannerSection/BannerSections';
 // import InsuranceThumbnailSection from '../InsuranceThumbnailSection/InsuranceThumbnailSections'
 

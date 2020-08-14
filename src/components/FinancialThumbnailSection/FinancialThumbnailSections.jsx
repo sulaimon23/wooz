@@ -10,7 +10,7 @@ class FinancialThumbnailSections extends Component {
             <div>
                 
                 <Container className='' style={{ maxWidth: '100%'}}>
-                    <Col lg={12} style={{ marginTop: '-90px'}}>
+                    <Col lg={12} style={{ marginTop: '-130px'}}>
                         <Row>
                             <Col md={6} style={{marginTop: '130px'}}>
                                 {/* <p>Back </p> */}
@@ -19,8 +19,8 @@ class FinancialThumbnailSections extends Component {
                             <Col md={6}>
                                 <Row>
                                     <Col>
-                                        <Card style={{xxwidth: '250px', height: '200px',}} className="text-center">
-                                            <Card.Body style={{padding: '70px 0 50px 0px'}}>
+                                        <Card style={{xxwidth: '250px', height: '150px',}} className="text-center">
+                                            <Card.Body style={{padding: '47px 0 50px 0px'}}>
                                                 <Card.Title style={{fontSize: 15}}>
                                                     <img src={savingsandloans} style={{width: '50px'}} alt=""/> &nbsp;Savings &amp; Loans
                                                     {/* <i className="fa fa-piggy-bank fa-lg" style={{color: 'blue'}}></i>  */}
@@ -29,8 +29,8 @@ class FinancialThumbnailSections extends Component {
                                         </Card>
                                     </Col>
                                     <Col>
-                                        <Card style={{xxwidth: '250px', height: '200px'}} className="text-center">
-                                            <Card.Body style={{padding: '70px 0 50px 0px'}}>
+                                        <Card style={{xxwidth: '250px', height: '150px'}} className="text-center">
+                                            <Card.Body style={{padding: '47px 0 50px 0px'}}>
                                                 <Card.Title style={{fontSize: 15}}>
                                                     <a style={{textDecoration: 'none'}} href="/moneymatters/insurance">
                                                         <img src={insurance} style={{width: '50px'}} alt=""/> Insurance
@@ -40,8 +40,8 @@ class FinancialThumbnailSections extends Component {
                                         </Card>
                                     </Col>
                                     <Col>
-                                        <Card style={{xxwidth: '250px', height: '200px'}} className="text-center">
-                                            <Card.Body style={{padding: '70px 0 50px 0px'}}>
+                                        <Card style={{xxwidth: '250px', height: '150px'}} className="text-center">
+                                            <Card.Body style={{padding: '47px 0 50px 0px'}}>
                                                 <Card.Title style={{fontSize: 15}}>
                                                 <img src={wallet} style={{width: '50px'}} alt=""/> Wallet
                                                 </Card.Title>

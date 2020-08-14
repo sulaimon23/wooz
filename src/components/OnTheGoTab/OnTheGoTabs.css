@@ -8,5 +8,7 @@
 Tab:hover {
     background-color: #ff5757;
     color: #ffffff;
-    border: none;
+    /* border: none; */
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }

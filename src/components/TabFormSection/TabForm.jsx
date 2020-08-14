@@ -47,7 +47,7 @@ function TabForm() {
         // <Tabs id='controlled-tab-example' activeKey={key} onSelect={(k) => setKey(k)} >
         <Card>
             <Card.Body style={{marginTop: '-63px'}}>
-                <Tabs style={{backgroundColor: '#389aff', width: '440px', marginLeft: '-20px', borderTopLeftRadius: '5px', borderTopRightRadius: '5px'}} defaultActiveKey="motorinsurance" transition={false} id="noanim-tab-example">
+                <Tabs style={{backgroundColor: '#043f7c', width: '834px', marginLeft: '-20px', borderTopLeftRadius: '5px', borderTopRightRadius: '5px'}} defaultActiveKey="motorinsurance" transition={false} id="noanim-tab-example">
                     <Tab style={{divStyle}} src={img} eventKey='travelinsurance' title='Travel Insurance'>
                         <br/>
                         <br/>

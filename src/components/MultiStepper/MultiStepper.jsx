@@ -26,21 +26,23 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 function getSteps() {
-  return ['Search', 'Select', 'Additional Details', 'Insurer Details', 'Confirmation'];
+  return ['Select', 'Additional Details', 'Insurer Details', 'Confirmation'];
+//   return ['Search', 'Select', 'Additional Details', 'Insurer Details', 'Confirmation'];
 }
 
 function getStepContent(stepIndex) {
     switch (stepIndex) {
         case 0:
-            return 'xyz';
-        case 1:
+            // return 'xyz';
             return (<SelectTabForm />);
-        case 2:
+        case 1:
             return (<VehicleCardSection />);
-        case 3:
+        case 2:
             return (<FormCardSection />);
-        case 4:
+        case 3:
             return (<ConfirmationCardSection />);
+        // case 4:
+            
         default:
             return 'Error Unknown';
     }

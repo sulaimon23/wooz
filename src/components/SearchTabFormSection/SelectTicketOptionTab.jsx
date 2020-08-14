@@ -9,7 +9,7 @@ import TicketInnerTabPanel from './TicketInnerTabPanel'
 import FlightSearchMultiStepper from '../MultiStepper/FlightSearchMultiStepper'
 import GoogleMap from './GoogleMap';
 
-function TicketOptionTab() {
+function SelectTicketOptionTab() {
     const [validated, setValidated] = useState(false);
     
     const handleSubmit = (event) => {
@@ -34,7 +34,7 @@ function TicketOptionTab() {
                             <TicketInnerTabPanel />
                         </Col>
                         <Col md={4}>
-                            <GoogleMap />
+                            {/* <GoogleMap /> */}
                         </Col>
                     </Row>
                 </Col>
@@ -47,4 +47,4 @@ function TicketOptionTab() {
     )
 }
 
-export default TicketOptionTab
+export default SelectTicketOptionTab

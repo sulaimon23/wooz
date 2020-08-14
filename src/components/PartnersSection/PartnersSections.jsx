@@ -39,7 +39,7 @@ class PartnersSections extends Component {
                         <Row>
                             <Col md={2} style={{marginTop: '130px'}}>
                                 <p>Partners with <br/> <b>Top Brands</b> </p>
-                                <Button style={{ borderRadius: '20px', fontSize: '12px' }} variant="primary">More Partners</Button>
+                                <Button style={{ borderRadius: '20px', fontSize: '12px', backgroundColor: '#043f7c', border:'none' }} variantxx="primary">More Partners</Button>
                             </Col> 
                             <Col md={10}>
                                 <Row>

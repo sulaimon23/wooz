@@ -21,6 +21,8 @@ import { Col } from 'react-bootstrap';
 import InnerTabContent from './InnerTabContent'
 import Covid19Content from './Covid19Content'
 import PriceAlertContent from './PriceAlertContent'
+import TicketInnerTabContent from './TicketInnerTabContent'
+// import Covid19Content from './Covid19Content'
 
 function InnerTabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -73,7 +75,7 @@ export default function ScrollableTabsButtonPrevent() {
 
   return (
     <div className={classes.root}>
-      <AppBar style={{backgroundColor: 'transparent', color: '#389aff', boxShadow: 'none', borderBottom: '1px solid'}} className='colorTransparent' position="static">
+      <AppBar style={{backgroundColor: 'transparent', color: '#043f7c', boxShadow: 'none', borderBottom: '1px solid'}} className='colorTransparent' position="static">
         <Tabs style={{width: '100%'}} value={value} onChange={handleChange} variant="fullwidth" scrollButtons="off" aria-label="scrollable prevent tabs example">
           <Tab style={{width: '-webkit-fill-available', }} icon={ <FlightIcon />} aria-label="flight" {...a11yProps(0)} 
             label={
@@ -119,7 +121,9 @@ export default function ScrollableTabsButtonPrevent() {
         <PriceAlertContent />
       </InnerTabPanel>
       <InnerTabPanel value={value} index={1}>
-        Item Two
+        {/* <Covid19Content />
+        <br/>
+        <TicketInnerTabContent /> */}
       </InnerTabPanel>
       <InnerTabPanel value={value} index={2}>
         Item Three
