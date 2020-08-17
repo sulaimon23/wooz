@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 // import Carousel from 'react-bootstrap/Carousel';
 // import ReactBootstrapCarousel from "react-bootstrap-carousel";
-import { Jumbotron, Container, Row, Col, Image, Button, Card } from 'react-bootstrap';
+import { Jumbotron, Container, Row, Breadcrumb, Col, Image, Button, Card } from 'react-bootstrap';
 import bannerimage from '../../assets/img/bannerimg/insurance.png'
 
 class BannerSectionUtilities extends Component {
@@ -9,6 +9,13 @@ class BannerSectionUtilities extends Component {
         return (
             <div style={{ backgroundImage: `url(${bannerimage})`, backgroundPosition: 'center', backgroundSize: 'cover', backgroundRepeat: 'no-repeat', color: 'white' }} >
                 <Container className='p-4' style={{ maxWidth: '100%',  }}>
+                    <Col lg={12}>
+                        <Breadcrumb>
+                            <Breadcrumb.Item href="/"> <span style={{color: '#636363'}}> Home </span> </Breadcrumb.Item>
+                            <Breadcrumb.Item active href="/Utilities"> <span style={{color: '#043f7c'}}>Utilities</span> </Breadcrumb.Item>
+                        </Breadcrumb>
+                        {/* <p> <span style={{color: '#707070'}} >Home /</span> <b>Money Matters</b> </p> */}
+                    </Col>
                     <Col lg={12}>
                         <Row>
                             <Col md={12}>

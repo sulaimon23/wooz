@@ -12,14 +12,7 @@ class Utilities extends Component {
         return (
             <div>
                 <Container className='' style={{ maxWidth: '100%'}}>
-                    <p></p>
-                    <Col lg={12}>
-                        <Breadcrumb style={{backgroundColor: 'white'}}>
-                            <Breadcrumb.Item href="/"> Home </Breadcrumb.Item>
-                            <Breadcrumb.Item active href="/Utilities"> Utilities </Breadcrumb.Item>
-                        </Breadcrumb>
-                        {/* <p> <span style={{color: '#707070'}} >Home /</span> <b>Money Matters</b> </p> */}
-                    </Col>
+                    {/* <p></p> */}
                 </Container>
                 <BannerSectionUtilities />
                 <UtilitiesThumbnailSection />

@@ -13,9 +13,9 @@ class InsuranceBannerSections extends Component {
                         <p> <span style={{color: '#707070'}}> <a href="/">Home </a> /</span> <span style={{color: '#707070'}}> <a href="/moneymatters">Money Matters</a> /</span> <b style={{color: '#636363'}}> Insurance </b> </p>
                     </Col> */}
                     <Breadcrumb style={{backgroundColor: 'none! important'}} >
-                        <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
-                        <Breadcrumb.Item href="/moneymatters">Money Matters</Breadcrumb.Item>
-                        <Breadcrumb.Item active>Insurance</Breadcrumb.Item>
+                        <Breadcrumb.Item href="/"> <span style={{color: '#636363'}}>Home</span> </Breadcrumb.Item>
+                        <Breadcrumb.Item href="/moneymatters"> <span style={{color: '#636363'}}>Money Matters</span> </Breadcrumb.Item>
+                        <Breadcrumb.Item style={{color: '#043f7c'}} active>Insurance</Breadcrumb.Item>
                     </Breadcrumb>
                     <Col lg={12}>
                         <Row>

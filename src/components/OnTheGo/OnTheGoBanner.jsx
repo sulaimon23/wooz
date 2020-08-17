@@ -10,8 +10,8 @@ class OnTheGoBanner extends Component {
             <div style={{ backgroundImage: `url(${bannerimage})`, backgroundPosition: 'center', backgroundSize: 'cover', backgroundRepeat: 'no-repeat', color: 'white' }} >
                 <Container className='p-4' style={{ maxWidth: '100%',  }}>
                     <Breadcrumb style={{backgroundColor: 'none! important'}} >
-                        <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
-                        <Breadcrumb.Item active href="/onthego">On The Go</Breadcrumb.Item>
+                        <Breadcrumb.Item href="/"> <span style={{color: '#636363'}}> Home </span> </Breadcrumb.Item>
+                        <Breadcrumb.Item active href="/onthego"> <span style={{color: '#043f7c'}}>On The Go</span> </Breadcrumb.Item>
                         {/* <Breadcrumb.Item active>Insurance</Breadcrumb.Item> */}
                     </Breadcrumb>
                     <Col lg={12}>

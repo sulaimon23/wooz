@@ -16,10 +16,10 @@ class MotorInsurance extends Component {
                     <Col lg={12}>
                         {/* <p> <span style={{color: '#707070'}} >Home /</span> <span style={{color: '#707070'}}>Money Matters /</span> <span style={{color: '#707070'}}>Insurance /</span> <b>Motor Insurance</b>  </p> */}
                         <Breadcrumb className='noBackground'>
-                            <Breadcrumb.Item href="/"> Home </Breadcrumb.Item>
-                            <Breadcrumb.Item href="/moneymatters"> Money Matters </Breadcrumb.Item>
-                            <Breadcrumb.Item href='/moneymatters/insurance'> Insurance </Breadcrumb.Item>
-                            <Breadcrumb.Item active> Motor Insurance </Breadcrumb.Item>
+                            <Breadcrumb.Item href="/"> <span style={{color: '#636363'}}> Home </span> </Breadcrumb.Item>
+                            <Breadcrumb.Item href="/moneymatters"> <span style={{color: '#636363'}}> Money Matters </span> </Breadcrumb.Item>
+                            <Breadcrumb.Item href='/moneymatters/insurance'> <span style={{color: '#636363'}}> Insurance </span> </Breadcrumb.Item>
+                            <Breadcrumb.Item active> <span style={{color: '#043f7c'}}> Motor Insurance </span> </Breadcrumb.Item>
                         </Breadcrumb>
                     </Col>
                     
