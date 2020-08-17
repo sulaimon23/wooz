@@ -9,6 +9,7 @@ import clickandplay from '../../assets/img/icons/home/click-play.png'
 import billpay from '../../assets/img/icons/home/bill-pay.png'
 import clickshop from '../../assets/img/icons/home/click-shop.png'
 import askadoc from '../../assets/img/icons/home/ask-doc.png'
+import askalawyer from '../../assets/img/icons/home/ask-lawyer.png'
 import hangout from '../../assets/img/icons/home/hangout.png'
 import learning from '../../assets/img/icons/home/learning.png'
 import worship from '../../assets/img/icons/home/worship.png'
@@ -71,17 +72,16 @@ class ThumbnailSections extends Component {
                                     </Card.Body>
                                 </Card>
                             </Col>
-                            <Col>
+                            {/* <Col>
                                 <Card className="text-center" style={{boxShadow: '7px 3px 10px #e1e1e1', border: 'none'}}>
                                     <Card.Body>
                                         <Card.Title style={{fontSize: 15, marginTop: '10px'}}>
-                                            {/* <i className="fa fa-credit-card fa-lg" style={{color: 'blue'}}></i> &nbsp; */}
                                             <img src={billpay} style={{width: '30px'}} alt=""/> &nbsp;
                                             <a style={{textDecoration: 'none'}} href="utilities">Bill Pay</a>
                                         </Card.Title>
                                     </Card.Body>
                                 </Card>
-                            </Col>
+                            </Col> */}
                             <Col>
                                 <Card className="text-center" style={{boxShadow: '7px 3px 10px #e1e1e1', border: 'none'}}>
                                     <Card.Body>
@@ -100,6 +100,16 @@ class ThumbnailSections extends Component {
                                             {/* <i className="fa fa-user-md fa-lg" style={{color: 'blue'}}></i> &nbsp; */}
                                             <img src={askadoc} style={{width: '30px'}} alt=""/> &nbsp;
                                             Ask A Doc
+                                        </Card.Title>
+                                    </Card.Body>
+                                </Card>
+                            </Col>
+                            <Col>
+                                <Card className="text-center" style={{boxShadow: '7px 3px 10px #e1e1e1', border: 'none'}}>
+                                    <Card.Body>
+                                        <Card.Title style={{fontSize: 15, marginTop: '10px'}}>
+                                            <img src={askalawyer} style={{width: '30px'}} alt=""/> &nbsp;
+                                            Ask A Lawyer
                                         </Card.Title>
                                     </Card.Body>
                                 </Card>
@@ -124,13 +134,14 @@ class ThumbnailSections extends Component {
                                 <Card className="text-center" style={{boxShadow: '7px 3px 10px #e1e1e1', border: 'none'}}>
                                     <Card.Body>
                                         <Card.Title style={{fontSize: 15, marginTop: '10px'}}>
-                                            {/* <i className="fa fa-graduation-cap fa-lg" style={{color: 'blue'}}></i> &nbsp; */}
-                                            <img src={learning} style={{width: '30px'}} alt=""/> &nbsp;
-                                            Learning
+                                            {/* <i className="fa fa-credit-card fa-lg" style={{color: 'blue'}}></i> &nbsp; */}
+                                            <img src={billpay} style={{width: '30px'}} alt=""/> &nbsp;
+                                            <a style={{textDecoration: 'none'}} href="utilities">Bill Pay</a>
                                         </Card.Title>
                                     </Card.Body>
                                 </Card>
                             </Col>
+                            
                             <Col>
                                 <Card className="text-center" style={{boxShadow: '7px 3px 10px #e1e1e1', border: 'none'}}>
                                     <Card.Body>
@@ -168,13 +179,23 @@ class ThumbnailSections extends Component {
                                 <Card className="text-center" style={{boxShadow: '7px 3px 10px #e1e1e1', border: 'none'}}>
                                     <Card.Body>
                                         <Card.Title style={{fontSize: 15, marginTop: '10px'}}>
-                                            {/* <i className="fa fa-motorcycle fa-lg" style={{color: 'blue'}}></i> &nbsp; */}
+                                            {/* <i className="fa fa-graduation-cap fa-lg" style={{color: 'blue'}}></i> &nbsp; */}
+                                            <img src={learning} style={{width: '30px'}} alt=""/> &nbsp;
+                                            Learning
+                                        </Card.Title>
+                                    </Card.Body>
+                                </Card>
+                            </Col>
+                            {/* <Col>
+                                <Card className="text-center" style={{boxShadow: '7px 3px 10px #e1e1e1', border: 'none'}}>
+                                    <Card.Body>
+                                        <Card.Title style={{fontSize: 15, marginTop: '10px'}}>
                                             <img src={dispatch} style={{width: '30px'}} alt=""/> &nbsp;
                                             Dispatch
                                         </Card.Title>
                                     </Card.Body>
                                 </Card>
-                            </Col>
+                            </Col> */}
                             <Col>
                                 <Card className="text-center" style={{boxShadow: '7px 3px 10px #e1e1e1', border: 'none'}}>
                                     <Card.Body>

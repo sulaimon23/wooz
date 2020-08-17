@@ -9,6 +9,9 @@ class InsuranceBannerSections extends Component {
         return (
             <div style={{ backgroundImage: `url(${bannerimage})`, backgroundPosition: 'center', backgroundSize: 'cover', backgroundRepeat: 'no-repeat', color: 'white' }} >
                 <Container className='p-4' style={{ maxWidth: '100%',  }}>
+                    {/* <Col lg={12}>
+                        <p> <span style={{color: '#707070'}}> <a href="/">Home </a> /</span> <span style={{color: '#707070'}}> <a href="/moneymatters">Money Matters</a> /</span> <b style={{color: '#636363'}}> Insurance </b> </p>
+                    </Col> */}
                     <Breadcrumb style={{backgroundColor: 'none! important'}} >
                         <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
                         <Breadcrumb.Item href="/moneymatters">Money Matters</Breadcrumb.Item>

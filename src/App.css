@@ -13,6 +13,16 @@
   }
 }
 
+a {
+  color: #043f7c;
+}
+
+a:hover {
+  /* color: #ff5757; */
+  background-color: transparent;
+  text-decoration: none
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -25,7 +35,8 @@
 }
 
 .App-link {
-  color: #61dafb;
+  /* color: #61dafb; */
+  color: #6c757d;
 }
 
 @keyframes App-logo-spin {

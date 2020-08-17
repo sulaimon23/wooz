@@ -29,7 +29,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 function getSteps() {
-  return ['TV Subscription', 'Confirmation'];
+  return ['Buy Electricity', 'Confirmation'];
 }
 
 function getStepContent(stepIndex) {

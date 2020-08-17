@@ -12,6 +12,7 @@ import utilities from '../../assets/img/icons/home/utilities-w.png'
 import learning from '../../assets/img/icons/home/learning-w.png'
 import '../SpecialOffersSection/SpecialOffersSections.css'
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import LikeButton from '../LikeButton/LikeButton'
 
 class SpecialOffersSections extends Component {
     render() {
@@ -23,10 +24,8 @@ class SpecialOffersSections extends Component {
                         <hr/>
                         <CardDeck>
                             <Card style={{height: '-webkit-min-content', boxShadow: '7px 3px 10px #e1e1e1', border: 'none'}}>
-                                
                                 <Card.Img variant="top" src={cardimg6} />
-
-                                
+                                <LikeButton />
                                 <span align='center' style={{backgroundColor: '#043f7c', marginTop: '-20px', marginLeft: '240px', padding: '10px', borderRadius: '250px', color: 'white', width: '45px'}}><i align='center' class="fa fa-plane"/></span>
                                 
                                 <Card.Body>
@@ -67,6 +66,7 @@ class SpecialOffersSections extends Component {
                             </Card>
                             <Card style={{height: '-webkit-min-content', boxShadow: '7px 3px 10px #e1e1e1', border: 'none'}}>
                                 <Card.Img variant="top" src={cardimg7} />
+                                <LikeButton />
                                 <span align='center' style={{backgroundColor: '#043f7c', marginTop: '-20px', marginLeft: '240px', padding: '10px', borderRadius: '250px', color: 'white', width: '45px'}}> <img align='center' style={{width: '20px', marginTop: '-6px'}} src={clickandshop} alt=""/></span>
                                 <Card.Body>
                                     <Card.Title><h6>Click &amp; Shop</h6></Card.Title>
@@ -91,6 +91,7 @@ class SpecialOffersSections extends Component {
                             </Card>
                             <Card style={{height: '-webkit-min-content', boxShadow: '7px 3px 10px #e1e1e1', border: 'none'}}>
                                 <Card.Img variant="top" src={cardimg8} />
+                                <LikeButton />
                                 <span align='center' style={{backgroundColor: '#043f7c', marginTop: '-20px', marginLeft: '240px', padding: '10px', borderRadius: '250px', color: 'white', width: '45px'}}> <img align='center' style={{width: '15px', marginTop: '-6px'}} src={clickandplay} alt=""/></span>
                                 <Card.Body>
                                     <Card.Title><h6>Click &amp; Play</h6></Card.Title>
@@ -115,6 +116,7 @@ class SpecialOffersSections extends Component {
                             </Card>
                             <Card style={{height: '-webkit-min-content', boxShadow: '7px 3px 10px #e1e1e1', border: 'none'}}>
                                 <Card.Img variant="top" src={cardimg9} />
+                                <LikeButton />
                                 <span align='center' style={{backgroundColor: '#043f7c', marginTop: '-20px', marginLeft: '240px', padding: '10px', borderRadius: '250px', color: 'white', width: '45px'}}> <img align='center' style={{width: '15px', marginTop: '-6px'}} src={utilities} alt=""/></span>
                                 <Card.Body>
                                     <Card.Title><h6>Utilities</h6></Card.Title>
@@ -139,6 +141,7 @@ class SpecialOffersSections extends Component {
                             </Card>
                             <Card style={{height: '-webkit-min-content', boxShadow: '7px 3px 10px #e1e1e1', border: 'none'}}>
                                 <Card.Img variant="top" src={cardimg10} />
+                                <LikeButton />
                                 <span align='center' style={{backgroundColor: '#043f7c', marginTop: '-20px', marginLeft: '240px', padding: '10px', borderRadius: '250px', color: 'white', width: '45px'}}> <img align='center' style={{width: '20px', marginTop: '-6px'}} src={learning} alt=""/></span>
                                 <Card.Body>
                                     <Card.Title><h6>Learning</h6></Card.Title>

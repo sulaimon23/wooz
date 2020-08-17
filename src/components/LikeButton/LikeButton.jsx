@@ -1,59 +1,99 @@
 import React, { Component } from "react";
-// import "./App.css";
+import './LikeButton.css'
 
-const reduceOne = (prevState, groupName, otherGroupName) => {
-    prevState[groupName].wasClicked
-        ? prevState[groupName].count = prevState[groupName].count - 1
-        : prevState[groupName].count = prevState[groupName].count + 1;
-    prevState[groupName].wasClicked = !prevState[groupName].wasClicked;
-    if (prevState[otherGroupName].wasClicked) {
-        prevState[otherGroupName].count = prevState[otherGroupName].count - 1;
-        prevState[otherGroupName].wasClicked = false;
-    }
-    return prevState;
-};
+// class LikeButton extends Component {
+//     constructor() {
+//       super();
+//       this.state = {
+//         liked: false
+//       };
+//       this.handleClick = this.handleClick.bind(this);
+//     } 
+    
+//     handleClick() {
+//       this.setState({
+//         liked: !this.state.liked
+//       });
+//     }
+    
+//     render() {
+//       const text = this.state.liked ? 'liked' : 'haven\'t liked';
+//       const label = this.state.liked ? 'Unlike' : 'Like'
+//       const label = this.state.liked ? 'Unlike' : 'Like'
+//       return (
+//         <div className="customContainer" style={{marginTop: '-170px', marginLeft: '240px'}}>
+//             <i  onClick={this.handleClick}>{label}</i>
+//           <button className="btn btn-primary" onClick={this.handleClick}>
+//             {label}</button> */}
+//           <p>
+//             you {text} this. Click to toggle.
+//           </p>
+//         </div>
+//       );
+//     }
+//   }
 
-const reducer = action =>
-    (prevState, props) =>
-    action.type === "TOGGLE_LIKE"
-        ? reduceOne(prevState, "like", "dislike")
-        : reduceOne(prevState, "dislike", "like");
+// export default LikeButton;
+  
+// ReactDOM.render(
+//     <LikeButton />,
+//     document.getElementById('example')
+// )
+
+// window.onload = () => console.info("You can always click on it 😉");
+
+// </script><script type="text/babel">
+// const {Component} = React;
+
 
 class LikeButton extends Component {
-    state = {
-        like: {
-            count: 0,
-            wasClicked: false,
-        },
-        dislike: {
-            count: 0,
-            wasClicked: false,
-        },
-    };
-
-    toggleLike = () => this.setState(reducer({ type: "TOGGLE_LIKE" }));
-    toggleDislike = () => this.setState(reducer({ type: "TOGGLE_DISLIKE" }));
-
-    render() {
-        return (
-            <div className="App">
-                <button className="like-button" onClick={this.toggleLike}>
-                    Like | {this.state.like.count}
-                </button>
-                {/* <header className="App-header">
-                    <h1 className="App-title">Like - Dislike</h1>
-                </header>
-                <p className="App-intro">
-                    <button className="like-button" onClick={this.toggleLike}>
-                        Like | {this.state.like.count}
-                    </button>
-                    <button className="dislike-button" onClick={this.toggleDislike}>
-                        Dislike | {this.state.dislike.count}
-                    </button>
-                </p> */}
-            </div>
-        );
+    like = () => {
+        this.setState ({liked: !this.state.liked})
     }
-}
+    
+    constructor(props) {
+        super(props);
+        this.state = {liked: false}
+        this.like = this.like.bind(this);
+    }
+    
+    render() {
+        let status,
+        style = {}, 
+        styleLike = {}
+        if (!this.state.liked) {
+            // status = "Do you like it?";
+            style = {
+                // marginTop: "5px",
+                // fontSize: '40px',
+            }
+            styleLike = {
+                // color: "rgb(244, 30, 64)",
+                color: '#eaecef'
+            }
+        } else {
+            style = {
+                // background: "rgb(244, 30, 64)",
+                // background: 'rgb(3,0,1)'
+                // marginBottom: "-10px",
+                // animation: "storm 2s 1s"
+            }
+            styleLike = {
+                color: "#ff0000",
+                animation: "like 4s"
+            }
+            // status = "You like it!";
+        }
+        
+        return (
+            <div className='react-app'>
+                <div onClick={this.like} style={style} className="hearth-circle">
+                    <i style={styleLike} className="fa fa-heart fa-5x" id="like"></i>                    
+                </div>
+                <h4 className='status'>{status}</h4>
+            </div>
+        )
+    }
+};
 
 export default LikeButton;

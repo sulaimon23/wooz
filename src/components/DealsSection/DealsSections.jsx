@@ -24,7 +24,7 @@ class DealsSections extends Component {
                             {/* on the go */}
                             <Card style={{height: '-webkit-min-content', boxShadow: '7px 3px 10px #e1e1e1', border: 'none'}}>
                                 <Card.Img variant="top" src={cardimg} />
-                                <img src={LikeButton} alt=""/>
+                                <LikeButton />
                                 <span align='center' style={{backgroundColor: '#043f7c', marginTop: '-20px', marginLeft: '240px', padding: '10px', borderRadius: '250px', color: 'white', width: '45px'}}><i align='center' class="fa fa-plane"/></span>
                                 <Card.Body>
                                     <Card.Title><h6>On The Go</h6></Card.Title>
@@ -66,6 +66,7 @@ class DealsSections extends Component {
                             {/* start click &amp; shop */}
                             <Card style={{height: '-webkit-min-content', boxShadow: '7px 3px 10px #e1e1e1', border: 'none'}}>
                                 <Card.Img variant="top" src={cardimg2} />
+                                <LikeButton />
                                 <span align='center' style={{backgroundColor: '#043f7c', marginTop: '-20px', marginLeft: '240px', padding: '10px', borderRadius: '250px', color: 'white', width: '45px'}}> <img align='center' style={{width: '20px', marginTop: '-6px'}} src={clickandshop} alt=""/></span>
                                 <Card.Body>
                                     <Card.Title><h6>Click &amp; Shop</h6></Card.Title>
@@ -93,6 +94,7 @@ class DealsSections extends Component {
                             {/* start click &amp; play */}
                             <Card style={{height: '-webkit-min-content', boxShadow: '7px 3px 10px #e1e1e1', border: 'none'}}>
                                 <Card.Img variant="top" src={cardimg3} />
+                                <LikeButton />
                                 <span align='center' style={{backgroundColor: '#043f7c', marginTop: '-20px', marginLeft: '240px', padding: '10px', borderRadius: '250px', color: 'white', width: '45px'}}> <img align='center' style={{width: '15px', marginTop: '-6px'}} src={clickandplay} alt=""/></span>
                                 <Card.Body>
                                     <Card.Title><h6>Click &amp; Play</h6></Card.Title>
@@ -120,6 +122,7 @@ class DealsSections extends Component {
                             {/* start money matters */}
                             <Card style={{height: '-webkit-min-content', boxShadow: '7px 3px 10px #e1e1e1', border: 'none'}}>
                                 <Card.Img variant="top" src={cardimg4} />
+                                <LikeButton />
                                 <span align='center' style={{backgroundColor: '#043f7c', marginTop: '-20px', marginLeft: '240px', padding: '10px', borderRadius: '250px', color: 'white', width: '45px'}}> <img align='center' style={{width: '15px', marginTop: '-6px'}} src={moneymatters} alt=""/></span>
                                 <Card.Body>
                                     <Card.Title><h6>Money Matters</h6></Card.Title>
@@ -147,6 +150,7 @@ class DealsSections extends Component {
                             {/* start dispatch */}
                             <Card style={{height: '-webkit-min-content', boxShadow: '7px 3px 10px #e1e1e1', border: 'none'}}>
                                 <Card.Img variant="top" src={cardimg5} />
+                                <LikeButton />
                                 <span align='center' style={{backgroundColor: '#043f7c', marginTop: '-20px', marginLeft: '240px', padding: '10px', borderRadius: '250px', color: 'white', width: '45px'}}> <img align='center' style={{width: '20px', marginTop: '-6px'}} src={dispatch} alt=""/></span>
                                 <Card.Body>
                                     <Card.Title><h6>Dispatch</h6></Card.Title>

@@ -18,28 +18,28 @@ class FooterSection extends Component {
                                 <Nav defaultActiveKeyxx="#" className="flex-column">
                                     <h5 style={{color: 'white'}}> <b>Information</b></h5> 
                                     {/* <h4 style={{color: 'white'}}><b></b> </h4> */}
-                                    <Nav.Link href="#">About Us</Nav.Link>
-                                    <Nav.Link eventKey="#">Privacy Policy</Nav.Link>
-                                    <Nav.Link eventKey="#">Delivery Information</Nav.Link>
-                                    <Nav.Link eventKey="#">Terms and Conditions</Nav.Link>
+                                    <Nav.Link style={{padding: '.5rem 1rem'}} href="#">About Us</Nav.Link>
+                                    <Nav.Link style={{padding: '.5rem 1rem'}} eventKey="#">Privacy Policy</Nav.Link>
+                                    <Nav.Link style={{padding: '.5rem 1rem'}} eventKey="#">Delivery Information</Nav.Link>
+                                    <Nav.Link style={{padding: '.5rem 1rem'}} eventKey="#">Terms and Conditions</Nav.Link>
                                 </Nav>
                             </Col> 
                             <Col md={2} style={{marginTop: '50px'}}>
                                 <Nav defaultActiveKeyxx="#" className="flex-column">
                                     <h5 style={{color: 'white'}}> <b>My Account</b></h5>
-                                    <Nav.Link href="#">About Us</Nav.Link>
-                                    <Nav.Link eventKey="#">Privacy Policy</Nav.Link>
-                                    <Nav.Link eventKey="#">Delivery Information</Nav.Link>
-                                    <Nav.Link eventKey="#">Terms and Conditions</Nav.Link>
+                                    <Nav.Link style={{padding: '.5rem 1rem'}} href="#">About Us</Nav.Link>
+                                    <Nav.Link style={{padding: '.5rem 1rem'}} eventKey="#">Privacy Policy</Nav.Link>
+                                    <Nav.Link style={{padding: '.5rem 1rem'}} eventKey="#">Delivery Information</Nav.Link>
+                                    <Nav.Link style={{padding: '.5rem 1rem'}} eventKey="#">Terms and Conditions</Nav.Link>
                                 </Nav>
                             </Col> 
                             <Col md={2} style={{marginTop: '50px'}}>
                                 <Nav defaultActiveKeyxx="#" className="flex-column">
                                     <h5 style={{color: 'white'}}> <b>More Info</b></h5>
-                                    <Nav.Link href="#">About Us</Nav.Link>
-                                    <Nav.Link eventKey="#">Privacy Policy</Nav.Link>
-                                    <Nav.Link eventKey="#">Delivery Information</Nav.Link>
-                                    <Nav.Link eventKey="#">Terms and Conditions</Nav.Link>
+                                    <Nav.Link style={{padding: '.5rem 1rem'}} href="#">About Us</Nav.Link>
+                                    <Nav.Link style={{padding: '.5rem 1rem'}} eventKey="#">Privacy Policy</Nav.Link>
+                                    <Nav.Link style={{padding: '.5rem 1rem'}} eventKey="#">Delivery Information</Nav.Link>
+                                    <Nav.Link style={{padding: '.5rem 1rem'}} eventKey="#">Terms and Conditions</Nav.Link>
                                 </Nav>
                             </Col>
                             <Col md={3} style={{marginTop: '50px'}}>

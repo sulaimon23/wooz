@@ -49,7 +49,7 @@ function AirtimeCard() {
                                 </InputGroup>
                             </Form.Group>
                             <Form.Group as={Col} md="7" controlId="validationCustom02">
-                                <Form.Label> <h6>Address<span style={{color: 'red'}}>*</span></h6></Form.Label>
+                                <Form.Label> <h6>Amount<span style={{color: 'red'}}>*</span></h6></Form.Label>
                                 <Form.Control required type="text" defaultValuexx="Otto" />
                                 <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
                             </Form.Group>
