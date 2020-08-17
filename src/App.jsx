@@ -4,7 +4,7 @@ import './App.css';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Home from './components/Home/Home';
 import Insurance from './components/Insurance/Insurance';
-import MotorInsurance from './components/MotorInsurance/MotorInsurance';
+import MotorInsurance from './components/Insurance/MotorInsurance/MotorInsurance';
 import CustomNavbar from './components/CustomNavbar';
 import NoMatch from './components/NoMatch';
 import MoneyMatters from './components/MoneyMatters/MoneyMatters';
