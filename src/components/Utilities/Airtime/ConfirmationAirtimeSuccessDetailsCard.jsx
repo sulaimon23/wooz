@@ -32,8 +32,12 @@ function ConfirmationAirtimeSuccessDetailsCard() {
                     <h6> Total 1,000 </h6>
                     <h6> Payment xxxx xxxx xxxx 1111 (VISA) </h6>
                     <span> This charge will appear on your statement as ECONNECT TICKET </span>
-                    <hr style={{color: '#043f7c', borderTop: '1px dashed'}}/>
+                    <br/>
+                    <br/>
+                    {/* <hr style={{color: '#043f7c', borderTop: '1px dashed'}}/> */}
                     <Button variant='success' type="submit"><span style={{fontSize: 'small'}}>View Receipt</span> </Button>
+                    <br/>
+                    <br/>
                 </div>
                 {/*  */}
                 

@@ -49,8 +49,16 @@ function AirtimeCard() {
                                 </InputGroup>
                             </Form.Group>
                             <Form.Group as={Col} md="7" controlId="validationCustom02">
-                                <Form.Label> <h6>Amount<span style={{color: 'red'}}>*</span></h6></Form.Label>
+                                <Form.Label> <h6>How Much Airtime Do You Want To Buy? <span style={{color: 'red'}}>*</span></h6></Form.Label>
+                                <InputGroup className="">
+                                <InputGroup.Append>
+                                    <Button style={{borderTopLeftRadius: '3px', borderBottomLeftRadius: '3px'}} variant="secondary">
+                                        &#8358;
+                                    </Button>
+                                </InputGroup.Append>
                                 <Form.Control required type="text" defaultValuexx="Otto" />
+                                </InputGroup>
+                                
                                 <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
                             </Form.Group>
                             

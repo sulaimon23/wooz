@@ -67,12 +67,12 @@ function ElectricityCard() {
                                 <Form.Label> <h6> How Much Electricity Do You Want To Buy? <span style={{color: 'red'}}>*</span></h6></Form.Label>
                                 <InputGroup>
                                     <InputGroup.Append>
-                                        <Button variant="dark">
+                                        <Button variant="secondary" style={{borderTopLeftRadius: '3px', borderBottomLeftRadius: '3px'}}>
                                             &#8358;
                                         </Button>
                                     </InputGroup.Append>
-                                    <FormControl placeholder="Enter value amount 'e.g. &#8358;10,000.00'" aria-describedby="basic-addon1" ></FormControl>
-                                    <Form.Control.Feedback type="invalid"> Enter a valid phone number. </Form.Control.Feedback>
+                                    <FormControl style={{borderTopRightRadius: '3px', borderBottomRightRadius: '3px'}} placeholder="Enter value amount 'e.g. &#8358;10,000.00'" aria-describedby="basic-addon1" ></FormControl>
+                                    <Form.Control.Feedback type="invalid"> Enter a valid amount. </Form.Control.Feedback>
                                 </InputGroup>
                             </Form.Group>
                             <Form.Group as={Col} md="7" controlId="validationCustomUsername">
