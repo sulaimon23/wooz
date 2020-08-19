@@ -1,6 +1,5 @@
-
-
 import React, { Component } from 'react';
+import { Jumbotron, Container, Row, Col, Image, Button, Card } from 'react-bootstrap';
 import Carousel from 'react-bootstrap/Carousel';
 import ReactBootstrapCarousel from "react-bootstrap-carousel";
 // import "bootstrap/dist/css/bootstrap.css";
@@ -14,23 +13,28 @@ import slider3 from '../../assets/img/slider/3.jpg';
 class SliderCarouselSections extends Component {
     render() {
         return (
-            <div className="container-fluid">
+            // <div classNamexx="container-fluid">
+            <Card>
                 <Carousel>
                     <Carousel.Item>
-                        <img className="d-block w-100" src={slider1} alt="First slide" />
+                        <Card.Img src={slider1} alt="First slide" />
+                        {/* <img className="d-block w-100" src={slider1} alt="First slide" /> */}
                     </Carousel.Item>
                     <Carousel.Item>
-                        <img className="d-block w-100" src={slider2} alt="Third slide" />
+                        <Card.Img src={slider2} alt="Second slide" />
+                        {/* <img className="d-block w-100" src={slider2} alt="Third slide" /> */}
                     </Carousel.Item>
                     <Carousel.Item>
-                        <img className="d-block w-100" src={slider3} alt="Third slide" />
+                        <Card.Img src={slider3} alt="Third slide" />
+                        {/* <img className="d-block w-100" src={slider3} alt="Third slide" /> */}
                         {/* <Carousel.Caption>
                             <h3>Third slide label</h3>
                             <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
                         </Carousel.Caption> */}
                     </Carousel.Item>
                 </Carousel>
-            </div>
+            </Card>
+            // </div>
         );
     }
 }

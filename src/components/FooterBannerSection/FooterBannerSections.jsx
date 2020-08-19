@@ -15,18 +15,19 @@ import Banner2 from '../../assets/img/slider/2.jpg';
 class FooterBannerSections extends Component {
     render() {
         return (
-            <div className="container-fluid">
+            // <div className="container-fluid">
                 <Col lg={12}>
                     <Row>
                         <Col md={6}>
-                            <img className="d-block w-100" src={Banner1} alt="First slide" />
+                            <Card.Img className='d-block w-100' src={Banner1} />
+                            {/* <img className="d-block w-100" src={Banner1} alt="First slide" /> */}
                         </Col>
                         <Col md={6}>
                             <img className="d-block w-100" src={Banner2} alt="First slide" />
                         </Col>
                     </Row>
                 </Col>
-            </div>
+            // </div>
         );
     }
 }

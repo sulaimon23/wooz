@@ -6,8 +6,8 @@ import { Jumbotron, Container, Row, Col, Image, Button, Card } from 'react-boots
 class AboutSections extends Component {
     render() {
         return (
-            <div className=" " style={{ backgroundColor: '#ffffff'}}>
-                <Container className='p-4' style={{ maxWidth: '100%'}}>
+            <div classNamexx="p-2" style={{ backgroundColor: '#ffffff', paddingTop: '30px', paddingBottom: '30px'}}>
+                {/* <Container className='p-4' style={{ maxWidth: '100%'}}> */}
                     <Col lg={12}>
                         <Row>
                             <Col md={12}>
@@ -17,7 +17,7 @@ class AboutSections extends Component {
                             </Col>
                         </Row>
                     </Col>
-                </Container>
+                {/* </Container> */}
             </div>
         );
     }

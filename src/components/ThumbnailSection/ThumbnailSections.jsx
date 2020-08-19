@@ -16,6 +16,7 @@ import worship from '../../assets/img/icons/home/worship.png'
 import taxlevies from '../../assets/img/icons/home/tax-levies.png'
 import charity from '../../assets/img/icons/home/charity.png'
 import dispatch from '../../assets/img/icons/home/dispatch.png'
+import woozeee from '../../assets/img/icons/home/woozeee.png'
 import other from '../../assets/img/icons/home/other.png'
 
 class ThumbnailSections extends Component {
@@ -23,16 +24,13 @@ class ThumbnailSections extends Component {
         return (
             <div>
                 
-                <Container className='' style={{ maxWidth: '100%'}}>
-                    <Col lg={12}>
-                        <Row md={8}>
+                {/* <Container className='' style={{ maxWidth: '100%'}}> */}
+                    <Col lg={12} className='mb-4'>
+                        <Row md={6}>
                             <Col>
                                 <Card className="text-center" style={{boxShadow: '7px 3px 10px #e1e1e1', border: 'none'}}>
                                     <Card.Body>
                                         <Card.Title style={{fontSize: '15px', marginTop: '10px'}}>
-                                            {/* <i className="fa fa-money fa-lg" style={{color: 'blue'}}></i> */}
-                                            {/* <Image src={slider3} alt="" />  */}
-                                            {/* <Image src="holder.js/171x180" roundedCircle /> */}
                                             <img src={moneymatters} style={{width: '30px'}} alt=""/> &nbsp;
                                             <a style={{textDecoration: 'none'}} href="moneymatters">Money Matters</a>
                                         </Card.Title>
@@ -43,7 +41,6 @@ class ThumbnailSections extends Component {
                                 <Card className="text-center" style={{boxShadow: '7px 3px 10px #e1e1e1', border: 'none'}}>
                                     <Card.Body>
                                         <Card.Title style={{fontSize: 15, marginTop: '10px'}}>
-                                            {/* <i className="fa fa-bank fa-lg" style={{color: 'blue'}}></i> &nbsp; */}
                                             <img src={uba} style={{width: '30px'}} alt=""/> &nbsp;
                                             <span style={{color: 'red'}}>UBA</span>
                                         </Card.Title>
@@ -54,7 +51,6 @@ class ThumbnailSections extends Component {
                                 <Card className="text-center" style={{boxShadow: '7px 3px 10px #e1e1e1', border: 'none'}}>
                                     <Card.Body>
                                         <Card.Title style={{fontSize: 15, marginTop: '10px'}}>
-                                            {/* <i className="fa fa-subway fa-lg" style={{color: 'blue'}}></i> &nbsp; */}
                                             <img src={onthego} style={{width: '30px'}} alt=""/> &nbsp;
                                             <a style={{textDecoration: 'none'}} href="onthego">On The Go</a>
                                         </Card.Title>
@@ -65,7 +61,6 @@ class ThumbnailSections extends Component {
                                 <Card className="text-center" style={{boxShadow: '7px 3px 10px #e1e1e1', border: 'none'}}>
                                     <Card.Body>
                                         <Card.Title style={{fontSize: 15, marginTop: '10px'}}>
-                                            {/* <i className="fa fa-gamepad fa-lg" style={{color: 'blue'}}></i> &nbsp; */}
                                             <img src={clickandplay} style={{width: '30px'}} alt=""/> &nbsp;
                                             Click &amp; Play
                                         </Card.Title>
@@ -104,6 +99,12 @@ class ThumbnailSections extends Component {
                                     </Card.Body>
                                 </Card>
                             </Col>
+                            
+                        </Row>
+                    </Col>
+                    {/* <br/> */}
+                    <Col lg={12} className='mb-4'>
+                        <Row md={6}>
                             <Col>
                                 <Card className="text-center" style={{boxShadow: '7px 3px 10px #e1e1e1', border: 'none'}}>
                                     <Card.Body>
@@ -114,11 +115,6 @@ class ThumbnailSections extends Component {
                                     </Card.Body>
                                 </Card>
                             </Col>
-                        </Row>
-                    </Col>
-                    <br/>
-                    <Col lg={12}>
-                        <Row md={8}>
                             <Col>
                                 <Card className="text-center" style={{boxShadow: '7px 3px 10px #e1e1e1', border: 'none'}}>
                                     <Card.Body>
@@ -175,6 +171,10 @@ class ThumbnailSections extends Component {
                                     </Card.Body>
                                 </Card>
                             </Col>
+                        </Row>
+                    </Col>
+                    <Col lg={12} classNamexx='mb-4'>
+                        <Row md={6}>
                             <Col>
                                 <Card className="text-center" style={{boxShadow: '7px 3px 10px #e1e1e1', border: 'none'}}>
                                     <Card.Body>
@@ -197,6 +197,16 @@ class ThumbnailSections extends Component {
                                 </Card>
                             </Col> */}
                             <Col>
+                                <Card className="text-center" style={{boxShadow: '7px 3px 10px #e1e1e1', backgroundColorxx: '#043f7c', border: 'none'}}>
+                                    <Card.Body>
+                                        <Card.Title style={{fontSize: 15, marginTop: '10px'}}>
+                                            <img src={woozeee} style={{width: '30px'}} alt=""/> 
+                                            {/* &nbsp; Auditions */}
+                                        </Card.Title>
+                                    </Card.Body>
+                                </Card>
+                            </Col>
+                            <Col>
                                 <Card className="text-center" style={{boxShadow: '7px 3px 10px #e1e1e1', border: 'none'}}>
                                     <Card.Body>
                                         <Card.Title style={{fontSize: 15, marginTop: '10px'}}>
@@ -209,7 +219,7 @@ class ThumbnailSections extends Component {
                             </Col>
                         </Row>
                     </Col>
-                </Container>
+                {/* </Container> */}
             </div>
         );
     }

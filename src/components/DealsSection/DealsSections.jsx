@@ -16,13 +16,13 @@ class DealsSections extends Component {
     render() {
         return (
             <div>
-                <Container className='' style={{ maxWidth: '100%'}}>
+                {/* <Container className='' style={{ maxWidth: '100%'}}> */}
                     <Col lg={12}>
                         <p>Deals of The Day</p>
                         <hr/>
                         <CardDeck>
                             {/* on the go */}
-                            <Card style={{height: '-webkit-min-content', boxShadow: '7px 3px 10px #e1e1e1', border: 'none'}}>
+                            <Card style={{height: '-webkit-min-content', boxShadow: '7px 3px 10px #e1e1e1', border: 'none', position: 'relative'}}>
                                 <Card.Img variant="top" src={cardimg} />
                                 <LikeButton />
                                 <span align='center' style={{backgroundColor: '#043f7c', marginTop: '-20px', marginLeft: '240px', padding: '10px', borderRadius: '250px', color: 'white', width: '45px'}}><i align='center' class="fa fa-plane"/></span>
@@ -176,7 +176,7 @@ class DealsSections extends Component {
                             {/* end dispatch */}
                         </CardDeck>
                     </Col>
-                </Container>
+                {/* </Container> */}
             </div>
         );
     }

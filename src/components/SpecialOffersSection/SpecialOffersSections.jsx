@@ -18,7 +18,7 @@ class SpecialOffersSections extends Component {
     render() {
         return (
             <div>
-                <Container className='' style={{ maxWidth: '100%'}}>
+                {/* <Container className='' style={{ maxWidth: '100%'}}> */}
                     <Col lg={12}>
                         <p>Special Offers <Badge variant="success">Offer</Badge></p>
                         <hr/>
@@ -166,7 +166,7 @@ class SpecialOffersSections extends Component {
                             </Card>
                         </CardDeck>
                     </Col>
-                </Container>
+                {/* </Container> */}
             </div>
         );
     }

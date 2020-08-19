@@ -24,36 +24,37 @@ class Home extends Component {
                             Welcome to WOOZ.NG
                         </h2>
                     </Jumbotron> */}
-                    <Col lg={12}>
-                        <Row>
-                            <Col md={8}>
-                                <Slider />
-                            </Col>
-                            <Col md={4}>
-                                <SliderCard />
-                            </Col>
-                        </Row>
-                    </Col>
-                    <br/>
-                    <ThumbnailSection />
-                    <br/>
-                    <br/>
-                    <DealsSection />
-                    <br/>
-                    <br/>
-                    <SpecialOffersSection />
-                    <br/>
-                    <br/>
-                    <FlashSalesSection />
-                    <br/>
-                    <br/>
-                    <br/>
-                    <FooterBannerSection />
-                    <br/>
-                    <br/>
-                    {/* <br/> */}
-                    
                 </Container>
+                <Col lg={12}>
+                    <Row>
+                        <Col md={8}>
+                            <Slider />
+                        </Col>
+                        <Col md={4}>
+                            <SliderCard />
+                        </Col>
+                    </Row>
+                </Col>
+                <br/>
+                <ThumbnailSection />
+                <br/>
+                <br/>
+                <DealsSection />
+                <br/>
+                <br/>
+                <SpecialOffersSection />
+                <br/>
+                <br/>
+                <FlashSalesSection />
+                <br/>
+                <br/>
+                <br/>
+                <FooterBannerSection />
+                <br/>
+                <br/>
+                {/* <br/> */}
+                    
+                
                 <br/>
                 <AboutSection />
                 <br/>

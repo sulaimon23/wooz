@@ -1,11 +1,14 @@
 .dropdownmenu{
     background-color: #043f7c;
     /* height: 50%; */
-    margin-top: 396px;
+    /* margin-top: 396px; */
+    /* margin-top: 24%; */
+    top: 100%;
     margin-left: -16px;
     margin-right: -16px;
     padding: 20px;
     position: absolute;
+    /* position: fixed; */
     z-index: 50000000;
     width: 100%;
     color: aliceblue;

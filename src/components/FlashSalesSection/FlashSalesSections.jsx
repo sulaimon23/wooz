@@ -16,7 +16,7 @@ class FlashSalesSections extends Component {
     render() {
         return (
             <div>
-                <Container className='' style={{ maxWidth: '100%'}}>
+                {/* <Container className='' style={{ maxWidth: '100%'}}> */}
                     <Col lg={12}>
                         <p>Flash Sales <Badge variant="success">New</Badge></p>
                         <hr/>
@@ -162,7 +162,7 @@ class FlashSalesSections extends Component {
                             </Card>
                         </CardDeck>
                     </Col>
-                </Container>
+                {/* </Container> */}
             </div>
         );
     }
