@@ -25,10 +25,26 @@ function CableTvConfirmationCard() {
                     <hr style={{color: '#043f7c', borderTop: '1px dashed'}}/>
                     <Row>
                         <Col md={6}>
-                            <p><b>Network Operator:</b> </p>
+                            <p><b>TV Operator:</b> </p>
                         </Col>
                         <Col md={6}>
-                            <p style={{float: 'right'}}>MTN </p>
+                            <p style={{float: 'right'}}>DSTv </p>
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col md={6}>
+                            <p><b>Smartcard Number:</b> </p>
+                        </Col>
+                        <Col md={6}>
+                            <p style={{float: 'right'}}>07060460216 </p>
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col md={6}>
+                            <p><b>Preferred Package:</b> </p>
+                        </Col>
+                        <Col md={6}>
+                            <p style={{float: 'right'}}>&#8358;2,000 </p>
                         </Col>
                     </Row>
                     <Row>
@@ -37,22 +53,6 @@ function CableTvConfirmationCard() {
                         </Col>
                         <Col md={6}>
                             <p style={{float: 'right'}}>07060460216 </p>
-                        </Col>
-                    </Row>
-                    <Row>
-                        <Col md={6}>
-                            <p><b>Amount:</b> </p>
-                        </Col>
-                        <Col md={6}>
-                            <p style={{float: 'right'}}>&#8358;2,000 </p>
-                        </Col>
-                    </Row>
-                    <Row>
-                        <Col md={6}>
-                            <p><b>Email:</b> </p>
-                        </Col>
-                        <Col md={6}>
-                            <p style={{float: 'right'}}>amoshood@fczmedia.com </p>
                         </Col>
                     </Row>
                 </div>
