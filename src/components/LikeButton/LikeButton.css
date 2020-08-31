@@ -9,8 +9,11 @@
     align-items: center;
     width: 57px;
     height: 57px;
-    margin-top: -170px;
-    margin-left: 225px;
+    /* margin-top: -170px; */
+    margin-top: -50%;
+    /* bottom: 20%; */
+    margin-left: 77%;
+    /* margin-left: 225px; */
     /* justify-content: center;
     margin-bottom: calc(var(--norm-size) / -2); */
 }
@@ -32,7 +35,9 @@
     position: absolute;
     align-content: center;
     /* margin-left: -6px; */
-    margin-top: -20px;
+    /* margin-top: -20px; */
+    /* margin-top: -10%; */
+    top: 5%;
     /* color: var(--like-color); */
     color: floralwhite;
 }

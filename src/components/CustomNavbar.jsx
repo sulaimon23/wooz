@@ -9,6 +9,8 @@ import img from '../assets/img/avatar.jpg'
 import ReactCountryFlag from "react-country-flag"
 // import DropdownMenu from "./DropdownMenu/DropdownMenu";
 import DropdownMenuComp from './DropdownMenu/DropdownMenu'
+// import MobileNavbarMenu from './DropdownMenu/MobileMenu'
+
 
 class CustomNavbar extends Component {
     constructor() {
@@ -16,24 +18,34 @@ class CustomNavbar extends Component {
         this.state = {
           isTrue: false
         }
+        // this.state = {
+        //     isTrue2: false
+        // }
     }
   
     toggle () {
         const {isTrue} = this.state
         this.setState({isTrue: !isTrue})
-        // mouseEvent='onMouseDown';
     }
-    // this.handleClickOutside ();
+
+    // togglemobile () {
+    //     const {isTrue2} = this.state
+    //     this.setState({isTrue2: !isTrue2})
+    // }
     
     render() {
         return (
             // <Container className='' style={{ maxWidth: '100%'}}>
-                <Navbar style={{backgroundColor: 'white'}} expand="lg">
+                <Navbar style={{backgroundColor: 'white'}} expand="lg" sticky="top">
                     {/* start menu icon */}
                     {/* <ClickAwayListener mouseEvent="onMouseDown" touchEvent="onTouchStart" onClickAway={handleClickAway}> */}
-                        <Nav.Link onClick={() => this.toggle()} style={{backgroundColor: '#043f7c', borderRadius: '3px', paddingLeft: '13px', paddingRight: '13px'}} >
+                        {/* web dropdownmenu */}
+                        <Nav.Link className='d-none d-lg-block' onClick={() => this.toggle()} style={{backgroundColor: '#043f7c', borderRadius: '3px', paddingLeft: '13px', paddingRight: '13px'}} >
                             <i style={{color: '#ffffff'}} className="fa fa-bars fa-lg"></i>
                         </Nav.Link>
+                        {/* end web dropdownmenu */}
+                        {/* <MobileNavbarMenu /> */}
+                        
                     {/* </ClickAwayListener> */}
                     {/* end menu icon */}
                     
@@ -46,7 +58,7 @@ class CustomNavbar extends Component {
                     {/* end brand logo */}
                     
                     {/* start responsive navbar */}
-                    <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                    {/* <Navbar.Toggle aria-controls="responsive-navbar-nav" /> */}
                     <Navbar.Collapse>
                         <Nav className="mx-auto">
                             {/* <Nav.Link href="#features">Features</Nav.Link> */}
@@ -67,9 +79,7 @@ class CustomNavbar extends Component {
                                 <Dropdown.Divider />
                                 <Dropdown.Item href="#">Other Services</Dropdown.Item>
                                 </DropdownButton>
-                                <FormControl placeholder="What are you looking for?" aria-describedby="basic-addon1" >
-                                    
-                                </FormControl>
+                                <FormControl placeholder="What are you looking for?" aria-describedby="basic-addon1"></FormControl>
                                 <InputGroup.Append>
                                     <Button variant="danger">
                                         <i className="fa fa-search"></i>
@@ -166,6 +176,7 @@ class CustomNavbar extends Component {
                         </Nav> */}
                     </Navbar.Collapse>
                     {this.state.isTrue ? <DropdownMenuComp /> : null}
+                    
                 </Navbar>
             // </Container>
             

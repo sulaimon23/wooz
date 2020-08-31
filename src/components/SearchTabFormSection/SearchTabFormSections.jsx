@@ -14,7 +14,7 @@ class SearchTabFormSections extends Component {
             <div>
                 {/* <div className='container-fluid'> */}
                 <Container style={{marginTop: '-107px', maxWidth: '100%' }}></Container>
-                <MultiStepper />
+                <MultiStepper style={{color: 'green'}} />
                 
             {/* </div> */}
             </div>

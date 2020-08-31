@@ -1,7 +1,7 @@
 import React, { Component, useState } from 'react';
 import { Jumbotron, Container, Row, Col, Image, Button, ButtonGroup, Card, InputGroup, Form, FormControl, FormCheck, Nav } from 'react-bootstrap';
 import PhoneInput from 'react-phone-input-2'
-import 'react-phone-input-2/lib/style.css'
+// import '../Utilities/Data/node_modules/react-phone-input-2/lib/style.css'
 import DatePicker from '../Calendar'
 // import Stepper from 'react-stepper-horizontal'
 
@@ -25,12 +25,12 @@ function FlightSelectTab() {
         // <div>
         //     <Container className='p-4' as={Col} lg={12} style={{maxWidth: '100%' }}>
         <div fluid>
-            <Container style={{backgroundColor: '#043f7c'}} direction='row'  fluid>
+            <Container style={{backgroundColor: '#043f7c', paddingTop: '20px'}} direction='row'  fluid>
                 <Card style={{backgroundColor: 'transparent', border: 'none'}}>
                     <Card.Body>
-                        <Form noValidate validated={validated} onSubmit={handleSubmit} style={{marginTop: '14px', height: '55px'}}>
-                            <Form.Row>
-                                <InputGroup className="mb-5" as={Col} md="3" >
+                        <Form noValidate validated={validated} onSubmit={handleSubmit} stylex={{marginTop: '14px', height: '55px'}}>
+                            <Form.Row stylex={{backgroundColor: '#043f7c', width: '100%', paddingTop: '20px'}}>
+                                <InputGroup className="mb-4" as={Col} md="3" >
                                     <InputGroup.Prepend>
                                         <InputGroup.Text>
                                         <i class='fa fa-map-marker'></i>
@@ -40,7 +40,7 @@ function FlightSelectTab() {
                                     <FormControl style={{borderTopRightRadius: '4px', borderBottomRightRadius: '4px'}} id="inlineFormInputGroup" placeholder="From:" required type='text' defaultValue='Murtala Mohammed Airport' />
                                     <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
                                 </InputGroup>
-                                <InputGroup className="mb-5" as={Col} md="3" >
+                                <InputGroup className="mb-4" as={Col} md="3" >
                                     <InputGroup.Prepend>
                                         <InputGroup.Text>
                                         <i class='fa fa-map-marker'></i>
@@ -50,7 +50,7 @@ function FlightSelectTab() {
                                     <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
                                 </InputGroup>
                                 <Form.Group as={Col} md="3" controlId="validationCustom02">
-                                    <InputGroup className="mb-3">
+                                    <InputGroup >
                                         <FormControl placeholder='Depature Date' />
                                         <FormControl placeholder='+ Add Return' />
                                     </InputGroup>
@@ -76,10 +76,10 @@ function FlightSelectTab() {
                         <Col md={8}>
                             <InnerTabPanel />
                         </Col>
-                        <Col md={4}>
+                        <Col md={4} className='d-none d-lg-block'>
                             <GoogleMap />
                         </Col>
-                    </Row>
+                    </Row> 
                 </Col>
             </Container>
             

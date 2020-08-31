@@ -19,8 +19,8 @@ function AirtimeConfirmationCard() {
    
     return (
         <div>
-            <Card style={{backgroundColor: '#ffffff', border: 'none'}}>
-                <div style={{ backgroundColor: 'transparent', padding: '20px'}}>
+            <Card  style={{backgroundColor: '#ffffff', border: 'none'}}>
+                <div className="justify-content-md-center" style={{ backgroundColor: 'transparent', padding: '20px', widthxx:'600px'}}>
                     <p style={{color: '#043f7c'}}> <b>Airtime Details</b> <span style={{float: 'right'}}>Edit &nbsp; <i className="fa fa-pencil"></i></span></p>
                     <hr style={{color: '#043f7c', borderTop: '1px dashed'}}/>
                     <Row>
@@ -28,7 +28,7 @@ function AirtimeConfirmationCard() {
                             <p><b>Network Operator:</b> </p>
                         </Col>
                         <Col md={6}>
-                            <p>MTN </p>
+                            <p style={{float: 'right'}}>MTN </p>
                         </Col>
                     </Row>
                     <Row>
@@ -36,7 +36,7 @@ function AirtimeConfirmationCard() {
                             <p><b>Phone Number:</b> </p>
                         </Col>
                         <Col md={6}>
-                            <p>07060460216 </p>
+                            <p style={{float: 'right'}}>07060460216 </p>
                         </Col>
                     </Row>
                     <Row>
@@ -44,7 +44,7 @@ function AirtimeConfirmationCard() {
                             <p><b>Amount:</b> </p>
                         </Col>
                         <Col md={6}>
-                            <p>&#8358;2,000 </p>
+                            <p style={{float: 'right'}}>&#8358;2,000 </p>
                         </Col>
                     </Row>
                     <Row>
@@ -52,7 +52,7 @@ function AirtimeConfirmationCard() {
                             <p><b>Email:</b> </p>
                         </Col>
                         <Col md={6}>
-                            <p>amoshood@fczmedia.com </p>
+                            <p style={{float: 'right'}}>amoshood@fczmedia.com </p>
                         </Col>
                     </Row>
                 </div>

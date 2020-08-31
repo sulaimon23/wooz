@@ -6,14 +6,14 @@ import AirtimeCard from './AirtimeCard';
 class BuyAirtimeDetailsTab extends Component {
     render() {
         return (
-            <div>
+            <div stylexx={{ maxWidth: '100%'}}>
                 
-                <Container className='' style={{ maxWidth: '100%'}}>
+                {/* <Container className='' style={{ maxWidth: '100%'}}> */}
                     {/* <MultiStep /> */}
-                    <Col lg={12}>
+                    {/* <Col lg={12}> */}
                         <AirtimeCard />
-                    </Col>
-                </Container>
+                    {/* </Col> */}
+                {/* </Container> */}
             </div>
         );
     }

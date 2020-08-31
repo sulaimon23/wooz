@@ -20,26 +20,35 @@ function DataSuccessDetailsCard() {
     // };
    
     return (
+        // <div>
+        //     <Card style={{backgroundColor: 'transparent', border: 'none'}}>
+        //         <Row>
+        //             <Col md={6} style={{backgroundColor: 'white'}}>
+        //                 <ConfirmationDataSuccessDetailsCard />
+        //             </Col>
+        //             <Col md={6} style={{backgroundColor: 'white'}}>
+        //                 <ConfirmationDataSuccessDetailsCard2 />
+        //             </Col>
+        //         </Row>
+        //     </Card>
+        // </div>
         <div>
-            <Card style={{backgroundColor: 'transparent', border: 'none'}}>
-                <div style={{ backgroundColor: 'transparent', padding: '20px'}}>
-                    <Col lg={12}>
-                        <Row>
-                            <Col md={6} style={{backgroundColor: 'white'}}>
-                                <ConfirmationDataSuccessDetailsCard />
-                            </Col>
-                            {/* <Col className='verticalline'>
-                            </Col> */}
-                            <Col md={6} style={{backgroundColor: 'white'}}>
-                                <ConfirmationDataSuccessDetailsCard2 />
-                            </Col>
-                        </Row>
-                        
+            <Card  style={{backgroundColor: '#ffffff', border: 'none'}}>
+                <Row>
+                    <Col md={6} style={{backgroundColor: 'white'}}>
+                        <ConfirmationDataSuccessDetailsCard />
                     </Col>
-                </div>
+                    <Col md={6} style={{backgroundColor: 'white'}}>
+                        <ConfirmationDataSuccessDetailsCard2 />
+                    </Col>
+                </Row>
+                
+                {/*  */}
+                
             </Card>
         </div>
+        
     )
 }
 
-export default DataSuccessDetailsCard
+export default DataSuccessDetailsCard;

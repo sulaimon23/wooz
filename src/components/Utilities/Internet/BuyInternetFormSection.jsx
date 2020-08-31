@@ -8,10 +8,8 @@ import InternetMultiStepper from '../../MultiStepper/InternetMultiStepper'
 class BuyInternetFormSection extends Component {
     render() {
         return (
-            <div>
-                <Container style={{marginTop: '-107px', width: '1115px' }}>
-                    <InternetMultiStepper />
-                </Container>
+            <div style={{display: 'flex', justifyContent: 'center'}}>
+                <InternetMultiStepper />
             </div>
         );
     }

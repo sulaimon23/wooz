@@ -24,7 +24,7 @@ class FlashSalesSections extends Component {
                             <Card style={{height: '-webkit-min-content', boxShadow: '7px 3px 10px #e1e1e1', border: 'none'}}>
                                 <Card.Img variant="top" src={cardimg11} />
                                 <LikeButton />
-                                <span align='center' style={{backgroundColor: '#043f7c', marginTop: '-20px', marginLeft: '240px', padding: '10px', borderRadius: '250px', color: 'white', width: '45px'}}><i align='center' class="fa fa-plane"/></span>
+                                <span align='center' className='ml-autox' style={{backgroundColor: '#043f7c', marginTop: '-20px', marginLeft: '80%', padding: '10px', borderRadius: '250px', color: 'white', width: '45px'}}><i align='center' class="fa fa-plane"/></span>
                                 <Card.Body>
                                     <Card.Title><h6>On The Go</h6></Card.Title>
                                     <br/>
@@ -48,8 +48,13 @@ class FlashSalesSections extends Component {
                                     </Card.Text>
                                 </Card.Body>
                                 <Row>
-                                    <Col sm='6'>
+                                    <Col sm='6' className='d-none d-lg-block'>
                                         <Card.Footer style={{textAlign: 'center', marginRight: '-30px'}}>
+                                            <small style={{Color: 'white'}}>View Details</small>
+                                        </Card.Footer>
+                                    </Col>
+                                    <Col sm='6' className='d-lg-none'>
+                                        <Card.Footer style={{textAlign: 'center', marginRightx: '-30px'}}>
                                             <small style={{Color: 'white'}}>View Details</small>
                                         </Card.Footer>
                                     </Col>
@@ -63,7 +68,7 @@ class FlashSalesSections extends Component {
                             <Card style={{height: '-webkit-min-content', boxShadow: '7px 3px 10px #e1e1e1', border: 'none'}}>
                                 <Card.Img variant="top" src={cardimg12} />
                                 <LikeButton />
-                                <span align='center' style={{backgroundColor: '#043f7c', marginTop: '-20px', marginLeft: '240px', padding: '10px', borderRadius: '250px', color: 'white', width: '45px'}}> <img align='center' style={{width: '20px', marginTop: '-6px'}} src={clickandshop} alt=""/></span>
+                                <span align='center' className='ml-autox' style={{backgroundColor: '#043f7c', marginTop: '-20px', marginLeft: '80%', padding: '10px', borderRadius: '250px', color: 'white', width: '45px'}}> <img align='center' style={{width: '20px', marginTop: '-6px'}} src={clickandshop} alt=""/></span>
                                 <Card.Body>
                                     <Card.Title><h6>Click &amp; Shop</h6></Card.Title>
                                     <br/>
@@ -73,8 +78,13 @@ class FlashSalesSections extends Component {
                                     </Card.Text>
                                 </Card.Body>
                                 <Row>
-                                    <Col sm='6'>
+                                    <Col sm='6' className='d-none d-lg-block'>
                                         <Card.Footer style={{textAlign: 'center', marginRight: '-30px'}}>
+                                            <small style={{Color: 'white'}}>View Details</small>
+                                        </Card.Footer>
+                                    </Col>
+                                    <Col sm='6' className='d-lg-none'>
+                                        <Card.Footer style={{textAlign: 'center', marginRightx: '-30px'}}>
                                             <small style={{Color: 'white'}}>View Details</small>
                                         </Card.Footer>
                                     </Col>
@@ -88,7 +98,7 @@ class FlashSalesSections extends Component {
                             <Card style={{height: '-webkit-min-content', boxShadow: '7px 3px 10px #e1e1e1', border: 'none'}}>
                                 <Card.Img variant="top" src={cardimg13} />
                                 <LikeButton />
-                                <span align='center' style={{backgroundColor: '#043f7c', marginTop: '-20px', marginLeft: '240px', padding: '10px', borderRadius: '250px', color: 'white', width: '45px'}}> <img align='center' style={{width: '15px', marginTop: '-6px'}} src={utilities} alt=""/></span>
+                                <span align='center' className='ml-autox' style={{backgroundColor: '#043f7c', marginTop: '-20px', marginLeft: '80%', padding: '10px', borderRadius: '250px', color: 'white', width: '45px'}}> <img align='center' style={{width: '15px', marginTop: '-6px'}} src={utilities} alt=""/></span>
                                 <Card.Body>
                                     <Card.Title><h6>Utilities</h6></Card.Title>
                                     <br/>
@@ -98,8 +108,13 @@ class FlashSalesSections extends Component {
                                     </Card.Text>
                                 </Card.Body>
                                 <Row>
-                                    <Col sm='6'>
+                                    <Col sm='6' className='d-none d-lg-block'>
                                         <Card.Footer style={{textAlign: 'center', marginRight: '-30px'}}>
+                                            <small style={{Color: 'white'}}>View Details</small>
+                                        </Card.Footer>
+                                    </Col>
+                                    <Col sm='6' className='d-lg-none'>
+                                        <Card.Footer style={{textAlign: 'center', marginRightx: '-30px'}}>
                                             <small style={{Color: 'white'}}>View Details</small>
                                         </Card.Footer>
                                     </Col>
@@ -113,7 +128,7 @@ class FlashSalesSections extends Component {
                             <Card style={{height: '-webkit-min-content', boxShadow: '7px 3px 10px #e1e1e1', border: 'none'}}>
                                 <Card.Img variant="top" src={cardimg4} />
                                 <LikeButton />
-                                <span align='center' style={{backgroundColor: '#043f7c', marginTop: '-20px', marginLeft: '240px', padding: '10px', borderRadius: '250px', color: 'white', width: '45px'}}> <img align='center' style={{width: '15px', marginTop: '-6px'}} src={moneymatters} alt=""/></span>
+                                <span align='center' className='ml-autox' style={{backgroundColor: '#043f7c', marginTop: '-20px', marginLeft: '80%', padding: '10px', borderRadius: '250px', color: 'white', width: '45px'}}> <img align='center' style={{width: '15px', marginTop: '-6px'}} src={moneymatters} alt=""/></span>
                                 <Card.Body>
                                     <Card.Title><h6>Money Matters</h6></Card.Title>
                                     <br/>
@@ -123,8 +138,13 @@ class FlashSalesSections extends Component {
                                     </Card.Text>
                                 </Card.Body>
                                 <Row>
-                                    <Col sm='6'>
+                                    <Col sm='6' className='d-none d-lg-block'>
                                         <Card.Footer style={{textAlign: 'center', marginRight: '-30px'}}>
+                                            <small style={{Color: 'white'}}>View Details</small>
+                                        </Card.Footer>
+                                    </Col>
+                                    <Col sm='6' className='d-lg-none'>
+                                        <Card.Footer style={{textAlign: 'center', marginRightx: '-30px'}}>
                                             <small style={{Color: 'white'}}>View Details</small>
                                         </Card.Footer>
                                     </Col>
@@ -138,7 +158,7 @@ class FlashSalesSections extends Component {
                             <Card style={{height: '-webkit-min-content', boxShadow: '7px 3px 10px #e1e1e1', border: 'none'}}>
                                 <Card.Img variant="top" src={cardimg14} />
                                 <LikeButton />
-                                <span align='center' style={{backgroundColor: '#043f7c', marginTop: '-20px', marginLeft: '240px', padding: '10px', borderRadius: '250px', color: 'white', width: '45px'}}> <img align='center' style={{width: '20px', marginTop: '-6px'}} src={askdoc} alt=""/></span>
+                                <span align='center' className='ml-autox' style={{backgroundColor: '#043f7c', marginTop: '-20px', marginLeft: '80%', padding: '10px', borderRadius: '250px', color: 'white', width: '45px'}}> <img align='center' style={{width: '20px', marginTop: '-6px'}} src={askdoc} alt=""/></span>
                                 <Card.Body>
                                     <Card.Title><h6>Ask A Doc</h6></Card.Title>
                                     <br/>
@@ -148,8 +168,13 @@ class FlashSalesSections extends Component {
                                     </Card.Text>
                                 </Card.Body>
                                 <Row>
-                                    <Col sm='6'>
+                                    <Col sm='6' className='d-none d-lg-block'>
                                         <Card.Footer style={{textAlign: 'center', marginRight: '-30px'}}>
+                                            <small style={{Color: 'white'}}>View Details</small>
+                                        </Card.Footer>
+                                    </Col>
+                                    <Col sm='6' className='d-lg-none'>
+                                        <Card.Footer style={{textAlign: 'center', marginRightx: '-30px'}}>
                                             <small style={{Color: 'white'}}>View Details</small>
                                         </Card.Footer>
                                     </Col>

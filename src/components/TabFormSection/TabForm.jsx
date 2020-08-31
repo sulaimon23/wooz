@@ -4,6 +4,10 @@ import { Col, Image, Button, ButtonGroup, Card, InputGroup, Form, FormControl, F
 import { Tabs, Tab } from 'react-bootstrap';
 import img from '../../assets/img/icons/home/charity.png'
 import './TabFormSections.css'
+// import TravelIcon from '@material-ui/icons/Flight';
+import TravelInsuranceIcon from '../../assets/img/icons/insurance/travelinsurance.png';
+import LifeInsuranceIcon from '../../assets/img/icons/insurance/lifeinsurance.png';
+// import MotorInsuranceIcon from '../../assets/img/icons/insurance/motorinsurance.png';
 
 
 const divStyle = {
@@ -47,7 +51,8 @@ function TabForm() {
         // <Tabs id='controlled-tab-example' activeKey={key} onSelect={(k) => setKey(k)} >
         <Card>
             <Card.Body style={{marginTop: '-63px'}}>
-                <Tabs style={{backgroundColor: '#043f7c', width: '834px', marginLeft: '-20px', borderTopLeftRadius: '5px', borderTopRightRadius: '5px'}} defaultActiveKey="motorinsurance" transition={false} id="noanim-tab-example">
+                {/* <Tabs style={{backgroundColor: '#043f7c', width: '834px', marginLeft: '-20px', borderTopLeftRadius: '5px', borderTopRightRadius: '5px'}} defaultActiveKey="motorinsurance" transition={false} id="noanim-tab-example"> */}
+                <Tabs style={{  backgroundColor: '#043f7c', width: '53.2%', heightx: '50px', marginTopx: '-9px', borderBottom: '-1px', borderTop: 'none', borderColor: 'none',  marginLeft: '-20px' , borderTopLeftRadius: '5px', borderTopRightRadius: '5px'}} defaultActiveKey="motorinsurance" transition={false} id="noanim-tab-example">
                     <Tab style={{divStyle}} src={img} eventKey='travelinsurance' title='Travel Insurance'>
                         <br/>
                         <br/>
@@ -191,6 +196,7 @@ function TabForm() {
                         </Form>
                     </Tab>
                     <Tab eventKey='motorinsurance' title='Motor Insurance'>
+                    {/* <Tab eventKey='motorinsurance' title={<span><LifeInsuranceIcon /> Motor Insurance </span>}> */}
                         <br/>
                         <br/>
                         <Form noValidate validated={validated} onSubmit={handleSubmit}>

@@ -21,10 +21,11 @@ function AirtimeCard() {
    
     return (
         <div>
-            <Card>
-                <div style={{ backgroundColor: '#ffffff', padding: '20px'}}>
+            
+            <Card style={{ backgroundColor: '#ffffff', padding: '20px', border: 'none'}}>
+                {/* <div style={{ backgroundColor: '#ffffff', padding: '20px'}}> */}
                     <Form noValidate validated={validated} onSubmit={handleSubmit}>
-                        <Form.Row  className="justify-content-md-center">
+                        <Form.Row className="justify-content-md-center">
                             <Form.Group as={Col} md="7" controlId="validationCustom02">
                                 <Form.Label> <h6>Network Operator <span style={{color: 'red'}}>*</span></h6></Form.Label>
                                 
@@ -39,12 +40,25 @@ function AirtimeCard() {
                                 <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
                             </Form.Group>
                             
-                            <Form.Group as={Col} md="7" controlId="validationCustomUsername">
+                            {/* <Form.Group as={Col} md="7" controlId="validationCustomUsername">
                                 <Form.Label> <h6>Phone Number <span style={{color: 'red'}}>*</span></h6></Form.Label>
                                 <InputGroup >
                                     <InputGroup.Prepend>
                                         <PhoneInput style={{width: '500px'}} inputProps={{ name: 'phone', required: true, autoFocus: false }} />
                                     </InputGroup.Prepend>
+                                    <Form.Control.Feedback type="invalid"> Enter a valid phone number. </Form.Control.Feedback>
+                                </InputGroup>
+                            </Form.Group> */}
+                            <Form.Group as={Col} md="7" controlId="validationCustomUsername">
+                                <Form.Label> <h6>Phone Number <span style={{color: 'red'}}>*</span></h6></Form.Label>
+                                <InputGroup >
+                                    <InputGroup.Append>
+                                        <Button style={{borderTopLeftRadius: '3px', borderBottomLeftRadius: '3px'}} variant="secondary">
+                                            {/* <i class="nigeria flag"></i> */}
+                                            NGN
+                                        </Button>
+                                    </InputGroup.Append>
+                                    <Form.Control required type="text" defaultValuexx="Otto" />
                                     <Form.Control.Feedback type="invalid"> Enter a valid phone number. </Form.Control.Feedback>
                                 </InputGroup>
                             </Form.Group>
@@ -70,7 +84,7 @@ function AirtimeCard() {
                             
                         </Form.Row>
                     </Form>
-                </div>
+                {/* </div> */}
             </Card>
         </div>
         

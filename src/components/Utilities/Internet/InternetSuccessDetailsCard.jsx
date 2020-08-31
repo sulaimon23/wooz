@@ -20,23 +20,18 @@ function InternetSuccessDetailsCard() {
     // };
    
     return (
-        <div>
+        <div> 
             <Card style={{backgroundColor: 'transparent', border: 'none'}}>
-                <div style={{ backgroundColor: 'transparent', padding: '20px'}}>
-                    <Col lg={12}>
-                        <Row>
-                            <Col md={6} style={{backgroundColor: 'white'}}>
-                                <ConfirmationInternetSuccessDetailsCard />
-                            </Col>
-                            {/* <Col className='verticalline'>
-                            </Col> */}
-                            <Col md={6} style={{backgroundColor: 'white'}}>
-                                <ConfirmationInternetSuccessDetailsCard2 />
-                            </Col>
-                        </Row>
-                        
+                <Row>
+                    <Col md={6} style={{backgroundColor: 'white'}}>
+                        <ConfirmationInternetSuccessDetailsCard />
                     </Col>
-                </div>
+                    {/* <Col className='verticalline'>
+                    </Col> */}
+                    <Col md={6} style={{backgroundColor: 'white'}}>
+                        <ConfirmationInternetSuccessDetailsCard2 />
+                    </Col>
+                </Row>
             </Card>
         </div>
     )

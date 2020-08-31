@@ -1,9 +1,10 @@
 import React, { Component, useState, select, Switch } from 'react';
-import { Jumbotron, Container, Row, Col, Image, Button, ButtonGroup, Card, InputGroup, Form, FormControl, FormCheck } from 'react-bootstrap';
+import { Jumbotron, Modal, Container, Row, Col, Image, Button, ButtonGroup, Card, InputGroup, Form, FormControl, FormCheck } from 'react-bootstrap';
 import PhoneInput from 'react-phone-input-2'
-import 'react-phone-input-2/lib/style.css'
+// import '../Utilities/Data/node_modules/react-phone-input-2/lib/style.css'
 import DatePicker from '../Calendar'
 import ButtonToggle from './ButtonToggle'
+import TravelInsuranceImg from '../../assets/img/icons/onthego/travelinsurance.png'
 
 function PassengerCard() {
 
@@ -18,13 +19,57 @@ function PassengerCard() {
 
     setValidated(true);
     };
-   
+
+    function MyVerticallyCenteredModal(props) {
+        return (
+          <Modal
+            {...props}
+            size="lg"
+            aria-labelledby="contained-modal-title-vcenter"
+            centered
+          >
+            {/* <Modal.Header closeButton>
+              <Modal.Title id="contained-modal-title-vcenter">
+                Modal heading
+              </Modal.Title>
+            </Modal.Header> */}
+            <Modal.Body>
+                <br/>
+              <h4 style={{color: '#043f7c'}}> <b>Buy Travel Insurance</b> </h4>
+                <Row>
+                    <Col sm={6} className='mb-4'>
+                        <br/>
+                        <br/>
+                        
+                        {/* <img width='150px' src={TravelInsuranceImg} alt=""/> */}
+                        <p>General (Business / Tourism)</p>
+                        <p>Pilgrimage Protection</p>
+                        <p>Student Protection</p>
+                        <br/>
+                        <br/>
+                        <Button variant="outline-danger">Skip</Button>{' '}
+                        <Button variant="danger">Proceed</Button>{' '}
+                    </Col>
+                    <Col sm={6} className='mb-4'>
+                        <img width='350px' src={TravelInsuranceImg} alt=""/>
+                    </Col>
+                </Row>
+                
+            </Modal.Body>
+            {/* <Modal.Footer>
+              <Button onClick={props.onHide}>Close</Button>
+            </Modal.Footer> */}
+          </Modal>
+        );
+      }
+    const [modalShow, setModalShow] = React.useState(false);
+
     return (
         <div>
             <Card>
                 <div style={{ backgroundColor: '#ffffff', padding: '20px'}}>
-                    <p style={{color: '#389aff'}}> <b>Main Passenger (Adult)</b> </p>
-                    <hr style={{color: '#389aff'}}/>
+                    <p style={{color: '#043f7c'}}> <b>Main Passenger (Adult)</b> </p>
+                    <hr style={{color: '#043f7c'}}/>
                     <Form noValidate validated={validated} onSubmit={handleSubmit}>
                         <Form.Row>
                             <Form.Group as={Col} md="6" controlId="validationCustom01">
@@ -122,13 +167,26 @@ function PassengerCard() {
                             </Form.Group>
                             <Form.Group as={Col} md="6" controlId="validationCustomUsername">
                                 <Form.Label> <h6>Phone Number <span style={{color: 'red'}}>*</span></h6></Form.Label>
+                                <InputGroup >
+                                    <InputGroup.Append>
+                                        <Button style={{borderTopLeftRadius: '3px', borderBottomLeftRadius: '3px'}} variant="secondary">
+                                            {/* <i class="nigeria flag"></i> */}
+                                            NGN
+                                        </Button>
+                                    </InputGroup.Append>
+                                    <Form.Control required type="text" defaultValuexx="Otto" />
+                                    <Form.Control.Feedback type="invalid"> Enter a valid phone number. </Form.Control.Feedback>
+                                </InputGroup>
+                            </Form.Group>
+                            {/* <Form.Group as={Col} md="6" controlId="validationCustomUsername">
+                                <Form.Label> <h6>Phone Number <span style={{color: 'red'}}>*</span></h6></Form.Label>
                                 <InputGroup>
                                     <InputGroup.Prepend>
                                         <PhoneInput style={{width: '100px'}} inputProps={{ name: 'phone', required: true, autoFocus: false }} />
                                     </InputGroup.Prepend>
                                     <Form.Control.Feedback type="invalid"> Please choose a username. </Form.Control.Feedback>
                                 </InputGroup>
-                            </Form.Group>
+                            </Form.Group> */}
                             <Form.Group as={Col} md="6" controlId="validationCustom02">
                                 <Form.Label> <h6>Address 1 <span style={{color: 'red'}}>*</span></h6></Form.Label>
                                 <Form.Control required type="text" defaultValuexx="Otto" />
@@ -165,7 +223,13 @@ function PassengerCard() {
                                     <ButtonToggle/>
                                 </Col>
                                 <Col md='10'>
-                                    <span style={{fontSize: '13.4px'}}>Create an account for faster booking. <a href="#">See Benefits</a></span>
+                                    <span style={{fontSize: '13.4px'}}>Create an account for faster booking.
+                                        <a variant="primary" onClick={() => setModalShow(true)}> <b  style={{color: 'red'}}>See Benefits</b> </a>
+                                        <MyVerticallyCenteredModal
+                                            show={modalShow}
+                                            onHide={() => setModalShow(false)}
+                                        />
+                                    </span>
                                 </Col>
                             </Row>
                             

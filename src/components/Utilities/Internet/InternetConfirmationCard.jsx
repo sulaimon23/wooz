@@ -20,7 +20,7 @@ function InternetConfirmationCard() {
     return (
         <div>
             <Card align='center' style={{backgroundColor: '#ffffff', border: 'none'}}>
-                <div style={{ backgroundColor: 'transparent', padding: '20px', width: '500px'}}>
+                <div style={{ backgroundColor: 'transparent', padding: '20px', widthx: '500px'}}>
                     <span style={{color: '#043f7c'}}><b style={{float: 'left'}}>Internet Details</b> <span style={{float: 'right'}}>Edit &nbsp; <i className="fa fa-pencil"></i></span></span>
                     <br/>
                     <hr style={{color: '#043f7c', borderTop: '1px dashed'}}/>
@@ -54,12 +54,6 @@ function InternetConfirmationCard() {
                         </Col>
                         <Col md={6}>
                             <p style={{float: 'right'}}>07060460216 </p>
-                        </Col>
-                    </Row>
-                    <br/>
-                    <Row>
-                        <Col align='center' md={12}>
-                            <Button variant='danger' type="submit" style={{width: '300px'}}><span style={{fontSize: 'small'}}>Buy Now</span> </Button>
                         </Col>
                     </Row>
                 </div>

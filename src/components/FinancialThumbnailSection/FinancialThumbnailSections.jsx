@@ -9,13 +9,15 @@ class FinancialThumbnailSections extends Component {
         return (
             <div>
                 
-                <Container className='' style={{ maxWidth: '100%'}}>
-                    <Col lg={12} style={{ marginTop: '-130px'}}>
+                {/* <Container className='' style={{ maxWidth: '100%'}}> */}
+                    <Col lg={12} style={{ marginTop: '-80px'}}>
                         <Row>
-                            <Col md={6} style={{marginTop: '130px'}}>
-                                {/* <p>Back </p> */}
+                            <Col sm={6} className='mb-4' style={{marginTop: '117px'}} className='mb-4'>
                                 <Button href='/' style={{ borderRadius: '20px', fontSize: '12px' }} variant="dark"><i className="fa fa-arrow-left"></i> &nbsp; Back</Button>
-                            </Col> 
+                            </Col>
+                            {/* <Col md={6} style={{marginTop: '130px'}}>
+                                <Button href='/' style={{ borderRadius: '20px', fontSize: '12px' }} variant="dark"><i className="fa fa-arrow-left"></i> &nbsp; Back</Button>
+                            </Col>  */}
                             <Col md={6}>
                                 <Row>
                                     <Col>
@@ -54,7 +56,7 @@ class FinancialThumbnailSections extends Component {
                             </Col>
                         </Row>
                     </Col>
-                </Container>
+                {/* </Container> */}
             </div>
         );
     }

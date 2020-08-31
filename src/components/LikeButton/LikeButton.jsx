@@ -86,7 +86,7 @@ class LikeButton extends Component {
         }
         
         return (
-            <div className='react-app'>
+            <div className='ml-autox' stylexx={{top: '-4px', marginRight: '10px', WebkitTransition: 'all 2s .2s', MozTransition: 'all 2s .3s', transition: 'all 2s .3s'}}>
                 <div onClick={this.like} style={style} className="hearth-circle">
                     <i style={styleLike} className="fa fa-heart fa-5x" id="like"></i>                    
                 </div>

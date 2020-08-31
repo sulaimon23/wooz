@@ -22,7 +22,7 @@ class OutboundCard extends Component {
                                     <br/>
                                     <Row>
                                         <Col md='5'>
-                                            <span style={{fontSize: '13.4px'}}>Muritala Mohammed Airport (MMA)</span>
+                                            <span style={{fontSize: '13.4px'}}>Murtala Muhammed International Airport (MMA)</span>
                                         </Col>
                                         <Col md='2'>
                                             <span style={{fontSize: '13.4px'}}>-</span>

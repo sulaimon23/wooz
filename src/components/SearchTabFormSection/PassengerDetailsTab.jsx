@@ -31,8 +31,8 @@ class PassengerDetailsTab extends Component {
                                 <InputGroup className="mb-3" style={{backgroundColor: 'transparent', border: 'none'}}>
                                     <InputGroup.Checkbox aria-label="Checkbox for following text input" /> &nbsp;&nbsp; <span style={{fontSize: '14px', marginTop: '4px'}}>Send me travel offers, trip reminders &amp; other updates by email</span>
                                 </InputGroup>
-                                <br/>
-                                <Button variant='danger' style={{width: '100%'}} type="submit">Review Journey Details </Button>
+                                {/* <br/>
+                                <Button variant='danger' style={{width: '100%'}} type="submit">Review Journey Details </Button> */}
                                 
                             </Col>
                             

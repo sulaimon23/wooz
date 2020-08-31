@@ -19,14 +19,13 @@ function DataConfirmationCard() {
    
     return (
         <div>
-            <Card align='center' style={{backgroundColor: '#ffffff', border: 'none'}}>
-                <div style={{ backgroundColor: 'transparent', padding: '20px', width: '500px'}}>
-                    <span style={{color: '#043f7c'}}><b style={{float: 'left'}}>Data Details</b> <span style={{float: 'right'}}>Edit &nbsp; <i className="fa fa-pencil"></i></span></span>
-                    <br/>
+            <Card  style={{backgroundColor: '#ffffff', border: 'none'}}>
+                <div className="justify-content-md-center" style={{ backgroundColor: 'transparent', padding: '20px', widthxx:'600px'}}>
+                    <p style={{color: '#043f7c'}}> <b>Data Details</b> <span style={{float: 'right'}}>Edit &nbsp; <i className="fa fa-pencil"></i></span></p>
                     <hr style={{color: '#043f7c', borderTop: '1px dashed'}}/>
                     <Row>
                         <Col md={6}>
-                            <p style={{float: 'left'}}><b>Network Operator:</b> </p>
+                            <p><b>Network Operator:</b> </p>
                         </Col>
                         <Col md={6}>
                             <p style={{float: 'right'}}>MTN </p>
@@ -34,7 +33,7 @@ function DataConfirmationCard() {
                     </Row>
                     <Row>
                         <Col md={6}>
-                            <p style={{float: 'left'}}><b>Phone Number:</b> </p>
+                            <p><b>Phone Number:</b> </p>
                         </Col>
                         <Col md={6}>
                             <p style={{float: 'right'}}>07060460216 </p>
@@ -42,24 +41,18 @@ function DataConfirmationCard() {
                     </Row>
                     <Row>
                         <Col md={6}>
-                            <p style={{float: 'left'}}><b>Data Plan:</b> </p>
+                            <p><b>Amount:</b> </p>
                         </Col>
                         <Col md={6}>
-                            <p style={{float: 'right'}}>&#8358;1000 = 1.5GB for 30 Days </p>
+                            <p style={{float: 'right'}}>&#8358;2,000 </p>
                         </Col>
                     </Row>
                     <Row>
                         <Col md={6}>
-                            <p style={{float: 'left'}}><b>Email:</b> </p>
+                            <p><b>Email:</b> </p>
                         </Col>
                         <Col md={6}>
                             <p style={{float: 'right'}}>amoshood@fczmedia.com </p>
-                        </Col>
-                    </Row>
-                    <br/>
-                    <Row>
-                        <Col align='center' md={12}>
-                            <Button variant='danger' type="submit" style={{width: '300px'}}><span style={{fontSize: 'small'}}>Buy Now</span> </Button>
                         </Col>
                     </Row>
                 </div>

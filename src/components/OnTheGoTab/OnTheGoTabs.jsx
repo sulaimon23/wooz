@@ -4,6 +4,7 @@ import PhoneInput from 'react-phone-input-2'
 import 'react-phone-input-2/lib/style.css'
 import DatePicker from '../Calendar'
 import OnTheGoTabForm from '../OnTheGoTab/OnTheGoTabForm';
+// import MobileOnTheGoTabForm from '../OnTheGoTab/MobileOnTheGoTabForm';
 
 function OnTheGoTabs() {
     const [validated, setValidated] = useState(false);
@@ -19,9 +20,12 @@ function OnTheGoTabs() {
     };
     return (
         <div>
-            <Container style={{marginTop: '-95px', maxWidth: '100%'}}>
+            {/* <Container classNamexx='d-none d-lg-block' style={{marginTop: '-95px', maxWidth: '100%'}}> */}
                 <OnTheGoTabForm />
-            </Container>
+            {/* </Container> */}
+            {/* <Container className='d-lg-none' style={{marginTop: '-95px', maxWidth: '100%'}}>
+                <MobileOnTheGoTabForm />
+            </Container> */}
         </div>
     )
 }

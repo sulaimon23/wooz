@@ -19,9 +19,9 @@ function ConfirmationDataSuccessDetailsCard2() {
     // };
    
     return (
-        <div>
+        <div style={{ backgroundColor: 'transparent', padding: '20px', marginTop: '50px'}} align='center'>
             {/* <Card style={{backgroundColor: 'transparent', border: 'none'}}> */}
-                <div style={{ backgroundColor: 'transparent', padding: '20px', marginTop: '50px'}} align='center'>
+                {/* <div style={{ backgroundColor: 'transparent', padding: '20px', marginTop: '50px'}} align='center'> */}
                     <br/>
                     <img src={emailicon} alt=""/>
                     <br/>
@@ -29,7 +29,7 @@ function ConfirmationDataSuccessDetailsCard2() {
                     <h4> <b>Check your email</b> </h4>
                     <br/>
                     <span> for your transaction receipt and further instructions </span>
-                </div>
+                {/* </div> */}
                 {/*  */}
                 
             {/* </Card> */}

@@ -17,6 +17,7 @@ import Data from './components/Utilities/Data/Data';
 import CableTv from './components/Utilities/CableTv/CableTv';
 import Electricity from './components/Utilities/Electricity/Electricity'
 import Internet from './components/Utilities/Internet/Internet'
+import AskDoc from './components/AskDoc/AskDoc';
 // import { NavbarBrand } from 'react-bootstrap';
 
 function App() {
@@ -52,6 +53,7 @@ function App() {
         <Route exact path="/utilities/cabletv" component={CableTv} />
         <Route exact path="/utilities/electricity" component={Electricity} />
         <Route exact path="/utilities/internet" component={Internet} />
+        <Route exact path="/askdoc" component={AskDoc} />
         <Route path='/nomatch' component={NoMatch} />
       </div>
     </Router>

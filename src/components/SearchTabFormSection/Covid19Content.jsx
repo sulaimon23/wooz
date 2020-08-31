@@ -7,7 +7,7 @@ class Covid19Content extends Component {
     render() {
         return (
             <div>
-                <Card  body style={{backgroundColor: '#FFFBE6', borderColor: '#FFE58F'}}>
+                <Card body style={{backgroundColor: '#FFFBE6', borderColor: '#FFE58F'}}>
                     {/* <h6 style={{color: '#50c878', fontSize: '12px'}}>FASTEST</h6> */}
                     <Row >
                         <Col md='12'>

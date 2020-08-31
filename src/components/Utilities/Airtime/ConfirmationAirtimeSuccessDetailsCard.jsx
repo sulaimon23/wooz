@@ -19,9 +19,9 @@ function ConfirmationAirtimeSuccessDetailsCard() {
     // };
    
     return (
-        <div>
+        <div style={{padding: '20px'}} align='center'>
             {/* <Card style={{backgroundColor: 'transparent', border: 'none'}}> */}
-                <div style={{ backgroundColor: 'transparent', padding: '20px'}} align='center'>
+                {/* <div style={{ backgroundColor: 'transparent', padding: '20px'}} align='center'> */}
                     <br/>
                     <img src={successicon} alt=""/>
                     <br/>
@@ -38,7 +38,7 @@ function ConfirmationAirtimeSuccessDetailsCard() {
                     <Button variant='success' type="submit"><span style={{fontSize: 'small'}}>View Receipt</span> </Button>
                     <br/>
                     <br/>
-                </div>
+                {/* </div> */}
                 {/*  */}
                 
             {/* </Card> */}

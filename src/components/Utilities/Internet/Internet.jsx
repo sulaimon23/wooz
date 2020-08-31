@@ -6,22 +6,16 @@ class Internet extends Component {
     render() {
         return (
             <div>
-                <Container className='' style={{ maxWidth: '100%'}}>
-                    <p></p>
-                    <Col lg={12}>
-                        <Breadcrumb style={{backgroundColor: 'white'}}>
-                            <Breadcrumb.Item href="/"> Home </Breadcrumb.Item>
-                            <Breadcrumb.Item href="/utilities"> Utilities </Breadcrumb.Item>
-                            <Breadcrumb.Item active href="/utilities/Internet"> Internet </Breadcrumb.Item>
-                        </Breadcrumb>
-                    </Col>
-                </Container>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
+                <Col lg={12} className='mb-4'>
+                    <br/>
+                    <Breadcrumb style={{backgroundColor: 'white'}}>
+                        <Breadcrumb.Item href="/"> <span style={{color: '#636363'}}> Home </span> </Breadcrumb.Item>
+                        <Breadcrumb.Item href="/utilities"> <span style={{color: '#636363'}}> Utilities </span> </Breadcrumb.Item>
+                        <Breadcrumb.Item active href="/utilities/internet"> <span style={{color: '#043f7c'}}> Internet </span> </Breadcrumb.Item>
+                    </Breadcrumb>
+                </Col>
                 <BuyInternetFormSection />
-            </div>
+            </div> 
         );
     }
 }

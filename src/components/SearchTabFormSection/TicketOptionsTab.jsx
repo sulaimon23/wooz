@@ -21,7 +21,7 @@ class TicketOptionsTab extends Component {
         return (
             <div>
                 
-                <Container className='' style={{ maxWidth: '100%'}}>
+                {/* <Container className='' style={{ maxWidth: '100%'}}> */}
                     {/* <MultiStep /> */}
                     <Col lg={12}>
                         <Row>
@@ -31,8 +31,8 @@ class TicketOptionsTab extends Component {
                                 <CardSelectButton />
                                 <br/>
                                 <BaggageCard />
-                                <br/>
-                                <Button variant='danger' style={{width: '100%'}} type="submit">Go To Passenger Details </Button>
+                                {/* <br/>
+                                <Button variant='danger' style={{width: '100%'}} type="submit">Go To Passenger Details </Button> */}
                                 
                             </Col>
                             
@@ -45,7 +45,7 @@ class TicketOptionsTab extends Component {
                         </Row>
                         
                     </Col>
-                </Container>
+                {/* </Container> */}
             </div>
         );
     }

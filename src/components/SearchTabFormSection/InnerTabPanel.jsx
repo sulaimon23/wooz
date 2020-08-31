@@ -112,12 +112,13 @@ export default function ScrollableTabsButtonPrevent() {
         <br/>
         <InnerTabContent />
         <br/>
+        {/* <br/>
         <InnerTabContent />
         <br/>
         <InnerTabContent />
         <br/>
         <InnerTabContent />
-        <br/>
+        <br/> */}
         <PriceAlertContent />
       </InnerTabPanel>
       <InnerTabPanel value={value} index={1}>

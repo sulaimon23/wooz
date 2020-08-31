@@ -1,7 +1,7 @@
 import React, { Component, useState, select, Switch } from 'react';
 import { Jumbotron, Container, Row, Col, Image, Button, ButtonGroup, Card, InputGroup, Form, FormControl, FormCheck } from 'react-bootstrap';
 import PhoneInput from 'react-phone-input-2'
-import 'react-phone-input-2/lib/style.css'
+// import '../Data/node_modules/react-phone-input-2/lib/style.css'
 
 function CableTvConfirmationCard() {
 
@@ -19,46 +19,40 @@ function CableTvConfirmationCard() {
    
     return (
         <div>
-            <Card align='center' style={{backgroundColor: '#ffffff', border: 'none'}}>
-                <div style={{ backgroundColor: 'transparent', padding: '20px', width: '700px'}}>
-                    <span style={{color: '#043f7c'}}><b style={{float: 'left'}}>CableTv Details</b> <span style={{float: 'right'}}>Edit &nbsp; <i className="fa fa-pencil"></i></span></span>
-                    <br/>
+            <Card  style={{backgroundColor: '#ffffff', border: 'none'}}>
+                <div className="justify-content-md-center" style={{ backgroundColor: 'transparent', padding: '20px', widthxx:'600px'}}>
+                    <p style={{color: '#043f7c'}}> <b>CableTv Details</b> <span style={{float: 'right'}}>Edit &nbsp; <i className="fa fa-pencil"></i></span></p>
                     <hr style={{color: '#043f7c', borderTop: '1px dashed'}}/>
                     <Row>
                         <Col md={6}>
-                            <p style={{float: 'left'}}><b>TV Operator:</b> </p>
+                            <p><b>Network Operator:</b> </p>
                         </Col>
                         <Col md={6}>
-                            <p style={{float: 'right'}}>DSTv </p>
+                            <p style={{float: 'right'}}>MTN </p>
                         </Col>
                     </Row>
                     <Row>
                         <Col md={6}>
-                            <p style={{float: 'left'}}><b>Smart Card Number:</b> </p>
+                            <p><b>Phone Number:</b> </p>
                         </Col>
                         <Col md={6}>
-                            <p style={{float: 'right'}}>123456789098765432 </p>
+                            <p style={{float: 'right'}}>07060460216 </p>
                         </Col>
                     </Row>
                     <Row>
                         <Col md={6}>
-                            <p style={{float: 'left'}}><b>Preferred Package:</b> </p>
+                            <p><b>Amount:</b> </p>
                         </Col>
                         <Col md={6}>
-                            <p style={{float: 'right'}}>&#8358;2000 = Dstv Yanga Bouquet E36</p>
+                            <p style={{float: 'right'}}>&#8358;2,000 </p>
                         </Col>
                     </Row>
                     <Row>
                         <Col md={6}>
-                            <p style={{float: 'left'}}><b>Phone Number:</b> </p>
+                            <p><b>Email:</b> </p>
                         </Col>
-                        <Col md={6}><p style={{float: 'right'}}>07060460216 </p>
-                        </Col>
-                    </Row>
-                    <br/>
-                    <Row>
-                        <Col align='center' md={12}>
-                            <Button variant='danger' type="submit" style={{width: '300px'}}><span style={{fontSize: 'small'}}>Buy Now</span> </Button>
+                        <Col md={6}>
+                            <p style={{float: 'right'}}>amoshood@fczmedia.com </p>
                         </Col>
                     </Row>
                 </div>

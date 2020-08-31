@@ -20,25 +20,34 @@ function AirtimeSuccessDetailsCard() {
     // };
    
     return (
+        // <div>
+        //     <Card style={{backgroundColor: 'transparent', border: 'none'}}>
+        //         <Row>
+        //             <Col md={6} style={{backgroundColor: 'white'}}>
+        //                 <ConfirmationAirtimeSuccessDetailsCard />
+        //             </Col>
+        //             <Col md={6} style={{backgroundColor: 'white'}}>
+        //                 <ConfirmationAirtimeSuccessDetailsCard2 />
+        //             </Col>
+        //         </Row>
+        //     </Card>
+        // </div>
         <div>
-            <Card style={{backgroundColor: 'transparent', border: 'none'}}>
-                <div style={{ backgroundColor: 'transparent', padding: '20px'}}>
-                    <Col lg={12}>
-                        <Row>
-                            <Col md={6} style={{backgroundColor: 'white'}}>
-                                <ConfirmationAirtimeSuccessDetailsCard />
-                            </Col>
-                            {/* <Col className='verticalline'>
-                            </Col> */}
-                            <Col md={6} style={{backgroundColor: 'white'}}>
-                                <ConfirmationAirtimeSuccessDetailsCard2 />
-                            </Col>
-                        </Row>
-                        
+            <Card style={{backgroundColor: '#ffffff', border: 'none'}}>
+                <Row>
+                    <Col md={6} style={{backgroundColor: 'white'}}>
+                        <ConfirmationAirtimeSuccessDetailsCard />
                     </Col>
-                </div>
+                    <Col md={6} style={{backgroundColor: 'white'}}>
+                        <ConfirmationAirtimeSuccessDetailsCard2 />
+                    </Col>
+                </Row>
+                
+                {/*  */}
+                
             </Card>
         </div>
+        
     )
 }
 

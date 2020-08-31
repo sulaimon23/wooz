@@ -22,7 +22,7 @@ function Confirmation() {
                 <Form.Row>
                     <Form.Group as={Col} md="3" controlId="validationCustom01">
                         {/* <Form.Label>File Damage <span style={{color: 'red'}}>*</span></Form.Label> */}
-                        <Form.Control style={{backgroundColor: '#389aff', color: 'white'}} required type="text" placeholder="File Damage" defaultValue="File Damage" disabled />
+                        <Form.Control style={{backgroundColor: '#043f7c', color: 'white'}} required type="text" placeholder="File Damage" defaultValue="File Damage" disabled />
                         <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
                     </Form.Group>
                     <Form.Group as={Col} md="3" controlId="validationCustom02">

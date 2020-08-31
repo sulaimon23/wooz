@@ -26,17 +26,20 @@ class Home extends Component {
                     </Jumbotron> */}
                 </Container>
                 <Col lg={12}>
-                    <Row>
-                        <Col md={8}>
+                    {/* <Row>
+                        <Col md={8} className='mb-4'> */}
                             <Slider />
-                        </Col>
-                        <Col md={4}>
+                        {/* </Col> */}
+                        {/* <Col md={4}>
                             <SliderCard />
-                        </Col>
-                    </Row>
+                        </Col> */}
+                    {/* </Row> */}
                 </Col>
-                <br/>
-                <ThumbnailSection />
+                {/* <br/> */}
+                <Col lg={12}>
+                    <ThumbnailSection />
+                </Col>
+                
                 <br/>
                 <br/>
                 <DealsSection />

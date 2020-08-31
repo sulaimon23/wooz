@@ -81,10 +81,11 @@ export default function HorizontalLabelPositionBelowStepper() {
                 ) : (
                 <div>
                 <Typography className={classes.instructions}>{getStepContent(activeStep)}</Typography>
-                <div>
-                <Button disabled={activeStep === 0} onClick={handleBack} className={classes.backButton} > Back </Button>
-                <Button variant="contained" color="primary" onClick={handleNext}> {activeStep === steps.length - 1 ? 'Finish' : 'Next'} </Button>
-            </div>
+                <div style={{textAlign: 'center'}}>
+                  {/* <Button disabled={activeStep === 0} onClick={handleBack} className={classes.backButton} > Back </Button> */}
+                  <Button style={{backgroundColor: '#343a40', color: '#ffffff'}} disabled={activeStep === 0} onClick={handleBack} className={classes.backButton} > Back </Button>
+                  <Button variant="contained" color="primary" onClick={handleNext}> {activeStep === steps.length - 1 ? 'Finish' : 'Next'} </Button>
+                </div>
           </div>
         )}
       </div>

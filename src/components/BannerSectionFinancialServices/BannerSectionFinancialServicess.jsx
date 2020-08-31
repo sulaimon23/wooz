@@ -8,11 +8,14 @@ class BannerSectionFinancialServices extends Component {
     render() {
         return (
             <div style={{ backgroundImage: `url(${bannerimage})`, backgroundPosition: 'center', backgroundSize: 'cover', backgroundRepeat: 'no-repeat', color: 'white' }} >
-                <Container className='p-4' style={{ maxWidth: '100%',  }}>
+                {/* <Container  style={{ maxWidth: '100%',  }}> */}
+                <Col classNamexx='p-4' lg={12}>
+                    <br/>
                     <Breadcrumb stylexx={{backgroundColor: 'white', color: '#636363'}}>
                         <Breadcrumb.Item href="/"> <span style={{color: '#636363'}}>Home</span> </Breadcrumb.Item>
                         <Breadcrumb.Item active href="/moneymatters"> <span style={{color: '#043f7c'}}>Money Matters</span> </Breadcrumb.Item>
                     </Breadcrumb>
+                </Col>
                     {/* <p> <span style={{color: '#707070'}} >Home /</span> <b style={{color: '#636363'}}>Money Matters</b> </p> */}
                     {/* <Button href='#' size='lg' style={{ borderRadius: '20px', fontSize: '12px' }} variant="dark">Back</Button> */}
                     <Col lg={12}>
@@ -36,7 +39,6 @@ class BannerSectionFinancialServices extends Component {
                             </Col>
                         </Row>
                     </Col>
-                </Container>
             </div>
         );
     }

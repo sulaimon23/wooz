@@ -1,7 +1,7 @@
 import React, { Component, useState, select, Switch } from 'react';
 import { Jumbotron, Container, Row, Col, Image, Button, ButtonGroup, Card, InputGroup, Form, FormControl, FormCheck } from 'react-bootstrap';
 import PhoneInput from 'react-phone-input-2'
-import 'react-phone-input-2/lib/style.css'
+// import '../Data/node_modules/react-phone-input-2/lib/style.css'
 import DatePicker from '../../Calendar'
 import ButtonToggle from '../../SearchTabFormSection/ButtonToggle'
 
@@ -21,58 +21,70 @@ function CableTvCard() {
    
     return (
         <div>
-            <Card>
-                <div style={{ backgroundColor: '#ffffff', padding: '20px'}}>
-                    {/* <p style={{color: '#389aff'}}> <b>Main Passenger (Adult)</b> </p>
-                    <hr style={{color: '#389aff'}}/> */}
+            
+            <Card style={{ backgroundColor: '#ffffff', padding: '20px', border: 'none'}}>
+                {/* <div style={{ backgroundColor: '#ffffff', padding: '20px'}}> */}
                     <Form noValidate validated={validated} onSubmit={handleSubmit}>
-                        <Form.Row  className="justify-content-md-center">
+                        <Form.Row className="justify-content-md-center">
                             <Form.Group as={Col} md="7" controlId="validationCustom02">
-                                <Form.Label> <h6>TV Operator <span style={{color: 'red'}}>*</span></h6></Form.Label>
+                                <Form.Label> <h6>Network Operator <span style={{color: 'red'}}>*</span></h6></Form.Label>
                                 
-                                <Form.Control as='select'>
-                                    <option>Select Network</option>
-                                    <option>MTN</option>
-                                    <option>Airtel</option>
-                                    <option>9mobile</option>
-                                    <option>Glo</option>
-                                </Form.Control>
+                                    <Form.Control as='select'>
+                                        <option>Network</option>
+                                        <option>MTN</option>
+                                        <option>Airtel</option>
+                                        <option>9mobile</option>
+                                        <option>Glo</option>
+                                    </Form.Control>
                                 
-                                <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
-                            </Form.Group>
-
-                            <Form.Group as={Col} md="7" controlId="validationCustom02">
-                                <Form.Label> <h6>Smart Card Number <span style={{fontSize: '12px'}}>(Optional)</span></h6></Form.Label>
-                                <Form.Control required type="text" defaultValuexx="Otto" placeholder='Enter Smartcard Number' />
                                 <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
                             </Form.Group>
                             
-                            <Form.Group as={Col} md="7" controlId="validationCustom02">
-                                <Form.Label> <h6>Preferred Package <span style={{color: 'red'}}>*</span></h6></Form.Label>
-                                <Form.Control as='select'>
-                                    <option>Preferred Package</option>
-                                    <option>&#8358;2565 = DSTv Yanga Bouquet E36</option>
-                                    <option>&#8358;3565 = DSTv Family Bouquet E36</option>
-                                    <option>&#8358;4065 = DSTv Classic Bouquet E36</option>
-                                    <option>&#8358;6565 = DSTv Premium Bouquet E36</option>
-                                    <option>&#8358;9565 = DSTv Exclusive Bouquet E36</option>
-                                </Form.Control>
-                                <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
-                            </Form.Group>
-
-                            <Form.Group as={Col} md="7" controlId="validationCustomUsername">
-                                <Form.Label> <h6> Phone Number <span style={{color: 'red'}}>*</span></h6></Form.Label>
+                            {/* <Form.Group as={Col} md="7" controlId="validationCustomUsername">
+                                <Form.Label> <h6>Phone Number <span style={{color: 'red'}}>*</span></h6></Form.Label>
                                 <InputGroup >
                                     <InputGroup.Prepend>
                                         <PhoneInput style={{width: '500px'}} inputProps={{ name: 'phone', required: true, autoFocus: false }} />
                                     </InputGroup.Prepend>
                                     <Form.Control.Feedback type="invalid"> Enter a valid phone number. </Form.Control.Feedback>
                                 </InputGroup>
+                            </Form.Group> */}
+                            <Form.Group as={Col} md="7" controlId="validationCustomUsername">
+                                <Form.Label> <h6>Phone Number <span style={{color: 'red'}}>*</span></h6></Form.Label>
+                                <InputGroup >
+                                    <InputGroup.Append>
+                                        <Button style={{borderTopLeftRadius: '3px', borderBottomLeftRadius: '3px'}} variant="secondary">
+                                            {/* <i class="nigeria flag"></i> */}
+                                            NGN
+                                        </Button>
+                                    </InputGroup.Append>
+                                    <Form.Control required type="text" defaultValuexx="Otto" />
+                                    <Form.Control.Feedback type="invalid"> Enter a valid phone number. </Form.Control.Feedback>
+                                </InputGroup>
+                            </Form.Group>
+                            <Form.Group as={Col} md="7" controlId="validationCustom02">
+                                <Form.Label> <h6>How Much Airtime Do You Want To Buy? <span style={{color: 'red'}}>*</span></h6></Form.Label>
+                                <InputGroup className="">
+                                <InputGroup.Append>
+                                    <Button style={{borderTopLeftRadius: '3px', borderBottomLeftRadius: '3px'}} variant="secondary">
+                                        &#8358;
+                                    </Button>
+                                </InputGroup.Append>
+                                <Form.Control required type="text" defaultValuexx="Otto" />
+                                </InputGroup>
+                                
+                                <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
+                            </Form.Group>
+                            
+                            <Form.Group as={Col} md="7" controlId="validationCustom02">
+                                <Form.Label> <h6>Email Address <span style={{fontSize: '12px'}}>(Optional)</span></h6></Form.Label>
+                                <Form.Control required type="text" defaultValuexx="Otto" />
+                                <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
                             </Form.Group>
                             
                         </Form.Row>
                     </Form>
-                </div>
+                {/* </div> */}
             </Card>
         </div>
         

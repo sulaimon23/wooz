@@ -11,11 +11,11 @@ import AirtimeMultiStepper from '../../MultiStepper/AirtimeMultiStepper'
 class BuyAirtimeFormSection extends Component {
     render() {
         return (
-            <div>
+            <div style={{display: 'flex', justifyContent: 'center'}}>
                 {/* <div className='container-fluid'> */}
-                <Container style={{marginTop: '-107px', width: '1115px' }}>
+                {/* <Container style={{marginTop: '-107px', width: '1115px' }}> */}
                     <AirtimeMultiStepper />
-                </Container>
+                {/* </Container> */}
                 {/* <FlightSearchMultiStepper /> */}
                 
                 

@@ -8,12 +8,12 @@ class BuyElectricityDetailsTab extends Component {
         return (
             <div>
                 
-                <Container className='' style={{ maxWidth: '100%'}}>
+                {/* <Container className='' style={{ maxWidth: '100%'}}> */}
                     {/* <MultiStep /> */}
-                    <Col lg={12}>
+                    {/* <Col lg={12}> */}
                         <ElectricityCard />
-                    </Col>
-                </Container>
+                    {/* </Col> */}
+                {/* </Container> */}
             </div>
         );
     }

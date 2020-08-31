@@ -7,13 +7,7 @@ class BuyInternetDetailsTab extends Component {
     render() {
         return (
             <div>
-                
-                <Container className='' style={{ maxWidth: '100%'}}>
-                    {/* <MultiStep /> */}
-                    <Col lg={12}>
-                        <InternetCard />
-                    </Col>
-                </Container>
+                <InternetCard /> 
             </div>
         );
     }

@@ -34,8 +34,8 @@ class VehicleFormCardSections extends Component {
                                         {/* <FormSection /> */}
                                     </div>
                                 </Card>
-                                <br/>
-                                <Button variant='danger' style={{width: '100%'}} type="submit">Go to Insurer Details </Button>
+                                {/* <br/>
+                                <Button variant='danger' style={{width: '100%'}} type="submit">Go to Insurer Details </Button> */}
                                 
                             </Col>
                             

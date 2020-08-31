@@ -21,27 +21,26 @@ function DataCard() {
    
     return (
         <div>
-            <Card>
-                <div style={{ backgroundColor: '#ffffff', padding: '20px'}}>
-                    {/* <p style={{color: '#389aff'}}> <b>Main Passenger (Adult)</b> </p>
-                    <hr style={{color: '#389aff'}}/> */}
+            
+            <Card style={{ backgroundColor: '#ffffff', padding: '20px', border: 'none'}}>
+                {/* <div style={{ backgroundColor: '#ffffff', padding: '20px'}}> */}
                     <Form noValidate validated={validated} onSubmit={handleSubmit}>
-                        <Form.Row  className="justify-content-md-center">
+                        <Form.Row className="justify-content-md-center">
                             <Form.Group as={Col} md="7" controlId="validationCustom02">
                                 <Form.Label> <h6>Network Operator <span style={{color: 'red'}}>*</span></h6></Form.Label>
                                 
-                                <Form.Control as='select'>
-                                    <option>Select Network</option>
-                                    <option>MTN</option>
-                                    <option>Airtel</option>
-                                    <option>9mobile</option>
-                                    <option>Glo</option>
-                                </Form.Control>
+                                    <Form.Control as='select'>
+                                        <option>Network</option>
+                                        <option>MTN</option>
+                                        <option>Airtel</option>
+                                        <option>9mobile</option>
+                                        <option>Glo</option>
+                                    </Form.Control>
                                 
                                 <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
                             </Form.Group>
                             
-                            <Form.Group as={Col} md="7" controlId="validationCustomUsername">
+                            {/* <Form.Group as={Col} md="7" controlId="validationCustomUsername">
                                 <Form.Label> <h6>Phone Number <span style={{color: 'red'}}>*</span></h6></Form.Label>
                                 <InputGroup >
                                     <InputGroup.Prepend>
@@ -49,17 +48,31 @@ function DataCard() {
                                     </InputGroup.Prepend>
                                     <Form.Control.Feedback type="invalid"> Enter a valid phone number. </Form.Control.Feedback>
                                 </InputGroup>
+                            </Form.Group> */}
+                            <Form.Group as={Col} md="7" controlId="validationCustomUsername">
+                                <Form.Label> <h6>Phone Number <span style={{color: 'red'}}>*</span></h6></Form.Label>
+                                <InputGroup >
+                                    <InputGroup.Append>
+                                        <Button style={{borderTopLeftRadius: '3px', borderBottomLeftRadius: '3px'}} variant="secondary">
+                                            {/* <i class="nigeria flag"></i> */}
+                                            NGN
+                                        </Button>
+                                    </InputGroup.Append>
+                                    <Form.Control required type="text" defaultValuexx="Otto" />
+                                    <Form.Control.Feedback type="invalid"> Enter a valid phone number. </Form.Control.Feedback>
+                                </InputGroup>
                             </Form.Group>
                             <Form.Group as={Col} md="7" controlId="validationCustom02">
-                                <Form.Label> <h6>Preferred Data Plan <span style={{color: 'red'}}>*</span></h6></Form.Label>
-                                <Form.Control as='select'>
-                                    <option>Select Data Plan</option>
-                                    <option>&#8358;500 = 1.5GB for 1 Week</option>
-                                    <option>&#8358;1000 = 1.5GB for 30 Days</option>
-                                    <option>&#8358;2000 = 2.5GB for 30 Days</option>
-                                    <option>&#8358;3000 = 3.5GB for 30 Days</option>
-                                    <option>&#8358;1000 = 1.5GB for 30 Days</option>
-                                </Form.Control>
+                                <Form.Label> <h6>How Much Airtime Do You Want To Buy? <span style={{color: 'red'}}>*</span></h6></Form.Label>
+                                <InputGroup className="">
+                                <InputGroup.Append>
+                                    <Button style={{borderTopLeftRadius: '3px', borderBottomLeftRadius: '3px'}} variant="secondary">
+                                        &#8358;
+                                    </Button>
+                                </InputGroup.Append>
+                                <Form.Control required type="text" defaultValuexx="Otto" />
+                                </InputGroup>
+                                
                                 <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
                             </Form.Group>
                             
@@ -71,7 +84,7 @@ function DataCard() {
                             
                         </Form.Row>
                     </Form>
-                </div>
+                {/* </div> */}
             </Card>
         </div>
         

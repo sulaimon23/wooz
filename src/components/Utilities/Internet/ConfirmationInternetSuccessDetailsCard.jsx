@@ -31,10 +31,11 @@ function ConfirmationInternetSuccessDetailsCard() {
                     <h6> Order #95622 </h6>
                     <h6> Total 1,000 </h6>
                     <h6> Payment xxxx xxxx xxxx 1111 (VISA) </h6>
-                    <p style={{fontSize: '15px'}}> This charge will appear on your statement as ECONNECT TICKET </p>
-                    {/* <hr style={{color: '#043f7c', borderTop: '1px dashed'}}/> */}
-                    <Button style={{width: '300px'}} variant='success' type="submit"><span style={{fontSize: 'small'}}>View Receipt</span> </Button>
+                    <span> This charge will appear on your statement as ECONNECT TICKET </span>
                     <br/>
+                    <br/>
+                    {/* <hr style={{color: '#043f7c', borderTop: '1px dashed'}}/> */}
+                    <Button variant='success' type="submit"><span style={{fontSize: 'small'}}>View Receipt</span> </Button>
                     <br/>
                     <br/>
                 </div>

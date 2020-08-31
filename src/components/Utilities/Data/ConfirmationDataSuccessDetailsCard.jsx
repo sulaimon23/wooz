@@ -19,9 +19,8 @@ function ConfirmationDataSuccessDetailsCard() {
     // };
    
     return (
-        <div>
-            {/* <Card style={{backgroundColor: 'transparent', border: 'none'}}> */}
-                <div style={{ backgroundColor: 'transparent', padding: '20px'}} align='center'>
+        <div style={{padding: '20px'}} align='center'>
+            
                     <br/>
                     <img src={successicon} alt=""/>
                     <br/>
@@ -31,16 +30,11 @@ function ConfirmationDataSuccessDetailsCard() {
                     <h6> Order #95622 </h6>
                     <h6> Total 1,000 </h6>
                     <h6> Payment xxxx xxxx xxxx 1111 (VISA) </h6>
-                    <p style={{fontSize: '15px'}}> This charge will appear on your statement as ECONNECT TICKET </p>
+                    <span> This charge will appear on your statement as ECONNECT TICKET </span>
+                    <br/>
+                    <br/>
                     {/* <hr style={{color: '#043f7c', borderTop: '1px dashed'}}/> */}
-                    <Button variant='success' type="submit"><span style={{fontSize: 'small'}}>View Receipt</span> </Button>
-                    <br/>
-                    <br/>
-                    <br/>
-                </div>
-                {/*  */}
-                
-            {/* </Card> */}
+                    <Button className='mb-4' variant='success' type="submit"><span style={{fontSize: 'small'}}>View Receipt</span> </Button>
         </div>
         
     )

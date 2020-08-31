@@ -79,12 +79,12 @@ export default function ScrollableTabsButtonPrevent() {
         <Covid19Content />
         <br/>
         <MotorInsuranceTabContent />
-        <br/>
+        {/* <br/>
         <MotorInsuranceTabContent />
         <br/>
         <MotorInsuranceTabContent />
         <br/>
-        <MotorInsuranceTabContent />
+        <MotorInsuranceTabContent /> */}
         <br/>
         <PriceAlertContent />
       </MotorInsuranceInnerTabPanel>

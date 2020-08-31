@@ -86,13 +86,13 @@ class FooterSection extends Component {
                             
                             <Col md={4}>
                                 <Row>
-                                    <Col>
+                                    <Col sm={4} className='mb-4'>
                                         <Image src={econnectwhite} />
                                     </Col>
-                                    <Col>
+                                    <Col sm={4} className='mb-4'>
                                         <Image src={googleplaystore} />
                                     </Col>
-                                    <Col>
+                                    <Col sm={4} className='mb-4'>
                                         <Image src={appstore} />
                                     </Col>
                                 </Row>

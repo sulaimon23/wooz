@@ -22,8 +22,8 @@ function ElectricitySuccessDetailsCard() {
     return (
         <div>
             <Card style={{backgroundColor: 'transparent', border: 'none'}}>
-                <div style={{ backgroundColor: 'transparent', padding: '20px'}}>
-                    <Col lg={12}>
+                {/* <div style={{ backgroundColor: 'transparent', padding: '20px'}}>
+                    <Col lg={12}> */}
                         <Row>
                             <Col md={6} style={{backgroundColor: 'white'}}>
                                 <ConfirmationElectricitySuccessDetailsCard />
@@ -35,8 +35,8 @@ function ElectricitySuccessDetailsCard() {
                             </Col>
                         </Row>
                         
-                    </Col>
-                </div>
+                    {/* </Col>
+                </div> */}
             </Card>
         </div>
     )

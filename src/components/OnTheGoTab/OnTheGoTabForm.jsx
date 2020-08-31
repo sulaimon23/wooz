@@ -1,5 +1,5 @@
 import React, { useState, Fragment, Sonnet } from 'react'
-import { Options, Col, Image, Button, ButtonGroup, Card, InputGroup, Form, FormControl, FormCheck, Nav, TabContent } from 'react-bootstrap';
+import { Options, Col, Container, Image, Button, ButtonGroup, Card, InputGroup, Form, FormControl, FormCheck, Nav, TabContent } from 'react-bootstrap';
 // import {render} from 'react-dom';
 import { Tabs, Tab } from 'react-bootstrap';
 import img from '../../assets/img/icons/home/charity.png'
@@ -9,6 +9,10 @@ import './OnTheGoTabs.css'
 import { Typeahead } from 'react-bootstrap-typeahead'; // ES2015
 // var Typeahead = require('react-bootstrap-typeahead').Typeahead; // CommonJS
 import fromdata from '../DatePicker/DatePicker'
+import FlightIcon from '@material-ui/icons/Flight';
+import DirectionsBusIcon from '@material-ui/icons/DirectionsBus';
+import DirectionsBoatIcon from '@material-ui/icons/DirectionsBoat';
+import TrainIcon from '@material-ui/icons/Train';
 
 
 
@@ -50,17 +54,13 @@ function OnTheGoTabForm() {
     // }
   
     return (
-        // <Tabs id='controlled-tab-example' activeKey={key} onSelect={(k) => setKey(k)} >
-        <Card style={{borderRadius: '.01rem'}}>
-            <Card.Body style={{marginTop: '-63px'}}>
-                <Tabs style={{  divStyle, backgroundColor: '#043f7c', width: '847px', height: '60px', marginTop: '-18px', borderTop: 'none', borderColor: 'none' , marginLeft: '-21px' , borderTopLeftRadius: '15px', borderTopRightRadius: '15px'}} defaultActiveKey="flights" transition={false} id="noanim-tab-example">
-                    <Tab style={{divStyle}} src={img} eventKey='flights' title='Flights'>
-                        <br/>
-                        <br/>
-                        <Form style={{}} noValidate validated={validated} onSubmit={handleSubmit}>
-                            
-                            <Form.Row>
-                                <InputGroup className="mb-5" as={Col} md="3" >
+        <div fluid>
+            <Container style={{backgroundColor: '#043f7c', paddingTop: '20px'}} direction='row' fluid>
+                <Card style={{backgroundColor: 'transparent', border: 'none'}}>
+                    <Card.Body>
+                        <Form noValidate validated={validated} onSubmit={handleSubmit} stylex={{marginTop: '14px', height: '55px'}}>
+                            <Form.Row stylex={{backgroundColor: '#043f7c', width: '100%', paddingTop: '20px'}}>
+                                <InputGroup className="mb-4" as={Col} md="3" >
                                     <InputGroup.Prepend>
                                         <InputGroup.Text>
                                         <i class='fa fa-map-marker'></i>
@@ -70,7 +70,7 @@ function OnTheGoTabForm() {
                                     <FormControl style={{borderTopRightRadius: '4px', borderBottomRightRadius: '4px'}} id="inlineFormInputGroup" placeholder="From:" required type='text' defaultValue='Murtala Mohammed Airport' />
                                     <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
                                 </InputGroup>
-                                <InputGroup className="mb-5" as={Col} md="3" >
+                                <InputGroup className="mb-4" as={Col} md="3" >
                                     <InputGroup.Prepend>
                                         <InputGroup.Text>
                                         <i class='fa fa-map-marker'></i>
@@ -79,21 +79,8 @@ function OnTheGoTabForm() {
                                     <FormControl style={{borderTopRightRadius: '4px', borderBottomRightRadius: '4px'}} id="inlineFormInputGroup" placeholder="To:" required type='text' defaultValue='London, England' />
                                     <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
                                 </InputGroup>
-                                {/* <Form.Group as={Col} md="2" controlId="validationCustom02">
-                                    <Form.Control required type="text" placeholder="From:" defaultValuexx="Mark" />
-                                    <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
-                                </Form.Group> */}
-                                {/* <Form.Group as={Col} md="3" controlId="validationCustom02">
-                                    <InputGroup.Prepend>
-                                        <InputGroup.Text>@</InputGroup.Text>
-                                        <Form.Control required type="text" placeholder="To:" defaultValuexx="Mark" />
-                                        <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
-                                    </InputGroup.Prepend>
-                                </Form.Group> */}
                                 <Form.Group as={Col} md="3" controlId="validationCustom02">
-                                    {/* <Form.Label>State <span style={{color: 'red'}}>*</span></Form.Label> */}
-                                    {/* <Form.Control required type="text" placeholder="To" defaultValuexx="Mark" /> */}
-                                    <InputGroup className="mb-3">
+                                    <InputGroup >
                                         <FormControl placeholder='Depature Date' />
                                         <FormControl placeholder='+ Add Return' />
                                     </InputGroup>
@@ -104,464 +91,15 @@ function OnTheGoTabForm() {
                                     <Form.Control required type="text" placeholder="Passengers" defaultValuexx="Mark" />
                                     <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
                                 </Form.Group>
-                                
-                                {/* <Form.Group as={Col} md="4" controlId="validationCustom02">
-                                    <DatePicker />
-                                    <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
-                                </Form.Group>
-                                
-                                <Form.Group as={Col} md="2" controlId="validationCustom02">
-                                    <Form.Control as="select">
-                                        <option>Vehicle Estimated Value</option>
-                                        <option>Abia</option>
-                                        <option>Adamawa</option>
-                                        <option>Akwa Ibom</option>
-                                        <option>Anambra</option>
-                                        <option>Bauchi</option>
-                                        <option>Bayelsa</option>
-                                        <option>Benue</option>
-                                        <option>Borno</option>
-                                        <option>Cross River</option>
-                                    </Form.Control>
-                                    <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
-                                </Form.Group> */}
                                 <Form.Group as={Col} md="1">
                                     <Button href='onthego/flightsearch' variant='danger' style={{width: '100%'}} type="submit"> Search </Button>
                                 </Form.Group>
                             </Form.Row>
                         </Form>
-                    </Tab>
-                    <Tab eventKey='buses' title='Buses'>
-                        <br/>
-                        <br/>
-                        <Form noValidate validated={validated} onSubmit={handleSubmit}>
-                        {/* <Form eventKey='#motorinsurance' noValidate validated={validated} onSubmit={handleSubmit}> */}
-                            <Form.Row>
-                                <Form.Group as={Col} md="2" controlId="validationCustom01">
-                                    {/* <Form.Label>First name <span style={{color: 'red'}}>*</span></Form.Label> */}
-                                    <Form.Control as="select">
-                                        <option>Cover Type</option>
-                                        <option>Abia</option>
-                                        <option>Adamawa</option>
-                                        <option>Akwa Ibom</option>
-                                        <option>Anambra</option>
-                                        <option>Bauchi</option>
-                                        <option>Bayelsa</option>
-                                        <option>Benue</option>
-                                        <option>Borno</option>
-                                        <option>Cross River</option>
-                                    </Form.Control>
-                                    <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
-                                </Form.Group>
-                                <Form.Group as={Col} md="3" controlId="validationCustom02">
-                                    {/* <Form.Label>Last name <span style={{color: 'red'}}>*</span></Form.Label> */}
-                                    <Form.Control as="select">
-                                        <option>Vehicle Category</option>
-                                        <option>Abia</option>
-                                        <option>Adamawa</option>
-                                        <option>Akwa Ibom</option>
-                                        <option>Anambra</option>
-                                        <option>Bauchi</option>
-                                        <option>Bayelsa</option>
-                                        <option>Benue</option>
-                                        <option>Borno</option>
-                                        <option>Cross River</option>
-                                    </Form.Control>
-                                    <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
-                                </Form.Group>
-                                <Form.Group as={Col} md="3" controlId="validationCustom02">
-                                    {/* <Form.Label>Middle name <span style={{color: 'red'}}>*</span></Form.Label> */}
-                                    <Form.Control as="select">
-                                        <option>Vehicle Make</option>
-                                        <option>Abia</option>
-                                        <option>Adamawa</option>
-                                        <option>Akwa Ibom</option>
-                                        <option>Anambra</option>
-                                        <option>Bauchi</option>
-                                        <option>Bayelsa</option>
-                                        <option>Benue</option>
-                                        <option>Borno</option>
-                                        <option>Cross River</option>
-                                    </Form.Control>
-                                    <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
-                                </Form.Group>
-                                
-                                <Form.Group as={Col} md="2" controlId="validationCustom02">
-                                    {/* <Form.Label>Email Address <span style={{color: 'red'}}>*</span></Form.Label> */}
-                                    <Form.Control as="select">
-                                        <option>Vehicle Model</option>
-                                        <option>Abia</option>
-                                        <option>Adamawa</option>
-                                        <option>Akwa Ibom</option>
-                                        <option>Anambra</option>
-                                        <option>Bauchi</option>
-                                        <option>Bayelsa</option>
-                                        <option>Benue</option>
-                                        <option>Borno</option>
-                                        <option>Cross River</option>
-                                    </Form.Control>
-                                    <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
-                                </Form.Group>
-                            </Form.Row>
-                            <Form.Row>
-                                <Form.Group as={Col} md="2" controlId="validationCustom02">
-                                    {/* <Form.Label>Residential Address <span style={{color: 'red'}}>*</span></Form.Label> */}
-                                    <Form.Control as="select">
-                                        <option>Vehicle Body Type</option>
-                                        <option>Abia</option>
-                                        <option>Adamawa</option>
-                                        <option>Akwa Ibom</option>
-                                        <option>Anambra</option>
-                                        <option>Bauchi</option>
-                                        <option>Bayelsa</option>
-                                        <option>Benue</option>
-                                        <option>Borno</option>
-                                        <option>Cross River</option>
-                                    </Form.Control>
-                                    <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
-                                </Form.Group>
-                                <Form.Group as={Col} md="3" controlId="validationCustom02">
-                                    {/* <Form.Label>State <span style={{color: 'red'}}>*</span></Form.Label> */}
-                                    <Form.Control as="select">
-                                        <option>Year of Make</option>
-                                        <option>Abia</option>
-                                        <option>Adamawa</option>
-                                        <option>Akwa Ibom</option>
-                                        <option>Anambra</option>
-                                        <option>Bauchi</option>
-                                        <option>Bayelsa</option>
-                                        <option>Benue</option>
-                                        <option>Borno</option>
-                                        <option>Cross River</option>
-                                    </Form.Control>
-                                    <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
-                                </Form.Group>
-                                <Form.Group as={Col} md="3" controlId="validationCustom02">
-                                    {/* <Form.Label>State <span style={{color: 'red'}}>*</span></Form.Label> */}
-                                    <Form.Control as="select">
-                                        <option>Period of Cover</option>
-                                        <option>Abia</option>
-                                        <option>Adamawa</option>
-                                        <option>Akwa Ibom</option>
-                                        <option>Anambra</option>
-                                        <option>Bauchi</option>
-                                        <option>Bayelsa</option>
-                                        <option>Benue</option>
-                                        <option>Borno</option>
-                                        <option>Cross River</option>
-                                    </Form.Control>
-                                    <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
-                                </Form.Group>
-                                <Form.Group as={Col} md="2" controlId="validationCustom02">
-                                    {/* <Form.Label>State <span style={{color: 'red'}}>*</span></Form.Label> */}
-                                    <Form.Control as="select">
-                                        <option>Vehicle Estimated Value</option>
-                                        <option>Abia</option>
-                                        <option>Adamawa</option>
-                                        <option>Akwa Ibom</option>
-                                        <option>Anambra</option>
-                                        <option>Bauchi</option>
-                                        <option>Bayelsa</option>
-                                        <option>Benue</option>
-                                        <option>Borno</option>
-                                        <option>Cross River</option>
-                                    </Form.Control>
-                                    <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
-                                </Form.Group>
-                                <Form.Group as={Col} md="2">
-                                    <Button href='/moneymatters/insurance/motorinsurance' variant='danger' style={{width: '100%'}} type="submit"> Search </Button>
-                                </Form.Group>
-                            </Form.Row>
-                        </Form>
-                    </Tab>
-                    <Tab eventKey='ferries' title='Ferries'>
-                        <br/>
-                        <br/>
-                        <Form noValidate validated={validated} onSubmit={handleSubmit}>
-                            <Form.Row>
-                                <Form.Group as={Col} md="" controlId="validationCustom01">
-                                    {/* <Form.Label>First name <span style={{color: 'red'}}>*</span></Form.Label> */}
-                                    <Form.Control as="select">
-                                        <option>Cover Type</option>
-                                        <option>Abia</option>
-                                        <option>Adamawa</option>
-                                        <option>Akwa Ibom</option>
-                                        <option>Anambra</option>
-                                        <option>Bauchi</option>
-                                        <option>Bayelsa</option>
-                                        <option>Benue</option>
-                                        <option>Borno</option>
-                                        <option>Cross River</option>
-                                    </Form.Control>
-                                    <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
-                                </Form.Group>
-                                <Form.Group as={Col} md="3" controlId="validationCustom02">
-                                    {/* <Form.Label>Last name <span style={{color: 'red'}}>*</span></Form.Label> */}
-                                    <Form.Control as="select">
-                                        <option>Vehicle Category</option>
-                                        <option>Abia</option>
-                                        <option>Adamawa</option>
-                                        <option>Akwa Ibom</option>
-                                        <option>Anambra</option>
-                                        <option>Bauchi</option>
-                                        <option>Bayelsa</option>
-                                        <option>Benue</option>
-                                        <option>Borno</option>
-                                        <option>Cross River</option>
-                                    </Form.Control>
-                                    <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
-                                </Form.Group>
-                                <Form.Group as={Col} md="3" controlId="validationCustom02">
-                                    {/* <Form.Label>Middle name <span style={{color: 'red'}}>*</span></Form.Label> */}
-                                    <Form.Control as="select">
-                                        <option>Vehicle Make</option>
-                                        <option>Abia</option>
-                                        <option>Adamawa</option>
-                                        <option>Akwa Ibom</option>
-                                        <option>Anambra</option>
-                                        <option>Bauchi</option>
-                                        <option>Bayelsa</option>
-                                        <option>Benue</option>
-                                        <option>Borno</option>
-                                        <option>Cross River</option>
-                                    </Form.Control>
-                                    <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
-                                </Form.Group>
-                                
-                                <Form.Group as={Col} md="3" controlId="validationCustom02">
-                                    {/* <Form.Label>Email Address <span style={{color: 'red'}}>*</span></Form.Label> */}
-                                    <Form.Control as="select">
-                                        <option>Vehicle Model</option>
-                                        <option>Abia</option>
-                                        <option>Adamawa</option>
-                                        <option>Akwa Ibom</option>
-                                        <option>Anambra</option>
-                                        <option>Bauchi</option>
-                                        <option>Bayelsa</option>
-                                        <option>Benue</option>
-                                        <option>Borno</option>
-                                        <option>Cross River</option>
-                                    </Form.Control>
-                                    <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
-                                </Form.Group>
-                            </Form.Row>
-                            <Form.Row>
-                                <Form.Group as={Col} md="3" controlId="validationCustom02">
-                                    {/* <Form.Label>Residential Address <span style={{color: 'red'}}>*</span></Form.Label> */}
-                                    <Form.Control as="select">
-                                        <option>Vehicle Body Type</option>
-                                        <option>Abia</option>
-                                        <option>Adamawa</option>
-                                        <option>Akwa Ibom</option>
-                                        <option>Anambra</option>
-                                        <option>Bauchi</option>
-                                        <option>Bayelsa</option>
-                                        <option>Benue</option>
-                                        <option>Borno</option>
-                                        <option>Cross River</option>
-                                    </Form.Control>
-                                    <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
-                                </Form.Group>
-                                <Form.Group as={Col} md="3" controlId="validationCustom02">
-                                    {/* <Form.Label>State <span style={{color: 'red'}}>*</span></Form.Label> */}
-                                    <Form.Control as="select">
-                                        <option>Year of Make</option>
-                                        <option>Abia</option>
-                                        <option>Adamawa</option>
-                                        <option>Akwa Ibom</option>
-                                        <option>Anambra</option>
-                                        <option>Bauchi</option>
-                                        <option>Bayelsa</option>
-                                        <option>Benue</option>
-                                        <option>Borno</option>
-                                        <option>Cross River</option>
-                                    </Form.Control>
-                                    <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
-                                </Form.Group>
-                                <Form.Group as={Col} md="3" controlId="validationCustom02">
-                                    {/* <Form.Label>State <span style={{color: 'red'}}>*</span></Form.Label> */}
-                                    <Form.Control as="select">
-                                        <option>Period of Cover</option>
-                                        <option>Abia</option>
-                                        <option>Adamawa</option>
-                                        <option>Akwa Ibom</option>
-                                        <option>Anambra</option>
-                                        <option>Bauchi</option>
-                                        <option>Bayelsa</option>
-                                        <option>Benue</option>
-                                        <option>Borno</option>
-                                        <option>Cross River</option>
-                                    </Form.Control>
-                                    <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
-                                </Form.Group>
-                                <Form.Group as={Col} md="2" controlId="validationCustom02">
-                                    {/* <Form.Label>State <span style={{color: 'red'}}>*</span></Form.Label> */}
-                                    <Form.Control as="select">
-                                        <option>Vehicle Estimated Value</option>
-                                        <option>Abia</option>
-                                        <option>Adamawa</option>
-                                        <option>Akwa Ibom</option>
-                                        <option>Anambra</option>
-                                        <option>Bauchi</option>
-                                        <option>Bayelsa</option>
-                                        <option>Benue</option>
-                                        <option>Borno</option>
-                                        <option>Cross River</option>
-                                    </Form.Control>
-                                    <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
-                                </Form.Group>
-                                <Form.Group as={Col} md="1">
-                                    <Button variant='danger' style={{width: '100%'}} type="submit"> Search </Button>
-                                </Form.Group>
-                            </Form.Row>
-                        </Form>
-                    </Tab>
-                    {/* Trains */}
-                    <Tab eventKey='trains' title='Trains'>
-                        <br/>
-                        <br/>
-                        <Form noValidate validated={validated} onSubmit={handleSubmit}>
-                            <Form.Row>
-                                <Form.Group as={Col} md="" controlId="validationCustom01">
-                                    {/* <Form.Label>First name <span style={{color: 'red'}}>*</span></Form.Label> */}
-                                    <Form.Control as="select">
-                                        <option>Cover Type</option>
-                                        <option>Abia</option>
-                                        <option>Adamawa</option>
-                                        <option>Akwa Ibom</option>
-                                        <option>Anambra</option>
-                                        <option>Bauchi</option>
-                                        <option>Bayelsa</option>
-                                        <option>Benue</option>
-                                        <option>Borno</option>
-                                        <option>Cross River</option>
-                                    </Form.Control>
-                                    <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
-                                </Form.Group>
-                                <Form.Group as={Col} md="3" controlId="validationCustom02">
-                                    {/* <Form.Label>Last name <span style={{color: 'red'}}>*</span></Form.Label> */}
-                                    <Form.Control as="select">
-                                        <option>Vehicle Category</option>
-                                        <option>Abia</option>
-                                        <option>Adamawa</option>
-                                        <option>Akwa Ibom</option>
-                                        <option>Anambra</option>
-                                        <option>Bauchi</option>
-                                        <option>Bayelsa</option>
-                                        <option>Benue</option>
-                                        <option>Borno</option>
-                                        <option>Cross River</option>
-                                    </Form.Control>
-                                    <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
-                                </Form.Group>
-                                <Form.Group as={Col} md="3" controlId="validationCustom02">
-                                    {/* <Form.Label>Middle name <span style={{color: 'red'}}>*</span></Form.Label> */}
-                                    <Form.Control as="select">
-                                        <option>Vehicle Make</option>
-                                        <option>Abia</option>
-                                        <option>Adamawa</option>
-                                        <option>Akwa Ibom</option>
-                                        <option>Anambra</option>
-                                        <option>Bauchi</option>
-                                        <option>Bayelsa</option>
-                                        <option>Benue</option>
-                                        <option>Borno</option>
-                                        <option>Cross River</option>
-                                    </Form.Control>
-                                    <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
-                                </Form.Group>
-                                
-                                <Form.Group as={Col} md="3" controlId="validationCustom02">
-                                    {/* <Form.Label>Email Address <span style={{color: 'red'}}>*</span></Form.Label> */}
-                                    <Form.Control as="select">
-                                        <option>Vehicle Model</option>
-                                        <option>Abia</option>
-                                        <option>Adamawa</option>
-                                        <option>Akwa Ibom</option>
-                                        <option>Anambra</option>
-                                        <option>Bauchi</option>
-                                        <option>Bayelsa</option>
-                                        <option>Benue</option>
-                                        <option>Borno</option>
-                                        <option>Cross River</option>
-                                    </Form.Control>
-                                    <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
-                                </Form.Group>
-                            </Form.Row>
-                            <Form.Row>
-                                <Form.Group as={Col} md="3" controlId="validationCustom02">
-                                    {/* <Form.Label>Residential Address <span style={{color: 'red'}}>*</span></Form.Label> */}
-                                    <Form.Control as="select">
-                                        <option>Vehicle Body Type</option>
-                                        <option>Abia</option>
-                                        <option>Adamawa</option>
-                                        <option>Akwa Ibom</option>
-                                        <option>Anambra</option>
-                                        <option>Bauchi</option>
-                                        <option>Bayelsa</option>
-                                        <option>Benue</option>
-                                        <option>Borno</option>
-                                        <option>Cross River</option>
-                                    </Form.Control>
-                                    <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
-                                </Form.Group>
-                                <Form.Group as={Col} md="3" controlId="validationCustom02">
-                                    {/* <Form.Label>State <span style={{color: 'red'}}>*</span></Form.Label> */}
-                                    <Form.Control as="select">
-                                        <option>Year of Make</option>
-                                        <option>Abia</option>
-                                        <option>Adamawa</option>
-                                        <option>Akwa Ibom</option>
-                                        <option>Anambra</option>
-                                        <option>Bauchi</option>
-                                        <option>Bayelsa</option>
-                                        <option>Benue</option>
-                                        <option>Borno</option>
-                                        <option>Cross River</option>
-                                    </Form.Control>
-                                    <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
-                                </Form.Group>
-                                <Form.Group as={Col} md="3" controlId="validationCustom02">
-                                    {/* <Form.Label>State <span style={{color: 'red'}}>*</span></Form.Label> */}
-                                    <Form.Control as="select">
-                                        <option>Period of Cover</option>
-                                        <option>Abia</option>
-                                        <option>Adamawa</option>
-                                        <option>Akwa Ibom</option>
-                                        <option>Anambra</option>
-                                        <option>Bauchi</option>
-                                        <option>Bayelsa</option>
-                                        <option>Benue</option>
-                                        <option>Borno</option>
-                                        <option>Cross River</option>
-                                    </Form.Control>
-                                    <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
-                                </Form.Group>
-                                <Form.Group as={Col} md="2" controlId="validationCustom02">
-                                    {/* <Form.Label>State <span style={{color: 'red'}}>*</span></Form.Label> */}
-                                    <Form.Control as="select">
-                                        <option>Vehicle Estimated Value</option>
-                                        <option>Abia</option>
-                                        <option>Adamawa</option>
-                                        <option>Akwa Ibom</option>
-                                        <option>Anambra</option>
-                                        <option>Bauchi</option>
-                                        <option>Bayelsa</option>
-                                        <option>Benue</option>
-                                        <option>Borno</option>
-                                        <option>Cross River</option>
-                                    </Form.Control>
-                                    <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
-                                </Form.Group>
-                                <Form.Group as={Col} md="1">
-                                    <Button variant='danger' style={{width: '100%'}} type="submit"> Search </Button>
-                                </Form.Group>
-                            </Form.Row>
-                        </Form>
-                    </Tab>
-                </Tabs>
-            </Card.Body>
-        </Card>
+                    </Card.Body>
+                </Card>
+            </Container>
+        </div>
     )
 }
   

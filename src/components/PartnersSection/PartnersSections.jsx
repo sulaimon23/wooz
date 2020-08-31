@@ -37,13 +37,13 @@ class PartnersSections extends Component {
                 <Container className='' style={{ maxWidth: '100%'}}>
                     <Col lg={12}>
                         <Row>
-                            <Col md={2} style={{marginTop: '130px'}}>
+                            <Col sm={2} className='mb-4' style={{marginTop: '130px'}}>
                                 <p>Partners with <br/> <b>Top Brands</b> </p>
                                 <Button style={{ borderRadius: '20px', fontSize: '12px', backgroundColor: '#043f7c', border:'none' }} variantxx="primary">More Partners</Button>
                             </Col> 
                             <Col md={10}>
                                 <Row>
-                                    <Col>
+                                    <Col sm={2} className='mb-4'>
                                         <Card className="text-center" className="text-center" style={{boxShadow: '7px 3px 10px #e1e1e1', border: 'none'}}>
                                             <Card.Body>
                                                 <Card.Title style={{fontSize: 15}}>
@@ -53,7 +53,7 @@ class PartnersSections extends Component {
                                             </Card.Body>
                                         </Card>
                                     </Col>
-                                    <Col>
+                                    <Col sm={2} className='mb-4'>
                                         <Card className="text-center" className="text-center" style={{boxShadow: '7px 3px 10px #e1e1e1', border: 'none'}}>
                                             <Card.Body>
                                                 <Card.Title style={{fontSize: 15}}>
@@ -62,7 +62,7 @@ class PartnersSections extends Component {
                                             </Card.Body>
                                         </Card>
                                     </Col>
-                                    <Col>
+                                    <Col sm={2} className='mb-4'>
                                         <Card className="text-center" className="text-center" style={{boxShadow: '7px 3px 10px #e1e1e1', border: 'none'}}>
                                             <Card.Body>
                                                 <Card.Title style={{fontSize: 15}}>
@@ -71,7 +71,7 @@ class PartnersSections extends Component {
                                             </Card.Body>
                                         </Card>
                                     </Col>
-                                    <Col>
+                                    <Col sm={2} className='mb-4'>
                                         <Card className="text-center" className="text-center" style={{boxShadow: '7px 3px 10px #e1e1e1', border: 'none'}}>
                                             <Card.Body>
                                                 <Card.Title style={{fontSize: 15}}>
@@ -80,7 +80,7 @@ class PartnersSections extends Component {
                                             </Card.Body>
                                         </Card>
                                     </Col>
-                                    <Col>
+                                    <Col sm={2} className='mb-4'>
                                         <Card className="text-center" className="text-center" style={{boxShadow: '7px 3px 10px #e1e1e1', border: 'none'}}>
                                             <Card.Body>
                                                 <Card.Title style={{fontSize: 15}}>
@@ -89,7 +89,7 @@ class PartnersSections extends Component {
                                             </Card.Body>
                                         </Card>
                                     </Col>
-                                    <Col>
+                                    <Col sm={2} className='mb-4'>
                                         <Card className="text-center" className="text-center" style={{boxShadow: '7px 3px 10px #e1e1e1', border: 'none'}}>
                                             <Card.Body>
                                                 <Card.Title style={{fontSize: 15}}>
@@ -98,7 +98,7 @@ class PartnersSections extends Component {
                                             </Card.Body>
                                         </Card>
                                     </Col>
-                                    <Col>
+                                    <Col sm={2} className='mb-4'>
                                         <Card className="text-center" className="text-center" style={{boxShadow: '7px 3px 10px #e1e1e1', border: 'none'}}>
                                             <Card.Body>
                                                 <Card.Title style={{fontSize: 15}}>
@@ -107,10 +107,7 @@ class PartnersSections extends Component {
                                             </Card.Body>
                                         </Card>
                                     </Col>
-                                </Row>
-                                <br/>
-                                <Row md={12}>
-                                    <Col>
+                                    <Col sm={2} className='mb-4'>
                                         <Card className="text-center" className="text-center" style={{boxShadow: '7px 3px 10px #e1e1e1', border: 'none'}}>
                                             <Card.Body>
                                                 <Card.Title style={{fontSize: 15}}>
@@ -119,7 +116,7 @@ class PartnersSections extends Component {
                                             </Card.Body>
                                         </Card>
                                     </Col>
-                                    <Col>
+                                    <Col sm={2} className='mb-4'>
                                         <Card className="text-center" className="text-center" style={{boxShadow: '7px 3px 10px #e1e1e1', border: 'none'}}>
                                             <Card.Body>
                                                 <Card.Title style={{fontSize: 15}}>
@@ -128,7 +125,7 @@ class PartnersSections extends Component {
                                             </Card.Body>
                                         </Card>
                                     </Col>
-                                    <Col>
+                                    <Col sm={2} className='mb-4'>
                                         <Card className="text-center" className="text-center" style={{boxShadow: '7px 3px 10px #e1e1e1', border: 'none'}}>
                                             <Card.Body>
                                                 <Card.Title style={{fontSize: 15}}>
@@ -137,7 +134,7 @@ class PartnersSections extends Component {
                                             </Card.Body>
                                         </Card>
                                     </Col>
-                                    <Col>
+                                    <Col sm={2} className='mb-4'>
                                         <Card className="text-center" className="text-center" style={{boxShadow: '7px 3px 10px #e1e1e1', border: 'none'}}>
                                             <Card.Body>
                                                 <Card.Title style={{fontSize: 15}}>
@@ -146,7 +143,7 @@ class PartnersSections extends Component {
                                             </Card.Body>
                                         </Card>
                                     </Col>
-                                    <Col>
+                                    <Col sm={2} className='mb-4'>
                                         <Card className="text-center" className="text-center" style={{boxShadow: '7px 3px 10px #e1e1e1', border: 'none'}}>
                                             <Card.Body>
                                                 <Card.Title style={{fontSize: 15}}>
@@ -155,7 +152,7 @@ class PartnersSections extends Component {
                                             </Card.Body>
                                         </Card>
                                     </Col>
-                                    <Col>
+                                    <Col sm={2} className='mb-4'>
                                         <Card className="text-center" className="text-center" style={{boxShadow: '7px 3px 10px #e1e1e1', border: 'none'}}>
                                             <Card.Body>
                                                 <Card.Title style={{fontSize: 15}}>
@@ -164,7 +161,7 @@ class PartnersSections extends Component {
                                             </Card.Body>
                                         </Card>
                                     </Col>
-                                    <Col>
+                                    <Col sm={2} className='mb-4'>
                                         <Card className="text-center" className="text-center" style={{boxShadow: '7px 3px 10px #e1e1e1', border: 'none'}}>
                                             <Card.Body>
                                                 <Card.Title style={{fontSize: 15}}>
@@ -173,10 +170,7 @@ class PartnersSections extends Component {
                                             </Card.Body>
                                         </Card>
                                     </Col>
-                                </Row>
-                                <br/>
-                                <Row md={12}>
-                                    <Col>
+                                    <Col sm={2} className='mb-4'>
                                         <Card className="text-center" className="text-center" style={{boxShadow: '7px 3px 10px #e1e1e1', border: 'none'}}>
                                             <Card.Body>
                                                 <Card.Title style={{fontSize: 15}}>
@@ -185,7 +179,7 @@ class PartnersSections extends Component {
                                             </Card.Body>
                                         </Card>
                                     </Col>
-                                    <Col>
+                                    <Col sm={2} className='mb-4'>
                                         <Card className="text-center" className="text-center" style={{boxShadow: '7px 3px 10px #e1e1e1', border: 'none'}}>
                                             <Card.Body>
                                                 <Card.Title style={{fontSize: 15}}>
@@ -194,7 +188,7 @@ class PartnersSections extends Component {
                                             </Card.Body>
                                         </Card>
                                     </Col>
-                                    <Col>
+                                    <Col sm={2} className='mb-4'>
                                         <Card className="text-center" className="text-center" style={{boxShadow: '7px 3px 10px #e1e1e1', border: 'none'}}>
                                             <Card.Body>
                                                 <Card.Title style={{fontSize: 15}}>
@@ -203,7 +197,7 @@ class PartnersSections extends Component {
                                             </Card.Body>
                                         </Card>
                                     </Col>
-                                    <Col>
+                                    <Col sm={2} className='mb-4'>
                                         <Card className="text-center" className="text-center" style={{boxShadow: '7px 3px 10px #e1e1e1', border: 'none'}}>
                                             <Card.Body>
                                                 <Card.Title style={{fontSize: 15}}>
@@ -212,7 +206,7 @@ class PartnersSections extends Component {
                                             </Card.Body>
                                         </Card>
                                     </Col>
-                                    <Col>
+                                    <Col sm={2} className='mb-4'>
                                         <Card className="text-center" className="text-center" style={{boxShadow: '7px 3px 10px #e1e1e1', border: 'none'}}>
                                             <Card.Body>
                                                 <Card.Title style={{fontSize: 15}}>
@@ -221,7 +215,7 @@ class PartnersSections extends Component {
                                             </Card.Body>
                                         </Card>
                                     </Col>
-                                    <Col>
+                                    <Col sm={2} className='mb-4'>
                                         <Card className="text-center" className="text-center" style={{boxShadow: '7px 3px 10px #e1e1e1', border: 'none'}}>
                                             <Card.Body>
                                                 <Card.Title style={{fontSize: 15}}>
@@ -230,7 +224,7 @@ class PartnersSections extends Component {
                                             </Card.Body>
                                         </Card>
                                     </Col>
-                                    <Col>
+                                    <Col sm={2} className='mb-4'>
                                         <Card className="text-center" className="text-center" style={{boxShadow: '7px 3px 10px #e1e1e1', border: 'none'}}>
                                             <Card.Body>
                                                 <Card.Title style={{fontSize: 15}}>
@@ -239,10 +233,7 @@ class PartnersSections extends Component {
                                             </Card.Body>
                                         </Card>
                                     </Col>
-                                </Row>
-                                <br/>
-                                <Row md={12}>
-                                    <Col>
+                                    <Col sm={2} className='mb-4'>
                                         <Card className="text-center" className="text-center" style={{boxShadow: '7px 3px 10px #e1e1e1', border: 'none'}}>
                                             <Card.Body>
                                                 <Card.Title style={{fontSize: 15}}>
@@ -251,7 +242,7 @@ class PartnersSections extends Component {
                                             </Card.Body>
                                         </Card>
                                     </Col>
-                                    <Col>
+                                    <Col sm={2} className='mb-4'>
                                         <Card className="text-center" className="text-center" style={{boxShadow: '7px 3px 10px #e1e1e1', border: 'none'}}>
                                             <Card.Body>
                                                 <Card.Title style={{fontSize: 15}}>
@@ -260,7 +251,7 @@ class PartnersSections extends Component {
                                             </Card.Body>
                                         </Card>
                                     </Col>
-                                    <Col>
+                                    <Col sm={2} className='mb-4'>
                                         <Card className="text-center" className="text-center" style={{boxShadow: '7px 3px 10px #e1e1e1', border: 'none'}}>
                                             <Card.Body>
                                                 <Card.Title style={{fontSize: 15}}>
@@ -269,7 +260,7 @@ class PartnersSections extends Component {
                                             </Card.Body>
                                         </Card>
                                     </Col>
-                                    <Col>
+                                    <Col sm={2} className='mb-4'>
                                         <Card className="text-center" className="text-center" style={{boxShadow: '7px 3px 10px #e1e1e1', border: 'none'}}>
                                             <Card.Body>
                                                 <Card.Title style={{fontSize: 15}}>
@@ -278,7 +269,7 @@ class PartnersSections extends Component {
                                             </Card.Body>
                                         </Card>
                                     </Col>
-                                    <Col>
+                                    <Col sm={2} className='mb-4'>
                                         <Card className="text-center" className="text-center" style={{boxShadow: '7px 3px 10px #e1e1e1', border: 'none'}}>
                                             <Card.Body>
                                                 <Card.Title style={{fontSize: 15}}>
@@ -287,7 +278,7 @@ class PartnersSections extends Component {
                                             </Card.Body>
                                         </Card>
                                     </Col>
-                                    <Col>
+                                    <Col sm={2} className='mb-4'>
                                         <Card className="text-center" className="text-center" style={{boxShadow: '7px 3px 10px #e1e1e1', border: 'none'}}>
                                             <Card.Body>
                                                 <Card.Title style={{fontSize: 15}}>
@@ -296,7 +287,7 @@ class PartnersSections extends Component {
                                             </Card.Body>
                                         </Card>
                                     </Col>
-                                    <Col>
+                                    <Col sm={2} className='mb-4'>
                                         <Card className="text-center" className="text-center" style={{boxShadow: '7px 3px 10px #e1e1e1', border: 'none'}}>
                                             <Card.Body>
                                                 <Card.Title style={{fontSize: 15}}>
@@ -305,6 +296,20 @@ class PartnersSections extends Component {
                                             </Card.Body>
                                         </Card>
                                     </Col>
+                                </Row>
+                                <br/>
+                                <Row md={12}>
+                                    
+                                    
+                                </Row>
+                                <br/>
+                                <Row md={12}>
+                                    
+                                    
+                                </Row>
+                                <br/>
+                                <Row md={12}>
+                                    
                                 </Row>
                             </Col>
                         </Row>

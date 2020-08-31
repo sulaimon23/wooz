@@ -8,10 +8,10 @@ import ElectricityMultiStepper from '../../MultiStepper/ElectricityMultiStepper'
 class BuyElectricityFormSection extends Component {
     render() {
         return (
-            <div>
-                <Container style={{marginTop: '-107px', width: '1115px' }}>
+            <div style={{display: 'flex', justifyContent: 'center'}}>
+                {/* <Container style={{marginTop: '-107px', width: '1115px' }}> */}
                     <ElectricityMultiStepper />
-                </Container>
+                {/* </Container> */}
             </div>
         );
     }

@@ -1,7 +1,7 @@
 import React, { Component, useState, select, Switch } from 'react';
 import { Jumbotron, Container, Row, Col, Image, Button, ButtonGroup, Card, InputGroup, Form, FormControl, FormCheck } from 'react-bootstrap';
 import PhoneInput from 'react-phone-input-2'
-import 'react-phone-input-2/lib/style.css'
+// import '../Utilities/Data/node_modules/react-phone-input-2/lib/style.css'
 import DatePicker from '../Calendar'
 import ButtonToggle from './ButtonToggle'
 

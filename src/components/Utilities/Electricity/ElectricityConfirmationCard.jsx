@@ -19,8 +19,8 @@ function ElectricityConfirmationCard() {
    
     return (
         <div>
-            <Card align='center' style={{backgroundColor: '#ffffff', border: 'none'}}>
-                <div style={{ backgroundColor: 'transparent', padding: '20px', width: '650px'}}>
+            <Card  style={{backgroundColor: '#ffffff', border: 'none'}}>
+                <div className="justify-content-md-center" style={{ backgroundColor: 'transparent', padding: '20px', widthxx:'600px'}}>
                     <span style={{color: '#043f7c'}}><b style={{float: 'left'}}>Electricity Details</b> <span style={{float: 'right'}}>Edit &nbsp; <i className="fa fa-pencil"></i></span></span>
                     <br/>
                     <hr style={{color: '#043f7c', borderTop: '1px dashed'}}/>
@@ -42,7 +42,7 @@ function ElectricityConfirmationCard() {
                     </Row>
                     <Row>
                         <Col md={6}>
-                            <p style={{float: 'left'}}><b>Account/Meter Number:</b> </p>
+                            <p style={{float: 'left'}}><b>Account/Meter Package:</b> </p>
                         </Col>
                         <Col md={6}>
                             <p style={{float: 'right'}}>Prepaid</p>
@@ -56,12 +56,20 @@ function ElectricityConfirmationCard() {
                             <p style={{float: 'right'}}>&#8358;20,000 </p>
                         </Col>
                     </Row>
-                    <br/>
+                    <Row>
+                        <Col md={6}>
+                            <p style={{float: 'left'}}><b>Phone Number:</b> </p>
+                        </Col>
+                        <Col md={6}>
+                            <p style={{float: 'right'}}>07060460216 </p>
+                        </Col>
+                    </Row>
+                    {/* <br/>
                     <Row>
                         <Col align='center' md={12}>
                             <Button variant='danger' type="submit" style={{width: '300px'}}><span style={{fontSize: 'small'}}>Buy Now</span> </Button>
                         </Col>
-                    </Row>
+                    </Row> */}
                 </div>
                 {/*  */}
                 
