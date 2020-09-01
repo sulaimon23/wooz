@@ -70,7 +70,8 @@ class FooterSection extends Component {
                                             <Image className='ml-auto' src={blogdateimg} />
                                         </Col>
                                     </Row>
-                                    <p style={{color: 'white'}}>The trend of online shopping is increasing regularly. All individuals love to shop for things online instead of visiting the market...</p>
+                                    <p style={{color: 'white'}}>The trend of online shopping is increasing regularly.</p>
+                                    {/* <p style={{color: 'white'}}>The trend of online shopping is increasing regularly. All individuals love to shop for things online instead of visiting the market...</p> */}
                                     <Button className='ml-auto' style={{clear: 'both', borderRadius: '20px', fontSize: '12px', width: '120px' }} variant="light">Read More <i className="fa fa-arrow-right"></i></Button>
                                 </Nav>
                             </Col>

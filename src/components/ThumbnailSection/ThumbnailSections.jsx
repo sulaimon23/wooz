@@ -3,6 +3,7 @@ import { Jumbotron, Container, Row, Col, Image, Button, Card } from 'react-boots
 import slider2 from '../../assets/img/slider/2.jpg'
 import slider3 from '../../assets/img/slider/3.jpg'
 import moneymatters from '../../assets/img/icons/home/money-matters.png'
+import mybank from '../../assets/img/icons/home/mybank.png'
 import uba from '../../assets/img/icons/home/uba.png'
 import onthego from '../../assets/img/icons/home/on-the-go.png'
 import clickandplay from '../../assets/img/icons/home/click-play.png'
@@ -18,6 +19,9 @@ import charity from '../../assets/img/icons/home/charity.png'
 import dispatch from '../../assets/img/icons/home/dispatch.png'
 import woozeee from '../../assets/img/icons/home/woozeee.png'
 import other from '../../assets/img/icons/home/other.png'
+import training from '../../assets/img/icons/home/training.png'
+import news from '../../assets/img/icons/home/news.png'
+import government from '../../assets/img/icons/home/government.png'
 
 class ThumbnailSections extends Component {
     render() {
@@ -44,8 +48,8 @@ class ThumbnailSections extends Component {
                                 <Card className="text-center" style={{boxShadow: '7px 3px 10px #e1e1e1', border: 'none'}}>
                                     <Card.Body>
                                         <Card.Title style={{fontSize: 15, marginTop: '10px'}}>
-                                            <img src={uba} style={{width: '30px'}} alt=""/> &nbsp;
-                                            <span style={{color: 'red'}}>UBA</span>
+                                            <img src={mybank} style={{width: '30px'}} alt=""/> &nbsp;
+                                            <span stylexx={{color: 'red'}}>My Bank</span>
                                         </Card.Title>
                                     </Card.Body>
                                 </Card>
@@ -204,6 +208,36 @@ class ThumbnailSections extends Component {
                                         <Card.Title style={{fontSize: 15, marginTop: '10px'}}>
                                             <img src={woozeee} style={{width: '30px'}} alt=""/> 
                                             &nbsp; Socials
+                                        </Card.Title>
+                                    </Card.Body>
+                                </Card>
+                            </Col>
+                            <Col sm={2} className='mb-4'>
+                                <Card className="text-center" style={{boxShadow: '7px 3px 10px #e1e1e1', backgroundColorxx: '#043f7c', border: 'none'}}>
+                                    <Card.Body>
+                                        <Card.Title style={{fontSize: 15, marginTop: '10px'}}>
+                                            <img src={government} style={{width: '30px'}} alt=""/> 
+                                            &nbsp; Government
+                                        </Card.Title>
+                                    </Card.Body>
+                                </Card>
+                            </Col>
+                            <Col sm={2} className='mb-4'>
+                                <Card className="text-center" style={{boxShadow: '7px 3px 10px #e1e1e1', backgroundColorxx: '#043f7c', border: 'none'}}>
+                                    <Card.Body>
+                                        <Card.Title style={{fontSize: 15, marginTop: '10px'}}>
+                                            <img src={news} style={{width: '30px'}} alt=""/> 
+                                            &nbsp; News
+                                        </Card.Title>
+                                    </Card.Body>
+                                </Card>
+                            </Col>
+                            <Col sm={2} className='mb-4'>
+                                <Card className="text-center" style={{boxShadow: '7px 3px 10px #e1e1e1', backgroundColorxx: '#043f7c', border: 'none'}}>
+                                    <Card.Body>
+                                        <Card.Title style={{fontSize: 15, marginTop: '10px'}}>
+                                            <img src={training} style={{width: '30px'}} alt=""/> 
+                                            &nbsp; Trainings
                                         </Card.Title>
                                     </Card.Body>
                                 </Card>

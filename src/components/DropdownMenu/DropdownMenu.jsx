@@ -96,7 +96,7 @@ class DropdownMenu extends Component {
               </div>
               <div className="column">
                 <h6 style={{color: 'white'}}><b>Tax &amp; Levies</b></h6>
-                <a href="#">Appl For NIMC</a>
+                <a href="#">NIMC</a>
                 <a href="#">Pay Tax</a>
                 <a href="#">Pay LAWMA</a>
                 <a href="#">Pay Toll Fees</a>
@@ -118,7 +118,7 @@ class DropdownMenu extends Component {
                 <a href="#">News</a>
                 <a href="#">Events</a>
                 <a href="#">Talents</a>
-                <a href="#">Wooz Community</a>
+                <a href="#">Woozeee Villa</a>
                 <a href="#">18+ Rooms</a>
               </div>
             </div>
