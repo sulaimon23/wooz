@@ -6,6 +6,7 @@ import Home from './components/Home/Home';
 import Insurance from './components/Insurance/Insurance';
 import MotorInsurance from './components/Insurance/MotorInsurance/MotorInsurance';
 import CustomNavbar from './components/CustomNavbar';
+// import SideNav from './components/SideNav/SideNav'
 import NoMatch from './components/NoMatch';
 import MoneyMatters from './components/MoneyMatters/MoneyMatters';
 import OnTheGo from './components/OnTheGo/OnTheGo'

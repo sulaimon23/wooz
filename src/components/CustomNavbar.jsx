@@ -10,7 +10,8 @@ import ReactCountryFlag from "react-country-flag"
 // import DropdownMenu from "./DropdownMenu/DropdownMenu";
 import DropdownMenuComp from './DropdownMenu/DropdownMenu'
 // import MobileNavbarMenu from './DropdownMenu/MobileMenu'
-
+import './SideNav/SideNav.css'
+import SideNav from './SideNav/SideNav'
 
 class CustomNavbar extends Component {
     constructor() {
@@ -44,7 +45,16 @@ class CustomNavbar extends Component {
                             <i style={{color: '#ffffff'}} className="fa fa-bars fa-lg"></i>
                         </Nav.Link>
                         {/* end web dropdownmenu */}
-                        {/* <MobileNavbarMenu /> */}
+
+                        {/* mobile dropdownmenu */}
+                        {/* <Nav.Link className='d-lg-none' onClick={() => this.toggle()} style={{backgroundColor: '#043f7c', borderRadius: '3px', paddingLeft: '13px', paddingRight: '13px'}} >
+                            <i style={{color: '#ffffff'}} className="fa fa-bars fa-lg"></i>
+                        </Nav.Link> */}
+                        {/* end mobile dropdownmenu */}
+                        <Navbar style={{padding: '2px'}} className='d-lg-none' >
+                            <SideNav />
+                        </Navbar>
+                        
                         
                     {/* </ClickAwayListener> */}
                     {/* end menu icon */}
@@ -91,7 +101,7 @@ class CustomNavbar extends Component {
                         <Nav>
 
                             {/* start currency */}
-                            <NavDropdown title="NGN &#x20A6;" id="collasible-nav-dropdown">
+                            <NavDropdown className='d-md-block' title="NGN &#x20A6;" id="collasible-nav-dropdown">
                                 <NavDropdown.Item href="#action/3.1">USD $</NavDropdown.Item>
                                 <NavDropdown.Item href="#action/3.2">EUR £</NavDropdown.Item>
                                 <NavDropdown.Item href="#action/3.3">GBP £</NavDropdown.Item>

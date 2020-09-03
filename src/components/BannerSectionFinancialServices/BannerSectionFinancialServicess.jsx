@@ -24,7 +24,7 @@ class BannerSectionFinancialServices extends Component {
                                 <br/>
                                 <br/>
                                 <br/>
-                                <h5 style={{fontSize: '18px', fontWeight: '500px'}}>Welcome To Financial Services</h5>
+                                <h4 style={{fontWeight: '500px', fontSize: '35px'}}> <b> Welcome To Financial Services</b> </h4>
                                 <br/>
                                 <p style={{ textAlign: 'justify' }}>The Financial services industry is one of the most sophisticated, globally integrated, <br/> and highly regulated industries. MoFo understands how to help our clients navigate this <br/> complex marketplace and how the ever-changing regulatory reform landscape <br/> will impact their businesses.</p>
                                 {/* <p style={{ textAlign: 'justify' }}>Smartshop.com is Nigeria’s number one online Shopping destination. We pride ourselves in having everything you could possibly need for life and living at the best prices than anywhere else. Our access to Original Equipment Manufacturers and premium sellers gives us a wide range of products at very low prices. Some of our popular categories include electronics, mobile phones, computers, fashion, beauty products, home and kitchen, Building and construction materials and a whole lot more from premium brands. Some of our other categories include </p> */}

@@ -1,4 +1,8 @@
 import React, { Component, useState } from 'react';
+import { makeStyles } from '@material-ui/core/styles';
+import Stepper from '@material-ui/core/Stepper';
+import Step from '@material-ui/core/Step';
+import StepLabel from '@material-ui/core/StepLabel';
 import { Jumbotron, Container, Row, Col, Image, Button, ButtonGroup, Card, InputGroup, Form, FormControl, FormCheck, Nav } from 'react-bootstrap';
 import PhoneInput from 'react-phone-input-2'
 // import '../Utilities/Data/node_modules/react-phone-input-2/lib/style.css'
@@ -8,6 +12,20 @@ import DatePicker from '../Calendar'
 import InnerTabPanel from '../SearchTabFormSection/InnerTabPanel'
 import FlightSearchMultiStepper from '../MultiStepper/FlightSearchMultiStepper'
 import GoogleMap from './GoogleMap';
+
+// const useStyles = makeStyles((theme) => ({
+//     root: {
+//       width: '100%',
+//       backgroundColor: 'transparent',
+//     },
+//     backButton: {
+//       marginRight: theme.spacing(1),
+//     },
+//     instructions: {
+//       marginTop: theme.spacing(1),
+//       marginBottom: theme.spacing(1),
+//     },
+//   }));
 
 function FlightSelectTab() {
     const [validated, setValidated] = useState(false);
@@ -21,6 +39,22 @@ function FlightSelectTab() {
 
     setValidated(true);
     };
+
+//     const classes = useStyles();
+//     const [activeStep, setActiveStep] = React.useState(0);
+//     const steps = getSteps();
+
+//     const handleNext = () => {
+//     setActiveStep((prevActiveStep) => prevActiveStep + 1);
+// };
+
+//     const handleBack = () => {
+//     setActiveStep((prevActiveStep) => prevActiveStep - 1);
+// };
+
+//     const handleReset = () => {
+//     setActiveStep(0);
+// };
     return (
         // <div>
         //     <Container className='p-4' as={Col} lg={12} style={{maxWidth: '100%' }}>
@@ -62,7 +96,8 @@ function FlightSelectTab() {
                                     <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
                                 </Form.Group>
                                 <Form.Group as={Col} md="1">
-                                    <Button href='onthego/flightsearch' variant='danger' style={{width: '100%'}} type="submit"> Search </Button>
+                                    <Button href='flightsearch/ticketoptionstab' variant='danger' style={{width: '100%'}} type="submit"> Search </Button>
+                                    {/* <Button variant="contained" color="primary" onClick={handleNext}> {activeStep === steps.length - 1 ? 'Finish' : 'Next'} </Button> */}
                                 </Form.Group>
                             </Form.Row>
                         </Form>

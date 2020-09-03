@@ -10,12 +10,12 @@ class BannerSectionUtilities extends Component {
             <div  style={{ backgroundImage: `url(${bannerimage})`, backgroundPosition: 'center', backgroundSize: 'cover', backgroundRepeat: 'no-repeat', color: 'white' }} >
                 <Col lg={12}>
                     <br/>
-                        <Breadcrumb>
-                            <Breadcrumb.Item href="/"> <span style={{color: '#636363'}}> Home </span> </Breadcrumb.Item>
-                            <Breadcrumb.Item active href="/Utilities"> <span style={{color: '#043f7c'}}>Utilities</span> </Breadcrumb.Item>
-                        </Breadcrumb>
-                        {/* <p> <span style={{color: '#707070'}} >Home /</span> <b>Money Matters</b> </p> */}
-                    </Col>
+                    <Breadcrumb>
+                        <Breadcrumb.Item href="/"> <span style={{color: '#636363'}}> Home </span> </Breadcrumb.Item>
+                        <Breadcrumb.Item active href="/Utilities"> <span style={{color: '#043f7c'}}>Utilities</span> </Breadcrumb.Item>
+                    </Breadcrumb>
+                    {/* <p> <span style={{color: '#707070'}} >Home /</span> <b>Money Matters</b> </p> */}
+                </Col>
                 {/* <Container className='p-4' style={{ maxWidth: '100%',  }}> */}
                     
                     <Col lg={12}>
