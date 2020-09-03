@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 // import ReactBootstrapCarousel from "react-bootstrap-carousel";
 import { Jumbotron, Container, Row, Col, Breadcrumb, Image, Button, Card } from 'react-bootstrap';
 import bannerimage from '../../assets/img/bannerimg/insurance.png'
+import play from '../../assets/img/icons/playbutton.png'
 
 class BannerSectionFinancialServices extends Component {
     render() {
@@ -20,7 +21,7 @@ class BannerSectionFinancialServices extends Component {
                     {/* <Button href='#' size='lg' style={{ borderRadius: '20px', fontSize: '12px' }} variant="dark">Back</Button> */}
                     <Col lg={12}>
                         <Row>
-                            <Col md={12}>
+                            <Col md={9}>
                                 <br/>
                                 <br/>
                                 <br/>
@@ -30,6 +31,19 @@ class BannerSectionFinancialServices extends Component {
                                 {/* <p style={{ textAlign: 'justify' }}>Smartshop.com is Nigeria’s number one online Shopping destination. We pride ourselves in having everything you could possibly need for life and living at the best prices than anywhere else. Our access to Original Equipment Manufacturers and premium sellers gives us a wide range of products at very low prices. Some of our popular categories include electronics, mobile phones, computers, fashion, beauty products, home and kitchen, Building and construction materials and a whole lot more from premium brands. Some of our other categories include </p> */}
                                 <br/>
                                 <Button href='#' size='lg' style={{ borderRadius: '20px', fontSize: '12px' }} variant="danger">Read More</Button>
+                                <br/>
+                                <br/>
+                                <br/>
+                                <br/>
+                                <br/>
+                                <br/>
+                            </Col>
+                            <Col md={3}>
+                                <br/>
+                                <br/>
+                                <br/>
+                                <br/>
+                                <img src={play} alt=""/>
                                 <br/>
                                 <br/>
                                 <br/>

@@ -16,7 +16,7 @@ class Thumbnails extends Component {
                         </Col>
                                 
                         <Col sm={2} className='mb-4'>
-                            <Card style={{xxwidth: '250px', height: '150px',}} className="text-center">
+                            <Card  className="text-center">
                                 <Card.Body style={{padding: '37px 0 50px 0px'}}>
                                     <Card.Title style={{fontSize: 15}}>
                                         <img src={talktodoc} style={{width: '50px'}} alt=""/> &nbsp;

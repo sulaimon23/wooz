@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 // import ReactBootstrapCarousel from "react-bootstrap-carousel";
 import { Jumbotron, Container, Row, Breadcrumb, Col, Image, Button, Card } from 'react-bootstrap';
 import bannerimage from '../../assets/img/bannerimg/insurance.png'
+import play from '../../assets/img/icons/playbutton.png'
 
 class BannerSectionUtilities extends Component {
     render() {
@@ -19,8 +20,8 @@ class BannerSectionUtilities extends Component {
                 {/* <Container className='p-4' style={{ maxWidth: '100%',  }}> */}
                     
                     <Col lg={12}>
-                        {/* <Row>
-                            <Col md={12}> */}
+                        <Row>
+                            <Col md={9}>
                                 <br/>
                                 <br/>
                                 <br/>
@@ -36,8 +37,21 @@ class BannerSectionUtilities extends Component {
                                 <br/>
                                 <br/>
                                 <br/>
-                            {/* </Col>
-                        </Row> */}
+                            </Col>
+                            <Col md={3}>
+                                <br/>
+                                <br/>
+                                <br/>
+                                <br/>
+                                <img src={play} alt=""/>
+                                <br/>
+                                <br/>
+                                <br/>
+                                <br/>
+                                <br/>
+                                <br/>
+                            </Col>
+                        </Row>
                     </Col>
                 {/* </Container> */}
             </div>
