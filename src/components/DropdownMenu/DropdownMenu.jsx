@@ -47,7 +47,7 @@ class DropdownMenu extends Component {
                 <a href="#">Airtime</a>
                 <a href="#">Data</a>
                 <a href="#">Electricity</a>
-                <a href="#">TV/Cable</a>
+                <a href="#">Cable TV</a>
                 <a href="#">Internet</a>
               </div>
               <div className="column">

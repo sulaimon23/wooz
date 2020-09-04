@@ -25,12 +25,12 @@ function SelectTab() {
         // <div>
         //     <Container className='p-4' as={Col} lg={12} style={{maxWidth: '100%' }}>
         <div fluid>
-            <Container style={{backgroundColor: '#043f7c'}} direction='row' className='p-4' fluid>
+            <Container style={{backgroundColor: '#043f7c', paddingTop: '20px'}} direction='row' classNamexx='p-4' fluid>
                 <Card style={{backgroundColor: 'transparent', border: 'none'}}>
                     <Card.Body>
-                        <Form noValidate validated={validated} onSubmit={handleSubmit} style={{height: '100px'}}>
+                        <Form noValidate validated={validated} onSubmit={handleSubmit} stylex={{height: '100px'}}>
                             <Form.Row>
-                                <InputGroup className="mb-5" as={Col} md="3" >
+                                <InputGroup className="mb-4" as={Col} md="3" >
                                     <InputGroup.Prepend>
                                         <InputGroup.Text>
                                         <i class='fa fa-map-marker'></i>
@@ -39,7 +39,7 @@ function SelectTab() {
                                     <FormControl style={{borderTopRightRadius: '4px', borderBottomRightRadius: '4px'}} id="inlineFormInputGroup" placeholder="From:" required type='text' defaultValue='Third Party' />
                                     <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
                                 </InputGroup>
-                                <InputGroup className="mb-5" as={Col} md="3" >
+                                <InputGroup className="mb-4" as={Col} md="3" >
                                     <InputGroup.Prepend>
                                         <InputGroup.Text>
                                         <i class='fa fa-map-marker'></i>
@@ -48,7 +48,7 @@ function SelectTab() {
                                     <FormControl style={{borderTopRightRadius: '4px', borderBottomRightRadius: '4px'}} id="inlineFormInputGroup" placeholder="To:" required type='text' defaultValue='Private' />
                                     <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
                                 </InputGroup>
-                                <InputGroup className="mb-5" as={Col} md="3" >
+                                <InputGroup className="mb-4" as={Col} md="3" >
                                     <InputGroup.Prepend>
                                         <InputGroup.Text>
                                         <i class='fa fa-map-marker'></i>
@@ -57,7 +57,7 @@ function SelectTab() {
                                     <FormControl style={{borderTopRightRadius: '4px', borderBottomRightRadius: '4px'}} id="inlineFormInputGroup" placeholder="To:" required type='text' defaultValue='Honda' />
                                     <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
                                 </InputGroup>
-                                <InputGroup className="mb-5" as={Col} md="3" >
+                                <InputGroup className="mb-4" as={Col} md="3" >
                                     <InputGroup.Prepend>
                                         <InputGroup.Text>
                                         <i class='fa fa-map-marker'></i>
@@ -73,9 +73,7 @@ function SelectTab() {
                                 <Form.Group as={Col} md="1">
                                     <Button href='onthego/flightsearch' variant='danger' style={{width: '100%'}} type="submit"> Search </Button>
                                 </Form.Group> */}
-                            </Form.Row>
-                            <Form.Row style={{marginTop: '-25px'}}>
-                                <InputGroup className="mb-5" as={Col} md="2" >
+                                <InputGroup className="mb-4" as={Col} md="2" >
                                     <InputGroup.Prepend>
                                         <InputGroup.Text>
                                         <i class='fa fa-map-marker'></i>
@@ -84,7 +82,7 @@ function SelectTab() {
                                     <FormControl style={{borderTopRightRadius: '4px', borderBottomRightRadius: '4px'}} id="inlineFormInputGroup" placeholder="From:" required type='text' defaultValue='Sedan' />
                                     <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
                                 </InputGroup>
-                                <InputGroup className="mb-5" as={Col} md="1" >
+                                <InputGroup className="mb-4" as={Col} md="1" >
                                     <InputGroup.Prepend>
                                         <InputGroup.Text>
                                         <i class='fa fa-map-marker'></i>
@@ -93,7 +91,7 @@ function SelectTab() {
                                     <FormControl style={{borderTopRightRadius: '4px', borderBottomRightRadius: '4px'}} id="inlineFormInputGroup" placeholder="To:" required type='text' defaultValue='2012' />
                                     <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
                                 </InputGroup>
-                                <InputGroup className="mb-5" as={Col} md="3" >
+                                <InputGroup className="mb-4" as={Col} md="3" >
                                     <InputGroup.Prepend>
                                         <InputGroup.Text>
                                         <i class='fa fa-map-marker'></i>
@@ -102,7 +100,7 @@ function SelectTab() {
                                     <FormControl style={{borderTopRightRadius: '4px', borderBottomRightRadius: '4px'}} id="inlineFormInputGroup" placeholder="To:" required type='text' defaultValue='1 Year' />
                                     <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
                                 </InputGroup>
-                                <InputGroup className="mb-5" as={Col} md="3" >
+                                <InputGroup className="mb-4" as={Col} md="3" >
                                     <InputGroup.Prepend>
                                         <InputGroup.Text>
                                         <i class='fa fa-map-marker'></i>
@@ -116,6 +114,9 @@ function SelectTab() {
                                     <Button hrefxx='onthego/flightsearch' variant='danger' style={{width: '100%'}} type="submit"> Search </Button>
                                 </Form.Group>
                             </Form.Row>
+                            {/* <Form.Row style={{marginTop: '-25px'}}>
+                                
+                            </Form.Row> */}
                         </Form>
                     </Card.Body>
                 </Card>
