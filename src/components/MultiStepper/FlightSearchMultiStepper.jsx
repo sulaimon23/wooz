@@ -27,18 +27,24 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 function getSteps() {
-  return ['Select', 'Ticket Options', 'Passenger Details', 'Confirmation'];
+  return ['Ticket Options', 'Passenger Details', 'Confirmation'];
 }
 
 function getStepContent(stepIndex) {
     switch (stepIndex) {
+        // case 0:
+        //     return ( <FlightSelectTab /> );
+        // case 1:
+        //     return ( <TicketOptionsTab /> );
+        // case 2:
+        //     return ( <PassengerDetailsTab /> );
+        // case 3:
+        //     return ( <ConfirmationTab /> );
         case 0:
-            return ( <FlightSelectTab /> );
-        case 1:
             return ( <TicketOptionsTab /> );
-        case 2:
+        case 1:
             return ( <PassengerDetailsTab /> );
-        case 3:
+        case 2:
             return ( <ConfirmationTab /> );
         
         default:

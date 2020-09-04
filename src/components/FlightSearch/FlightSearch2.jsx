@@ -6,9 +6,10 @@ import FormCardSection from '../FormCardSection/FormCardSections'
 import FlightSearchTabFormSection from '../SearchTabFormSection/FlightSearchTabFormSections';
 // import BannerSection from '../BannerSection/BannerSections';
 // import InsuranceThumbnailSection from '../InsuranceThumbnailSection/InsuranceThumbnailSections'
-import FlightSearch2 from './FlightSearch2'
+import FlightSearchMultiStepper from '../MultiStepper/FlightSearchMultiStepper'
+// import FormCardSection from '../FormCardSection/FormCardSections'
 
-class FlightSearch extends Component {
+class FlightSearch2 extends Component {
     render() {
         return (
             <div>
@@ -23,13 +24,13 @@ class FlightSearch extends Component {
                         </Breadcrumb>
                     </Col> */}
                 </Container>
+                {/* <br/>
                 <br/>
                 <br/>
+                <br/> */}
+                {/* <FlightSearchTabFormSection /> */}
+                <FlightSearchMultiStepper />
                 <br/>
-                <br/>
-                <FlightSearchTabFormSection />
-                {/* <FlightSearch2 /> */}
-                {/* <br/> */}
                 {/* <FormCardSection /> */}
                 
                 
@@ -40,4 +41,4 @@ class FlightSearch extends Component {
     }
 }
 
-export default FlightSearch;
+export default FlightSearch2;

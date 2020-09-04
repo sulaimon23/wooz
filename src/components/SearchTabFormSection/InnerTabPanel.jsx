@@ -95,16 +95,16 @@ export default function ScrollableTabsButtonPrevent() {
               </React.Fragment> 
             }
           />
-          <Tab style={{width: '-webkit-fill-available', }} icon={ <DirectionsBoatIcon />} aria-label="ferries" {...a11yProps(2)} 
+          <Tab style={{width: '-webkit-fill-available', }} icon={ <DirectionsBoatIcon />} aria-label="train" {...a11yProps(2)} 
             label={
               <React.Fragment>
-                Ferries
+                Train
                 <br />
                 <h6 style={{ fontSize: 'smaller' }}>NGN 123,999 • 120h55m</h6>
               </React.Fragment> 
             }
           />
-          <Tab style={{width: '-webkit-fill-available', }} as={Col} md='6' icon={<TrainIcon />} aria-label="train" {...a11yProps(3)} label='Trains' disabled />
+          <Tab style={{width: '-webkit-fill-available', }} as={Col} md='6' icon={<TrainIcon />} aria-label="ferries" {...a11yProps(3)} label='Ferries' disabled />
         </Tabs>
       </AppBar>
       <InnerTabPanel value={value} index={0}>

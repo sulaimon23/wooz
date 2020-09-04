@@ -11,6 +11,7 @@ import NoMatch from './components/NoMatch';
 import MoneyMatters from './components/MoneyMatters/MoneyMatters';
 import OnTheGo from './components/OnTheGo/OnTheGo'
 import FlightSearch from './components/FlightSearch/FlightSearch';
+import FlightSearch2 from './components/FlightSearch/FlightSearch2';
 import Utilities from './components/Utilities/Utilities';
 // import UtilitiesThumbnailSection from './components/UtilitiesThumbnailSection/UtilitiesThumbnailSection';
 import Airtime from './components/Utilities/Airtime/Airtime';
@@ -48,6 +49,7 @@ function App() {
         <Route exact path="/moneymatters/insurance/motorinsurance" component={MotorInsurance} />
         <Route exact path="/onthego" component={OnTheGo} />
         <Route exact path="/onthego/flightsearch" component={FlightSearch} />
+        <Route exact path="/onthego/flightsearch2" component={FlightSearch2} />
         <Route exact path="/utilities" component={Utilities} />
         <Route exact path="/utilities/airtime" component={Airtime} />
         <Route exact path="/utilities/data" component={Data} />

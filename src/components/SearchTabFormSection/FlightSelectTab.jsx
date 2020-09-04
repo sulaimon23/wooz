@@ -96,7 +96,7 @@ function FlightSelectTab() {
                                     <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
                                 </Form.Group>
                                 <Form.Group as={Col} md="1">
-                                    <Button href='flightsearch/ticketoptionstab' variant='danger' style={{width: '100%'}} type="submit"> Search </Button>
+                                    <Button href='flightsearch2' variant='danger' style={{width: '100%'}} type="submit"> Search </Button>
                                     {/* <Button variant="contained" color="primary" onClick={handleNext}> {activeStep === steps.length - 1 ? 'Finish' : 'Next'} </Button> */}
                                 </Form.Group>
                             </Form.Row>

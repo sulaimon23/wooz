@@ -10,7 +10,41 @@ import TravelInsuranceIcon from '../../assets/img/icons/insurance/travelinsuranc
 import LifeInsuranceIcon from '../../assets/img/icons/insurance/lifeinsurance.png';
 // import MotorInsuranceIcon from '../../assets/img/icons/insurance/motorinsurance.png';
 import DirectionsBusIcon from '@material-ui/icons/DirectionsBus';
+import FlightIcon from '@material-ui/icons/Flight';
 
+
+// function TabForm(props) {
+//     const { children, value, index, ...other } = props;
+  
+//     return (
+//       <div
+//         role="tabpanel"
+//         hidden={value !== index}
+//         id={`scrollable-prevent-tabpanel-${index}`}
+//         aria-labelledby={`scrollable-prevent-tab-${index}`}
+//         {...other}
+//       >
+//         {value === index && (
+//           <Box p={3}>
+//             <Typography>{children}</Typography>
+//           </Box>
+//         )}
+//       </div>
+//     );
+//   }
+  
+//   TabForm.propTypes = {
+//     children: PropTypes.node,
+//     index: PropTypes.any.isRequired,
+//     value: PropTypes.any.isRequired,
+//   };
+  
+//   function a11yProps(index) {
+//     return {
+//       id: `scrollable-prevent-tab-${index}`,
+//       'aria-controls': `scrollable-prevent-tabpanel-${index}`,
+//     };
+//   }
 
 const divStyle = {
     color: 'white',
@@ -56,7 +90,10 @@ function TabForm() {
             <Card.Body style={{marginTop: '-63px'}}>
                 {/* <Tabs style={{backgroundColor: '#043f7c', width: '834px', marginLeft: '-20px', borderTopLeftRadius: '5px', borderTopRightRadius: '5px'}} defaultActiveKey="motorinsurance" transition={false} id="noanim-tab-example"> */}
                 <Tabs style={{  backgroundColor: '#043f7c', width: '52.4%', heightx: '50px', marginTopx: '-9px', borderBottom: '-1px', borderTop: 'none', borderColor: 'none',  marginLeftx: '-20px' , borderTopLeftRadius: '5px', borderTopRightRadius: '5px'}} defaultActiveKey="motorinsurance" transition={false} id="noanim-tab-example">
-                    <Tab style={{divStyle}} src={img} icon={ <DirectionsBusIcon />} eventKey='travelinsurance' title='Travel Insurances'>
+                    {/* <Tab style={{divStyle}} icon={ <FlightIcon />} eventKey='travelinsurance' title='Travel Insurances' aria-label="flight"> */}
+                    <Tab style={{divStyle}} src={TravelInsuranceIcon} eventKey='travelinsurance' title='Travel Insurances'>
+                    
+                    
                         <br/>
                         <br/>
                         <Form noValidate validated={validated} onSubmit={handleSubmit}>
