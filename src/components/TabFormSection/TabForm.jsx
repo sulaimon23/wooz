@@ -14,6 +14,7 @@ import DirectionsBusIcon from '@material-ui/icons/DirectionsBus';
 
 const divStyle = {
     color: 'white',
+    align: 'center'
 }
 
 function TabForm() {
@@ -54,7 +55,7 @@ function TabForm() {
         <Card>
             <Card.Body style={{marginTop: '-63px'}}>
                 {/* <Tabs style={{backgroundColor: '#043f7c', width: '834px', marginLeft: '-20px', borderTopLeftRadius: '5px', borderTopRightRadius: '5px'}} defaultActiveKey="motorinsurance" transition={false} id="noanim-tab-example"> */}
-                <Tabs style={{  backgroundColor: '#043f7c', width: '53.2%', heightx: '50px', marginTopx: '-9px', borderBottom: '-1px', borderTop: 'none', borderColor: 'none',  marginLeft: '-20px' , borderTopLeftRadius: '5px', borderTopRightRadius: '5px'}} defaultActiveKey="motorinsurance" transition={false} id="noanim-tab-example">
+                <Tabs style={{  backgroundColor: '#043f7c', width: '100%', heightx: '50px', marginTopx: '-9px', borderBottom: '-1px', borderTop: 'none', borderColor: 'none',  marginLeftx: '-20px' , borderTopLeftRadius: '5px', borderTopRightRadius: '5px'}} defaultActiveKey="motorinsurance" transition={false} id="noanim-tab-example">
                     <Tab style={{divStyle}} src={img} icon={ <DirectionsBusIcon />} eventKey='travelinsurance' title='Travel Insurances'>
                         <br/>
                         <br/>

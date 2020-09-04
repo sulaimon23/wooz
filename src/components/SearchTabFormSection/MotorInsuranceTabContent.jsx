@@ -20,7 +20,7 @@ class MotorInsuranceTabContent extends Component {
                             <span style={{fontSize: '14px'}}>Third Party Insurance</span>
                         </Col>
                         <Col md='3' style={{marginRight: '-45px', color: '#043f7c', marginTop: '8px'}}>
-                            <Button variant='primary' style={{ borderRadius: '20px', backgroundColor: '#6dcff6', fontSize: '12px'}} type="submit"> View Coverage </Button>
+                            <Button variant='primary' style={{ borderRadius: '20px', backgroundColor: '#043f7c', fontSize: '12px'}} type="submit"> View Coverage </Button>
                         </Col>
                         <Col style={{marginTop: '12px'}} classNamexx='float-right' md='3' >NGN 16,990</Col>
                     </Row>
@@ -38,7 +38,7 @@ class MotorInsuranceTabContent extends Component {
                             <span style={{fontSize: '14px'}}>Third Party Insurance</span>
                         </Col>
                         <Col md='3' style={{marginRight: '-45px', color: '#043f7c', marginTop: '8px'}}>
-                            <Button variant='primary' style={{ borderRadius: '20px', backgroundColor: '#6dcff6', fontSize: '12px'}} type="submit"> View Coverage </Button>
+                            <Button variant='primary' style={{ borderRadius: '20px', backgroundColor: '#043f7c', fontSize: '12px'}} type="submit"> View Coverage </Button>
                         </Col>
                         <Col style={{marginTop: '12px'}} classNamexx='float-right' md='3' >NGN 16,990</Col>
                     </Row>
@@ -56,7 +56,7 @@ class MotorInsuranceTabContent extends Component {
                             <span style={{fontSize: '14px'}}>Third Party Insurance</span>
                         </Col>
                         <Col md='3' style={{marginRight: '-45px', color: '#043f7c', marginTop: '8px'}}>
-                            <Button variant='primary' style={{ borderRadius: '20px', backgroundColor: '#6dcff6', fontSize: '12px'}} type="submit"> View Coverage </Button>
+                            <Button variant='primary' style={{ borderRadius: '20px', backgroundColor: '#043f7c', fontSize: '12px'}} type="submit"> View Coverage </Button>
                         </Col>
                         <Col style={{marginTop: '12px'}} classNamexx='float-right' md='3' >NGN 16,990</Col>
                     </Row>

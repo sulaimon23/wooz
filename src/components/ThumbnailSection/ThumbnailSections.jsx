@@ -119,7 +119,8 @@ class ThumbnailSections extends Component {
                                     <Card.Body>
                                         <Card.Title style={{fontSize: 15, marginTop: '10px'}}>
                                             <img src={woozeee} style={{width: '30px'}} alt=""/> 
-                                            &nbsp; Socials
+                                            &nbsp;
+                                            <a style={{textDecoration: 'none'}} href="https://woozeee-broadcast.vercel.app/lives" target='_blank'>Socials</a>
                                         </Card.Title>
                                     </Card.Body>
                                 </Card>
