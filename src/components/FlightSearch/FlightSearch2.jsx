@@ -29,6 +29,9 @@ class FlightSearch2 extends Component {
                 <br/>
                 <br/> */}
                 {/* <FlightSearchTabFormSection /> */}
+                {/* <Col sm={2} className='mb-4' stylexx={{marginTop: '117px'}} className='mb-4'>
+                    <Button href='/' style={{ borderRadius: '20px', fontSize: '12px' }} variant="dark"><i className="fa fa-arrow-left"></i> &nbsp; Back</Button>
+                </Col> */}
                 <FlightSearchMultiStepper />
                 <br/>
                 {/* <FormCardSection /> */}

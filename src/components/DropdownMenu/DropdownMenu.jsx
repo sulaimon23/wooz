@@ -15,7 +15,7 @@ class DropdownMenu extends Component {
           <div className="d-none d-lg-block dropdownmenucontent">
             <div class="row">
               <div class="column">
-                <h6 style={{color: 'white'}}><b>Money Matter</b></h6>
+                <h6 style={{color: 'white'}}><b>Money Matters</b></h6>
                 <a href="#">Savings and loans</a>
                 <a href="#">Insurance</a>
                 <a href="#">Wallet</a>
@@ -32,8 +32,8 @@ class DropdownMenu extends Component {
                 <h6 style={{color: 'white'}}><b>On The Go</b></h6>
                 <a href="#">Flight</a>
                 <a href="#">Bus</a>
-                <a href="#">Ferry</a>
                 <a href="#">Train</a>
+                <a href="#">Ferry</a>
               </div>
               <div className="column">
                 <h6 style={{color: 'white'}}><b>Click &amp; Play</b></h6>
@@ -46,8 +46,8 @@ class DropdownMenu extends Component {
                 <h6 style={{color: 'white'}}><b>Bill Pay</b></h6>
                 <a href="#">Airtime</a>
                 <a href="#">Data</a>
-                <a href="#">Electricity</a>
                 <a href="#">Cable TV</a>
+                <a href="#">Electricity</a>
                 <a href="#">Internet</a>
               </div>
               <div className="column">

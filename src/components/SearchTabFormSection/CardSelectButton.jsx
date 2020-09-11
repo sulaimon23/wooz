@@ -40,6 +40,7 @@ import cabinbagimg from '../../assets/img/icons/cabinbag.png'
 import infoimg from '../../assets/img/icons/info.png'
 import airpeaceimg from '../../assets/img/icons/flightbrands/airpeace.png'
 import ToggleButton from '@material-ui/lab/ToggleButton';
+import './ButtonCard.css'
 
 const useStyles = makeStyles({
   root: {
@@ -56,6 +57,11 @@ const useStyles = makeStyles({
   pos: {
     marginBottom: 12,
   },
+  cardd: {
+    "&:hover": {
+        background: "#efefef"
+      }
+  }
 });
 
 export default function OutlinedCard() {
@@ -78,8 +84,8 @@ export default function OutlinedCard() {
         </Row> */}
         <hr className='mb-4' style={{color: '#043f7c'}}/>
         <Row style={{ padding: '10px', marginBottom: '10px', marginTop: '20px', marginLeft: '0px', marginRight: '0px'}}>
-            <Col md={4} className='mb-4'>
-                <Card className={classes.root} variant="outlined" style={{padding: '20px'}}>
+            <Col md={4} className='mb-4 MuiToggleButton-root'>
+                <Card classNamexx={classes.root} className='' variant="outlined" style={{padding: '20px', focus: 'blue', cursor: 'pointer', backgroundColor: 'rgb(222, 235, 249)'}}>
                     <CardContent>
                         <Typography variant="h5" component="h2">
                             First Class
@@ -102,8 +108,8 @@ export default function OutlinedCard() {
                     </CardContent>
                 </Card>
             </Col>
-            <Col md={4} className='mb-4'>
-                <Card className={classes.root} variant="outlined" style={{padding: '20px'}}>
+            <Col md={4} className='mb-4 MuiToggleButton-root'>
+                <Card classNamexx={classes.root} className='' variant="outlined" style={{padding: '20px'}}>
                     <CardContent>
                         <Typography variant="h5" component="h2">
                             Business Class

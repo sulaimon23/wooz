@@ -57,45 +57,169 @@ function OnTheGoTabForm() {
         <div fluid>
             <Container style={{backgroundColor: '#043f7c', paddingTop: '20px'}} direction='row' fluid>
                 <Card style={{backgroundColor: 'transparent', border: 'none'}}>
-                    <Card.Body>
-                        <Form noValidate validated={validated} onSubmit={handleSubmit} stylex={{marginTop: '14px', height: '55px'}}>
-                            <Form.Row stylex={{backgroundColor: '#043f7c', width: '100%', paddingTop: '20px'}}>
-                                <InputGroup className="mb-4" as={Col} md="3" >
-                                    <InputGroup.Prepend>
-                                        <InputGroup.Text>
-                                        <i class='fa fa-map-marker'></i>
-                                        </InputGroup.Text>
-                                    </InputGroup.Prepend>
-                                    {/* <fromdata /> */}
-                                    <FormControl style={{borderTopRightRadius: '4px', borderBottomRightRadius: '4px'}} id="inlineFormInputGroup" placeholder="From:" required type='text' defaultValue='Murtala Mohammed Airport' />
-                                    <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
-                                </InputGroup>
-                                <InputGroup className="mb-4" as={Col} md="3" >
-                                    <InputGroup.Prepend>
-                                        <InputGroup.Text>
-                                        <i class='fa fa-map-marker'></i>
-                                        </InputGroup.Text>
-                                    </InputGroup.Prepend>
-                                    <FormControl style={{borderTopRightRadius: '4px', borderBottomRightRadius: '4px'}} id="inlineFormInputGroup" placeholder="To:" required type='text' defaultValue='London, England' />
-                                    <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
-                                </InputGroup>
-                                <Form.Group as={Col} md="3" controlId="validationCustom02">
-                                    <InputGroup >
-                                        <FormControl placeholder='Depature Date' />
-                                        <FormControl placeholder='+ Add Return' />
-                                    </InputGroup>
-                                    <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
-                                </Form.Group>
-                                <Form.Group as={Col} md="2" controlId="validationCustom02">
-                                    {/* <Form.Label>Residential Address <span style={{color: 'red'}}>*</span></Form.Label> */}
-                                    <Form.Control required type="text" placeholder="Passengers" defaultValuexx="Mark" />
-                                    <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
-                                </Form.Group>
-                                <Form.Group as={Col} md="1">
-                                    <Button href='onthego/flightsearch' variant='danger' style={{width: '100%'}} type="submit"> Search </Button>
-                                </Form.Group>
-                            </Form.Row>
-                        </Form>
+                    <Card.Body stylexx={{marginTop: '-103px'}}>
+                        <Tabs style={{  backgroundColor: '#043f7c', width: '52.4%', heightx: '50px', marginTop: '-81px', borderBottom: '-1px', borderTop: 'none', borderColor: 'none',  marginLeft: '-20px' , borderTopLeftRadius: '5px', borderTopRightRadius: '5px'}} defaultActiveKey="flights" transition={false} id="noanim-tab-example">
+                            <Tab style={{divStyle}} src={FlightIcon} eventKey='flights' title='Flight'>
+                                <Form noValidate validated={validated} onSubmit={handleSubmit} style={{marginTop: '44px', height: '55px'}}>
+                                    <Form.Row stylex={{backgroundColor: '#043f7c', width: '100%', paddingTop: '20px'}}>
+                                        <InputGroup className="mb-4" as={Col} md="3" >
+                                            <InputGroup.Prepend>
+                                                <InputGroup.Text>
+                                                <i class='fa fa-map-marker'></i>
+                                                </InputGroup.Text>
+                                            </InputGroup.Prepend>
+                                            {/* <fromdata /> */}
+                                            <FormControl style={{borderTopRightRadius: '4px', borderBottomRightRadius: '4px'}} id="inlineFormInputGroup" placeholder="From:" required type='text' defaultValue='Murtala Mohammed Airport' />
+                                            <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
+                                        </InputGroup>
+                                        <InputGroup className="mb-4" as={Col} md="3" >
+                                            <InputGroup.Prepend>
+                                                <InputGroup.Text>
+                                                <i class='fa fa-map-marker'></i>
+                                                </InputGroup.Text>
+                                            </InputGroup.Prepend>
+                                            <FormControl style={{borderTopRightRadius: '4px', borderBottomRightRadius: '4px'}} id="inlineFormInputGroup" placeholder="To:" required type='text' defaultValue='London, England' />
+                                            <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
+                                        </InputGroup>
+                                        <Form.Group as={Col} md="3" controlId="validationCustom02">
+                                            <InputGroup >
+                                                <FormControl placeholder='Depature Date' />
+                                                <FormControl placeholder='+ Add Return' />
+                                            </InputGroup>
+                                            <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
+                                        </Form.Group>
+                                        <Form.Group as={Col} md="2" controlId="validationCustom02">
+                                            {/* <Form.Label>Residential Address <span style={{color: 'red'}}>*</span></Form.Label> */}
+                                            <Form.Control required type="text" placeholder="Passengers" defaultValuexx="Mark" />
+                                            <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
+                                        </Form.Group>
+                                        <Form.Group as={Col} md="1">
+                                            <Button href='onthego/flightsearch' variant='danger' style={{width: '100%'}} type="submit"> Search </Button>
+                                        </Form.Group>
+                                    </Form.Row>
+                                </Form>
+                            </Tab>
+                            <Tab style={{divStyle}} src={FlightIcon} eventKey='buses' title='Buses'>
+                                <Form noValidate validated={validated} onSubmit={handleSubmit} style={{marginTop: '44px', height: '55px'}}>
+                                    <Form.Row stylex={{backgroundColor: '#043f7c', width: '100%', paddingTop: '20px'}}>
+                                        <InputGroup className="mb-4" as={Col} md="3" >
+                                            <InputGroup.Prepend>
+                                                <InputGroup.Text>
+                                                <i class='fa fa-map-marker'></i>
+                                                </InputGroup.Text>
+                                            </InputGroup.Prepend>
+                                            {/* <fromdata /> */}
+                                            <FormControl style={{borderTopRightRadius: '4px', borderBottomRightRadius: '4px'}} id="inlineFormInputGroup" placeholder="From:" required type='text' defaultValue='Murtala Mohammed Airport' />
+                                            <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
+                                        </InputGroup>
+                                        <InputGroup className="mb-4" as={Col} md="3" >
+                                            <InputGroup.Prepend>
+                                                <InputGroup.Text>
+                                                <i class='fa fa-map-marker'></i>
+                                                </InputGroup.Text>
+                                            </InputGroup.Prepend>
+                                            <FormControl style={{borderTopRightRadius: '4px', borderBottomRightRadius: '4px'}} id="inlineFormInputGroup" placeholder="To:" required type='text' defaultValue='London, England' />
+                                            <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
+                                        </InputGroup>
+                                        <Form.Group as={Col} md="3" controlId="validationCustom02">
+                                            <InputGroup >
+                                                <FormControl placeholder='Depature Date' />
+                                                <FormControl placeholder='+ Add Return' />
+                                            </InputGroup>
+                                            <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
+                                        </Form.Group>
+                                        <Form.Group as={Col} md="2" controlId="validationCustom02">
+                                            {/* <Form.Label>Residential Address <span style={{color: 'red'}}>*</span></Form.Label> */}
+                                            <Form.Control required type="text" placeholder="Passengers" defaultValuexx="Mark" />
+                                            <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
+                                        </Form.Group>
+                                        <Form.Group as={Col} md="1">
+                                            <Button href='onthego/flightsearch' variant='danger' style={{width: '100%'}} type="submit"> Search </Button>
+                                        </Form.Group>
+                                    </Form.Row>
+                                </Form>
+                            </Tab>
+                            <Tab style={{divStyle}} src={FlightIcon} eventKey='ferries' title='Ferries'>
+                                <Form noValidate validated={validated} onSubmit={handleSubmit} style={{marginTop: '44px', height: '55px'}}>
+                                    <Form.Row stylex={{backgroundColor: '#043f7c', width: '100%', paddingTop: '20px'}}>
+                                        <InputGroup className="mb-4" as={Col} md="3" >
+                                            <InputGroup.Prepend>
+                                                <InputGroup.Text>
+                                                <i class='fa fa-map-marker'></i>
+                                                </InputGroup.Text>
+                                            </InputGroup.Prepend>
+                                            {/* <fromdata /> */}
+                                            <FormControl style={{borderTopRightRadius: '4px', borderBottomRightRadius: '4px'}} id="inlineFormInputGroup" placeholder="From:" required type='text' defaultValue='Murtala Mohammed Airport' />
+                                            <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
+                                        </InputGroup>
+                                        <InputGroup className="mb-4" as={Col} md="3" >
+                                            <InputGroup.Prepend>
+                                                <InputGroup.Text>
+                                                <i class='fa fa-map-marker'></i>
+                                                </InputGroup.Text>
+                                            </InputGroup.Prepend>
+                                            <FormControl style={{borderTopRightRadius: '4px', borderBottomRightRadius: '4px'}} id="inlineFormInputGroup" placeholder="To:" required type='text' defaultValue='London, England' />
+                                            <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
+                                        </InputGroup>
+                                        <Form.Group as={Col} md="3" controlId="validationCustom02">
+                                            <InputGroup >
+                                                <FormControl placeholder='Depature Date' />
+                                                <FormControl placeholder='+ Add Return' />
+                                            </InputGroup>
+                                            <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
+                                        </Form.Group>
+                                        <Form.Group as={Col} md="2" controlId="validationCustom02">
+                                            {/* <Form.Label>Residential Address <span style={{color: 'red'}}>*</span></Form.Label> */}
+                                            <Form.Control required type="text" placeholder="Passengers" defaultValuexx="Mark" />
+                                            <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
+                                        </Form.Group>
+                                        <Form.Group as={Col} md="1">
+                                            <Button href='onthego/flightsearch' variant='danger' style={{width: '100%'}} type="submit"> Search </Button>
+                                        </Form.Group>
+                                    </Form.Row>
+                                </Form>
+                            </Tab>
+                            <Tab style={{divStyle}} src={FlightIcon} eventKey='trains' title='Trains'>
+                                <Form noValidate validated={validated} onSubmit={handleSubmit} style={{marginTop: '44px', height: '55px'}}>
+                                    <Form.Row stylex={{backgroundColor: '#043f7c', width: '100%', paddingTop: '20px'}}>
+                                        <InputGroup className="mb-4" as={Col} md="3" >
+                                            <InputGroup.Prepend>
+                                                <InputGroup.Text>
+                                                <i class='fa fa-map-marker'></i>
+                                                </InputGroup.Text>
+                                            </InputGroup.Prepend>
+                                            {/* <fromdata /> */}
+                                            <FormControl style={{borderTopRightRadius: '4px', borderBottomRightRadius: '4px'}} id="inlineFormInputGroup" placeholder="From:" required type='text' defaultValue='Murtala Mohammed Airport' />
+                                            <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
+                                        </InputGroup>
+                                        <InputGroup className="mb-4" as={Col} md="3" >
+                                            <InputGroup.Prepend>
+                                                <InputGroup.Text>
+                                                <i class='fa fa-map-marker'></i>
+                                                </InputGroup.Text>
+                                            </InputGroup.Prepend>
+                                            <FormControl style={{borderTopRightRadius: '4px', borderBottomRightRadius: '4px'}} id="inlineFormInputGroup" placeholder="To:" required type='text' defaultValue='London, England' />
+                                            <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
+                                        </InputGroup>
+                                        <Form.Group as={Col} md="3" controlId="validationCustom02">
+                                            <InputGroup >
+                                                <FormControl placeholder='Depature Date' />
+                                                <FormControl placeholder='+ Add Return' />
+                                            </InputGroup>
+                                            <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
+                                        </Form.Group>
+                                        <Form.Group as={Col} md="2" controlId="validationCustom02">
+                                            {/* <Form.Label>Residential Address <span style={{color: 'red'}}>*</span></Form.Label> */}
+                                            <Form.Control required type="text" placeholder="Passengers" defaultValuexx="Mark" />
+                                            <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
+                                        </Form.Group>
+                                        <Form.Group as={Col} md="1">
+                                            <Button href='onthego/flightsearch' variant='danger' style={{width: '100%'}} type="submit"> Search </Button>
+                                        </Form.Group>
+                                    </Form.Row>
+                                </Form>
+                            </Tab>
+                        </Tabs>
                     </Card.Body>
                 </Card>
             </Container>

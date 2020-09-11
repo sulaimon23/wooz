@@ -1,4 +1,5 @@
 import React from 'react';
+import { Jumbotron, Container, Row, Col, Image, Breadcrumb, Card } from 'react-bootstrap';
 import { makeStyles } from '@material-ui/core/styles';
 import Stepper from '@material-ui/core/Stepper';
 import Step from '@material-ui/core/Step';
@@ -50,6 +51,7 @@ function getStepContent(stepIndex) {
         default:
             return 'Error Unknown';
     }
+    
 }
 
 export default function HorizontalLabelPositionBelowStepper() {
@@ -71,6 +73,7 @@ export default function HorizontalLabelPositionBelowStepper() {
 
     return (
         <div className={classes.root}>
+          
             <Stepper style={{backgroundColor: 'transparent'}} activeStep={activeStep} alternativeLabelxx>
                 {steps.map((label) => (
                 <Step key={label}>
@@ -79,6 +82,7 @@ export default function HorizontalLabelPositionBelowStepper() {
                 ))}
             </Stepper>
             <div>
+              
                 {activeStep === steps.length ? (
                     <div>
                         <Typography className={classes.instructions}>All steps completed</Typography>
@@ -89,6 +93,9 @@ export default function HorizontalLabelPositionBelowStepper() {
                 <Typography className={classes.instructions}>{getStepContent(activeStep)}</Typography>
                 <div style={{textAlign: 'center'}}>
                   {/* <Button disabled={activeStep === 0} onClick={handleBack} className={classes.backButton} > Back </Button> */}
+                  {/* <Col sm={2} className='mb-4' stylex={{marginTop: '117px'}} className='mb-4'>
+                    <Button href='/' style={{ borderRadius: '20px', fontSize: '12px' }} variant="secondary"><i className="fa fa-arrow-left"></i> &nbsp; Back</Button>
+                  </Col> */}
                   <Button style={{backgroundColor: '#343a40', color: '#ffffff'}} disabled={activeStep === 0} onClick={handleBack} className={classes.backButton} > Back </Button>
                   <Button variant="contained" color="primary" onClick={handleNext}> {activeStep === steps.length - 1 ? 'Finish' : 'Next'} </Button>
                 </div>
