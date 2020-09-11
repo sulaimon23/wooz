@@ -9,6 +9,7 @@ import clickandshop from '../../assets/img/icons/home/click-shop-w.png'
 import clickandplay from '../../assets/img/icons/home/click-play-w.png'
 import moneymatters from '../../assets/img/icons/home/money-matters-w.png'
 import dispatch from '../../assets/img/icons/home/dispatch-w.png'
+import lineimg from '../../assets/img/icons/line.png'
 // import slider3 from '../../assets/img/slider/3.jpg'
 import LikeButton from '../LikeButton/LikeButton'
 
@@ -18,7 +19,16 @@ class DealsSections extends Component {
             <div>
                 {/* <Container className='' style={{ maxWidth: '100%'}}> */}
                     <Col lg={12}>
-                        <p>Deals of The Day</p>
+                        <Row>
+                            <Col md='10' align='left' style={{color: '#043f7c'}}>
+                                <span style={{color: '#000000', fontSize: '17px'}}> <Image src={lineimg} alt=""/> &nbsp; <b>Deals of The Day</b> </span>
+                            </Col>
+                            <Col md='2' align='right' style={{color: '#043f7c'}}>
+                                <Button style={{borderRadius: '100px', fontSize: '12px', marginTop: '-5px'}} size="sm" variant="outline-danger">View More <i class='fa fa-arrow-right'></i> </Button>{' '}
+                            </Col>
+                        </Row>
+                        
+                        {/* <p> Deals of The Day</p> */}
                         <hr/>
                         <CardDeck>
                             {/* on the go */}
@@ -60,8 +70,8 @@ class DealsSections extends Component {
                                         </Card.Footer>
                                     </Col>
                                     <Col sm='6'>
-                                        <Card.Footer style={{textAlign: 'center', backgroundColor: 'red', left: '-50px', borderBottomRightRadius: '5px', borderBottomLeftRadius: '0px', xxborderRadius: '0px'}}>
-                                            <small style={{ color: 'white' }}>Book Now</small>
+                                        <Card.Footer style={{textAlign: 'center', backgroundColor: '#ff5757', left: '-50px', borderBottomRightRadius: '5px', borderBottomLeftRadius: '0px', xxborderRadius: '0px'}}>
+                                            <small style={{ color: 'white' }}> <b>Book Now</b> </small>
                                         </Card.Footer>
                                     </Col>
                                 </Row>
@@ -96,8 +106,8 @@ class DealsSections extends Component {
                                         </Card.Footer>
                                     </Col>
                                     <Col sm='6'>
-                                        <Card.Footer style={{textAlign: 'center', backgroundColor: 'red', borderRadius: '0px'}}>
-                                            <small style={{ color: 'white' }}>Book Now</small>
+                                    <Card.Footer style={{textAlign: 'center', backgroundColor: '#ff5757', left: '-50px', borderBottomRightRadius: '5px', borderBottomLeftRadius: '0px', xxborderRadius: '0px'}}>
+                                            <small style={{ color: 'white' }}>Buy Now</small>
                                         </Card.Footer>
                                     </Col>
                                 </Row>
@@ -129,8 +139,8 @@ class DealsSections extends Component {
                                         </Card.Footer>
                                     </Col>
                                     <Col sm='6'>
-                                        <Card.Footer style={{textAlign: 'center', backgroundColor: 'red', borderRadius: '0px'}}>
-                                            <small style={{ color: 'white' }}>Book Now</small>
+                                    <Card.Footer style={{textAlign: 'center', backgroundColor: '#ff5757', left: '-50px', borderBottomRightRadius: '5px', borderBottomLeftRadius: '0px', xxborderRadius: '0px'}}>
+                                            <small style={{ color: 'white' }}>Bet Now</small>
                                         </Card.Footer>
                                     </Col>
                                 </Row>
@@ -162,7 +172,7 @@ class DealsSections extends Component {
                                         </Card.Footer>
                                     </Col>
                                     <Col sm='6'>
-                                        <Card.Footer style={{textAlign: 'center', backgroundColor: 'red', borderRadius: '0px'}}>
+                                        <Card.Footer style={{textAlign: 'center', backgroundColor: '#ff5757', left: '-50px', borderBottomRightRadius: '5px', borderBottomLeftRadius: '0px', xxborderRadius: '0px'}}>
                                             <small style={{ color: 'white' }}>Book Now</small>
                                         </Card.Footer>
                                     </Col>
@@ -195,7 +205,7 @@ class DealsSections extends Component {
                                         </Card.Footer>
                                     </Col>
                                     <Col sm='6'>
-                                        <Card.Footer style={{textAlign: 'center', backgroundColor: 'red', borderRadius: '0px'}}>
+                                        <Card.Footer style={{textAlign: 'center', backgroundColor: '#ff5757', left: '-50px', borderBottomRightRadius: '5px', borderBottomLeftRadius: '0px', xxborderRadius: '0px'}}>
                                             <small style={{ color: 'white' }}>Book Now</small>
                                         </Card.Footer>
                                     </Col>

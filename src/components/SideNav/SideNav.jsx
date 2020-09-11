@@ -133,8 +133,8 @@ export default (props) => {
         <img src={mybank} style={{width: '25px'}} alt=""/> &nbsp;&nbsp; My Bank
       </a>
       {/* <hr/> */}
-      <a className="menu-item" href="utilities">
-        <img src={billpay} style={{width: '25px'}} alt=""/> &nbsp;&nbsp; Pay Bills
+      <a className="menu-item" href="/utilities">
+        <img src={billpay} style={{width: '25px'}} alt=""/> &nbsp;&nbsp; Bill Pay
       </a>
       {/* <hr/> */}
       <a className="menu-item" href="/services">

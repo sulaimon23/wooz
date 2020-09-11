@@ -11,6 +11,7 @@ import moneymatters from '../../assets/img/icons/home/money-matters-w.png'
 import utilities from '../../assets/img/icons/home/utilities-w.png'
 import askdoc from '../../assets/img/icons/home/ask-doc-w.png'
 import LikeButton from '../LikeButton/LikeButton'
+import lineimg from '../../assets/img/icons/line.png'
 
 class FlashSalesSections extends Component {
     render() {
@@ -18,7 +19,14 @@ class FlashSalesSections extends Component {
             <div>
                 {/* <Container className='' style={{ maxWidth: '100%'}}> */}
                     <Col lg={12}>
-                        <p>Flash Sales <Badge variant="success">New</Badge></p>
+                        <Row>
+                            <Col md='10' align='left' style={{color: '#043f7c'}}>
+                                <span style={{color: '#000000'}}> <Image src={lineimg} alt=""/> &nbsp; Flash Sales <Badge variant="success">New</Badge></span>
+                            </Col>
+                            <Col md='2' align='right' style={{color: '#043f7c'}}>
+                                <Button style={{borderRadius: '100px', fontSize: '12px', marginTop: '-5px'}} size="sm" variant="outline-danger">View More <i class='fa fa-arrow-right'></i> </Button>{' '}
+                            </Col>
+                        </Row>
                         <hr/>
                         <CardDeck>
                             <Card style={{height: '-webkit-min-content', boxShadow: '7px 3px 10px #e1e1e1', border: 'none'}}>
@@ -59,7 +67,7 @@ class FlashSalesSections extends Component {
                                         </Card.Footer>
                                     </Col>
                                     <Col sm='6'>
-                                        <Card.Footer style={{textAlign: 'center', backgroundColor: 'red', borderRadius: '0px'}}>
+                                        <Card.Footer style={{textAlign: 'center', backgroundColor: '#ff5757', left: '-50px', borderBottomRightRadius: '5px', borderBottomLeftRadius: '0px', xxborderRadius: '0px'}}>
                                             <small style={{ color: 'white' }}>Book Now</small>
                                         </Card.Footer>
                                     </Col>
@@ -89,7 +97,7 @@ class FlashSalesSections extends Component {
                                         </Card.Footer>
                                     </Col>
                                     <Col sm='6'>
-                                        <Card.Footer style={{textAlign: 'center', backgroundColor: 'red', borderRadius: '0px'}}>
+                                        <Card.Footer style={{textAlign: 'center', backgroundColor: '#ff5757', left: '-50px', borderBottomRightRadius: '5px', borderBottomLeftRadius: '0px', xxborderRadius: '0px'}}>
                                             <small style={{ color: 'white' }}>Buy Now</small>
                                         </Card.Footer>
                                     </Col>
@@ -119,7 +127,7 @@ class FlashSalesSections extends Component {
                                         </Card.Footer>
                                     </Col>
                                     <Col sm='6'>
-                                        <Card.Footer style={{textAlign: 'center', backgroundColor: 'red', borderRadius: '0px'}}>
+                                        <Card.Footer style={{textAlign: 'center', backgroundColor: '#ff5757', left: '-50px', borderBottomRightRadius: '5px', borderBottomLeftRadius: '0px', xxborderRadius: '0px'}}>
                                             <small style={{ color: 'white' }}>Activate Now</small>
                                         </Card.Footer>
                                     </Col>
@@ -149,7 +157,7 @@ class FlashSalesSections extends Component {
                                         </Card.Footer>
                                     </Col>
                                     <Col sm='6'>
-                                        <Card.Footer style={{textAlign: 'center', backgroundColor: 'red', borderRadius: '0px'}}>
+                                        <Card.Footer style={{textAlign: 'center', backgroundColor: '#ff5757', left: '-50px', borderBottomRightRadius: '5px', borderBottomLeftRadius: '0px', xxborderRadius: '0px'}}>
                                             <small style={{ color: 'white' }}>Apply Now</small>
                                         </Card.Footer>
                                     </Col>
@@ -179,7 +187,7 @@ class FlashSalesSections extends Component {
                                         </Card.Footer>
                                     </Col>
                                     <Col sm='6'>
-                                        <Card.Footer style={{textAlign: 'center', backgroundColor: 'red', borderRadius: '0px'}}>
+                                        <Card.Footer style={{textAlign: 'center', backgroundColor: '#ff5757', left: '-50px', borderBottomRightRadius: '5px', borderBottomLeftRadius: '0px', xxborderRadius: '0px'}}>
                                             <small style={{ color: 'white' }}>Buy Now</small>
                                         </Card.Footer>
                                     </Col>
