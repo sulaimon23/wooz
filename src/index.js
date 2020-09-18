@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import CustomNavbar from './components/CustomNavbar';
+// import CustomNavbar from './components/CustomNavbar';
 import * as serviceWorker from './serviceWorker';
 // import '../node_modules/font-awesome/css/font-awesome.min.css';
 import 'font-awesome/css/font-awesome.min.css';

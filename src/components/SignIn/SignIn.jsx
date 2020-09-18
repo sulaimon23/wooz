@@ -33,7 +33,7 @@ import React, { Component, useState, select, Switch } from 'react';
 import axios from '../../config/axios';
 
 import '../../assets/plugins/nucleo/css/nucleo.css';
-import '@fortawesome/fontawesome-free/css/all.min.css';
+// import '../ForgotPassword/node_modules/@fortawesome/fontawesome-free/css/all.min.css';
 // import "../assets/scss/argon-dashboard-react.scss";
 // import '../../assets/css/argon-dashboard-react.css'
 
@@ -56,6 +56,7 @@ import {
     // Row,
     Col,
 } from 'reactstrap';
+import FooterSection from '../FooterSection/FooterSection';
 
 class SignIn extends React.Component {
     handleLogin = () => {
@@ -85,15 +86,15 @@ class SignIn extends React.Component {
     render() {
         return (
             <div
-                style={{ backgroundColor: '#043f7c', backgroundSize: 'cover' }}>
+                style={{ backgroundColorx: '#043f7c', backgroundSize: 'cover' }}>
                 <Container
                     className=""
                     style={{
                         display: 'flex',
                         justifyContent: 'center',
                         alignItems: 'center',
-                        margin: '0 auto',
-                        height: '100vh',
+                        // margin: '0 auto',
+                        height: '50vh',
                         width: '150vh',
                         // backgroundColor: '#043f7c',
                         // backgroundSize: 'cover',
@@ -102,22 +103,21 @@ class SignIn extends React.Component {
                     }}>
                     <Col lg="4" md="7">
                         <Card className="bg-light shadow border-0">
-                            <CardHeader className="bg-transparent pb-5">
-                                {/* <div className="text-muted text-center mt-2 mb-3">
-                                <small>Sign in with</small>
-                            </div> */}
+                            {/* <CardHeader className="bg-transparent pb-5">
                                 <div className="btn-wrapper text-center">
                                     <br />
-                                    <img
-                                        width="200px"
-                                        alt="..."
-                                        src={require('../../assets/img/woozeee.png')}
-                                    />
+                                    <a href="/">
+                                        <img
+                                            width="200px"
+                                            alt="..."
+                                            src={require('../../assets/img/woozeee.png')}
+                                        />
+                                    </a>
                                 </div>
-                            </CardHeader>
+                            </CardHeader> */}
                             <CardBody className="px-lg-5 py-lg-5">
                                 <div className="text-center text-muted mb-4">
-                                    <small style={{ color: '#000000' }}>
+                                    <small style={{ color: '#000000', fontSize: '15px' }}>
                                         Sign in with credentials
                                     </small>
                                 </div>
@@ -171,22 +171,25 @@ class SignIn extends React.Component {
                             <Col xs="6">
                                 <a
                                     className="text-light"
-                                    href="#pablo"
-                                    onClick={(e) => e.preventDefault()}>
-                                    <small>Forgot password?</small>
+                                    href="/forgotpassword"
+                                    // onClick={(e) => e.preventDefault()}
+                                    >
+                                    <small style={{color: '#043f7c'}}>Forgot password?</small>
                                 </a>
                             </Col>
                             <Col className="text-right" xs="6">
                                 <a
                                     className="text-light"
-                                    href="#pablo"
-                                    onClick={(e) => e.preventDefault()}>
-                                    <small>Create new account</small>
+                                    href="/signup"
+                                    // onClick={(e) => e.preventDefault()}
+                                    >
+                                    <small style={{color: '#043f7c'}}>Create new account</small>
                                 </a>
                             </Col>
                         </Row>
                     </Col>
                 </Container>
+                <FooterSection />
             </div>
         );
     }

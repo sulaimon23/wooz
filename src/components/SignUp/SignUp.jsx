@@ -1,22 +1,26 @@
 import React, { Component, useState, select, Switch } from 'react';
+
 import {
-    Jumbotron,
-    Container,
-    Row,
-    Col,
-    Image,
     Button,
-    ButtonGroup,
+    Row,
     Card,
+    CardHeader,
+    CardBody,
+    Container,
+    FormGroup,
     Form,
+    Input,
+    InputGroupAddon,
+    InputGroupText,
     InputGroup,
-    FormControl,
-    FormCheck,
-} from 'react-bootstrap';
+    // Row,
+    Col,
+} from 'reactstrap';
 import * as Formik from 'formik';
 import axios from '../../config/axios';
 
 import * as Yup from 'yup';
+import FooterSection from '../FooterSection/FooterSection';
 
 const SignupSchema = Yup.object().shape({});
 
@@ -54,164 +58,175 @@ function SignUp() {
 
     return (
         <div
-            style={{
-                display: 'flex',
-                justifyContent: 'center',
-                alignItems: 'center',
-                marginTop: '150px',
-            }}>
-            <Card style={{ padding: '30px' }}>
-                <Form noValidate validated={validated} onSubmit={handleSubmit}>
-                    <Form.Row>
-                        <Form.Group
-                            as={Col}
-                            md="6"
-                            controlId="validationCustom01">
-                            <Form.Label>
-                                {' '}
-                                <h6>First name</h6>{' '}
-                            </Form.Label>
-                            <Form.Control
-                                onChange={(event) =>
-                                    setFirstName(event.target.value)
-                                }
-                                required
-                                type="text"
-                                placeholder="First name"
-                                defaultValue={firstName}
-                            />
-                            <Form.Control.Feedback>
-                                Looks good!
-                            </Form.Control.Feedback>
-                        </Form.Group>
-                        <Form.Group
-                            as={Col}
-                            md="6"
-                            controlId="validationCustom02">
-                            <Form.Label>
-                                {' '}
-                                <h6>Last name</h6>{' '}
-                            </Form.Label>
-                            <Form.Control
-                                onChange={(event) =>
-                                    setLastName(event.target.value)
-                                }
-                                required
-                                type="text"
-                                placeholder="Last name"
-                                defaultValue={lastName}
-                            />
-                            <Form.Control.Feedback>
-                                Looks good!
-                            </Form.Control.Feedback>
-                        </Form.Group>
-                        <Form.Group
-                            as={Col}
-                            md="6"
-                            controlId="validationCustomUsername">
-                            <Form.Label>
-                                {' '}
-                                <h6>email</h6>{' '}
-                            </Form.Label>
-                            <InputGroup>
-                                <InputGroup.Prepend>
-                                    <InputGroup.Text id="inputGroupPrepend">
-                                        @
-                                    </InputGroup.Text>
-                                </InputGroup.Prepend>
-                                <Form.Control
-                                    onChange={(event) =>
-                                        setEmail(event.target.value)
-                                    }
-                                    type="email"
-                                    // placeholder="email"
-                                    aria-describedby="inputGroupPrepend"
-                                    required
-                                    defaultValue={email}
-                                />
-                                <Form.Control.Feedback type="invalid">
-                                    Please enter a valid email.
-                                </Form.Control.Feedback>
-                            </InputGroup>
-                        </Form.Group>
-                        <Form.Group
-                            as={Col}
-                            md="6"
-                            controlId="validationCustom03">
-                            <Form.Label>
-                                {' '}
-                                <h6>Phone</h6>{' '}
-                            </Form.Label>
-                            <Form.Control
-                                onChange={(event) =>
-                                    setPhone(event.target.value)
-                                }
-                                type="tel"
-                                // placeholder="+2347060460216"
-                                required
-                                defaultValue={phone}
-                            />
-                            <Form.Control.Feedback type="invalid">
-                                Please enter a valid phone number.
-                            </Form.Control.Feedback>
-                        </Form.Group>
-                    </Form.Row>
-                    <Form.Row>
-                        <Form.Group
-                            as={Col}
-                            md="6"
-                            controlId="validationCustom04">
-                            <Form.Label>
-                                {' '}
-                                <h6>Password</h6>{' '}
-                            </Form.Label>
-                            <Form.Control
-                                onChange={(event) =>
-                                    setPassword(event.target.value)
-                                }
-                                type="password"
-                                // placeholder="•••••••"
-                                required
-                                defaultValue={password}
-                            />
-                            <Form.Control.Feedback type="invalid">
-                                Please provide a valid password.
-                            </Form.Control.Feedback>
-                        </Form.Group>
-                        <Form.Group
-                            as={Col}
-                            md="6"
-                            controlId="validationCustom05">
-                            <Form.Label>
-                                {' '}
-                                <h6>Confirm Password</h6>{' '}
-                            </Form.Label>
-                            <Form.Control
-                                onChange={(event) =>
-                                    setConfirmPassword(event.target.value)
-                                }
-                                // type="password"
-                                // placeholder="•••••••"
-                                required
-                                type="password"
-                                defaultValue={password}
-                            />
-                            <Form.Control.Feedback type="invalid">
-                                Please provide a valid password.
-                            </Form.Control.Feedback>
-                        </Form.Group>
-                    </Form.Row>
-                    {/* <Form.Group>
-                    <Form.Check style={{fontSize: '6px'}}
-                        required
-                        label="Agree to terms and conditions"
-                        feedback="You must agree before submitting."
-                    />
-                </Form.Group> */}
-                    <Button type="submit">Submit</Button>
-                </Form>
-            </Card>
-        </div>
+                style={{ backgroundColorx: '#043f7c', backgroundSize: 'cover' }}>
+                <Container
+                    className=""
+                    style={{
+                        display: 'flex',
+                        justifyContent: 'center',
+                        alignItems: 'center',
+                        margin: '0 auto',
+                        height: '70vh',
+                        width: '150vh',
+                        // backgroundColor: '#043f7c',
+                        // backgroundSize: 'cover',
+                        maxWidth: '100%',
+                        maxWidth: '100%',
+                    }}>
+                    <Col lg="4" md="7">
+                        <Card className="bg-light shadow border-0">
+                            <CardBody className="px-lg-5 py-lg-5">
+                                <div className="text-center text-muted mb-4">
+                                    <small style={{ color: '#000000', fontSize: '15px' }}>
+                                        Sign up with credentials
+                                    </small>
+                                </div>
+                                <Form role="form">
+                                    <FormGroup className="mb-3">
+                                        <InputGroup className="input-group-alternative">
+                                            <InputGroupAddon addonType="prepend">
+                                                <InputGroupText>
+                                                    <i className="fa fa-user" />
+                                                </InputGroupText>
+                                            </InputGroupAddon>
+                                            <Input
+                                            onChange={(event) =>
+                                                setFirstName(event.target.value)
+                                            } required
+                                                placeholder="Firstname"
+                                                type="email"
+                                                autoComplete="new-email"
+                                            />
+                                        </InputGroup>
+                                    </FormGroup>
+                                    <FormGroup className="mb-3">
+                                        <InputGroup className="input-group-alternative">
+                                            <InputGroupAddon addonType="prepend">
+                                                <InputGroupText>
+                                                    <i className="fa fa-user" />
+                                                </InputGroupText>
+                                            </InputGroupAddon>
+                                            <Input
+                                            onChange={(event) =>
+                                                setLastName(event.target.value)
+                                            } required
+                                                placeholder="Lastname"
+                                                type="email"
+                                                autoComplete="new-email"
+                                            />
+                                        </InputGroup>
+                                    </FormGroup>
+                                    <FormGroup className="mb-3">
+                                        <InputGroup className="input-group-alternative">
+                                            <InputGroupAddon addonType="prepend">
+                                                <InputGroupText>
+                                                    <i className="ni ni-email-83" />
+                                                </InputGroupText>
+                                            </InputGroupAddon>
+                                            <Input
+                                            onChange={(event) =>
+                                                setEmail(event.target.value)
+                                            } required
+                                                placeholder="Email"
+                                                type="email"
+                                                autoComplete="new-email"
+                                            />
+                                        </InputGroup>
+                                    </FormGroup>
+                                    <FormGroup>
+                                        <InputGroup className="input-group-alternative">
+                                            <InputGroupAddon addonType="prepend">
+                                                <InputGroupText>
+                                                    <i className="fa fa-phone" />
+                                                </InputGroupText>
+                                            </InputGroupAddon>
+                                            <Input
+                                            onChange={(event) =>
+                                                setPhone(event.target.value)
+                                            }
+                                            required
+                                                placeholder="Phone"
+                                                type="password"
+                                                autoComplete="new-password"
+                                            />
+                                        </InputGroup>
+                                    </FormGroup>
+                                    <FormGroup>
+                                        <InputGroup className="input-group-alternative">
+                                            <InputGroupAddon addonType="prepend">
+                                                <InputGroupText>
+                                                    <i className="ni ni-lock-circle-open" />
+                                                </InputGroupText>
+                                            </InputGroupAddon>
+                                            <Input
+                                            onChange={(event) =>
+                                                setPassword(event.target.value)
+                                            }
+                                            required
+                                                placeholder="Password"
+                                                type="password"
+                                                autoComplete="new-password"
+                                            />
+                                        </InputGroup>
+                                    </FormGroup>
+                                    <FormGroup>
+                                        <InputGroup className="input-group-alternative">
+                                            <InputGroupAddon addonType="prepend">
+                                                <InputGroupText>
+                                                    <i className="ni ni-lock-circle-open" />
+                                                </InputGroupText>
+                                            </InputGroupAddon>
+                                            <Input
+                                            onChange={(event) =>
+                                                setConfirmPassword(event.target.value)
+                                            }
+                                            required
+                                                placeholder="Confirm Password"
+                                                type="password"
+                                                autoComplete="new-password"
+                                            />
+                                        </InputGroup>
+                                    </FormGroup>
+                                    {/* <hr className="text-center" style={{width: '100%', margin: '0 auto'}} /> */}
+                                    <div className="text-center">
+                                        <Button
+                                            style={{
+                                                backgroundColor: '#ff5757',
+                                                width: '100%',
+                                            }}
+                                            // onClick={this.handleLogin}
+                                            className="my-4"
+                                            color="danger"
+                                            type="submit">
+                                            Sign up
+                                        </Button>
+                                    </div>
+                                </Form>
+                            </CardBody>
+                        </Card>
+                        <Row className="mt-3">
+                            {/* <Col xs="6">
+                                <a
+                                    className="text-light"
+                                    href="#pablo"
+                                    onClick={(e) => e.preventDefault()}>
+                                    <small style={{color: '#043f7c'}}>Forgot password?</small>
+                                </a>
+                            </Col> */}
+                            <Col classNamex="text-right" xs="6">
+                                <a
+                                    className="text-light"
+                                    href="/signin"
+                                    // onClick={(e) => e.preventDefault()}
+                                    >
+                                    <small style={{color: '#043f7c'}}>Have an account? <b>signin</b> </small>
+                                </a>
+                            </Col>
+                        </Row>
+                    </Col>
+                </Container>
+                <FooterSection />
+            </div>
     );
 }
 

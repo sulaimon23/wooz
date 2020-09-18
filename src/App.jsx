@@ -10,6 +10,9 @@ import SideNav from './components/SideNav/SideNav'
 import NoMatch from './components/NoMatch';
 import MoneyMatters from './components/MoneyMatters/MoneyMatters';
 import OnTheGo from './components/OnTheGo/OnTheGo';
+import Bus from './components/OnTheGo/Bus/Bus';
+import Ferries from './components/OnTheGo/Ferries/Ferries';
+import Train from './components/OnTheGo/Train/Train';
 import FlightSearch from './components/FlightSearch/FlightSearch';
 import FlightSearch2 from './components/FlightSearch/FlightSearch2';
 import Utilities from './components/Utilities/Utilities';
@@ -20,8 +23,10 @@ import CableTv from './components/Utilities/CableTv/CableTv';
 import Electricity from './components/Utilities/Electricity/Electricity';
 import Internet from './components/Utilities/Internet/Internet';
 import AskDoc from './components/AskDoc/AskDoc';
-// import SignIn from './components/SignIn/SignIn';
-// import SignUp from './components/SignUp/SignUp';
+
+import SignIn from './components/SignIn/SignIn';
+import SignUp from './components/SignUp/SignUp';
+import ForgotPassword from './components/ForgotPassword/ForgotPassword';
 // import { NavbarBrand } from 'react-bootstrap';
 
 function App() {
@@ -45,9 +50,12 @@ function App() {
         <Router>
             <div>
                 {/* {1 === 2 && <CustomNavbar />} */}
-                {/* <Route exact path="/signin" component={SignIn} />
-                <Route exact path="/signup" component={SignUp} /> */}
+                {/* <CustomNavbar /> */}
+                
                 <CustomNavbar />
+                <Route exact path="/signin" component={SignIn} />
+                <Route exact path="/signup" component={SignUp} />
+                <Route exact path="/forgotpassword" component={ForgotPassword} />
                 <Route exact path="/" component={Home} />
                 <Route exact path="/moneymatters" component={MoneyMatters} />
                 <Route
@@ -61,6 +69,9 @@ function App() {
                     component={MotorInsurance}
                 />
                 <Route exact path="/onthego" component={OnTheGo} />
+                <Route exact path="/onthego/bus" component={Bus} />
+                <Route exact path="/onthego/ferries" component={Ferries} />
+                <Route exact path="/onthego/train" component={Train} />
                 <Route
                     exact
                     path="/onthego/flightsearch"

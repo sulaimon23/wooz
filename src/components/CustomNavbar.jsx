@@ -128,12 +128,12 @@ class CustomNavbar extends Component {
                                     </ReactCountryFlag>
                                 </Dropdown.Toggle>
                                 <Dropdown.Menu>
-                                    <Dropdown.Item href="#/action-1"> <i className="fa fa-shopping-bag"></i> Track Orders</Dropdown.Item>
-                                    <Dropdown.Item href="#/action-2"> <i className="fa fa-exchange"></i> Reorder items</Dropdown.Item>
-                                    <Dropdown.Item href="#/action-3"> <i className="fa fa-credit-card"></i> Voucher Credit</Dropdown.Item>
-                                    <Dropdown.Item href="#/action-3"> <i className="fa fa-question-circle"></i> Help</Dropdown.Item>
+                                    <Dropdown.Item href="#/action-3"> <i className="fa fa-credit-card"></i> GH</Dropdown.Item>
+                                    <Dropdown.Item href="#/action-1"> <i className="fa fa-shopping-bag"></i> USA</Dropdown.Item>
+                                    <Dropdown.Item href="#/action-2"> <i className="fa fa-exchange"></i> UK</Dropdown.Item>
+                                    <Dropdown.Item href="#/action-3"> <i className="fa fa-question-circle"></i> SA</Dropdown.Item>
                                     <Dropdown.Divider />
-                                    <Dropdown.Item href="#action/3.4"> <i className="fa fa-power-off"></i> Logout</Dropdown.Item>
+                                    <Dropdown.Item href="/signin"> <i className="fa fa-power-off"></i> Logout</Dropdown.Item>
                                 </Dropdown.Menu>
                             </Dropdown>
                             
@@ -144,14 +144,12 @@ class CustomNavbar extends Component {
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
                             </NavDropdown> */}
-                            <Nav.Link href="#deets"><i className="fa fa-shopping-cart fa-lg" style={{color: "#043f7c"}}></i></Nav.Link>
+                            
+                            
+                            {/* <Nav.Link href="#deets"><i className="fa fa-shopping-cart fa-lg" style={{color: "#043f7c"}}></i></Nav.Link>
                             <Nav.Link eventKey={2} href="#memes">
                                 Hello, Ayodeji
-                                {/* <FontAwesomeIcon icon={['far', 'search']} /> */}
                             </Nav.Link>
-                            {/* <Nav.Link>
-                                <Image src={img} style={{width: '30px'}} roundedCircle />
-                            </Nav.Link> */}
                             <Dropdown alignRight>
                                 <Dropdown.Toggle variant="transparent" id="dropdown-basic">
                                     <Image src={img} style={{width: '30px'}} roundedCircle />
@@ -162,9 +160,9 @@ class CustomNavbar extends Component {
                                     <Dropdown.Item href="#/action-3"> <i className="fa fa-credit-card"></i> Voucher Credit</Dropdown.Item>
                                     <Dropdown.Item href="#/action-3"> <i className="fa fa-question-circle"></i> Help</Dropdown.Item>
                                     <Dropdown.Divider />
-                                    <Dropdown.Item href="#action/3.4"> <i className="fa fa-power-off"></i> Logout</Dropdown.Item>
+                                    <Dropdown.Item href="/signin"> <i className="fa fa-power-off"></i> Logout</Dropdown.Item>
                                 </Dropdown.Menu>
-                            </Dropdown>
+                            </Dropdown> */}
                             
                             {/* <NavDropdown >
                                 
@@ -175,6 +173,14 @@ class CustomNavbar extends Component {
                                 <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
                             </NavDropdown> */}
                             
+                        </Nav>
+                        <Nav>
+                        <Nav.Link eventKey={2} href="#memes">
+                                <Button stylexx={{backgroundColor: '#ff5757'}} variant="outline-danger" type="submit">Login</Button>
+                            </Nav.Link>
+                            <Nav.Link eventKey={2} href="#memes">
+                                <Button style={{backgroundColor: '#043f7c', borderColor: '#043f7c'}} variantxx="primary">Sign Up</Button>{' '}
+                            </Nav.Link>
                         </Nav>
                         {/* <Nav pullRight>
                             <NavItem eventKey={1} componentClass={Link} to="/" >

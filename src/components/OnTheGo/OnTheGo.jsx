@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Jumbotron, Container, Row, Col, Image, Breadcrumb, Button, Card } from 'react-bootstrap';
-import OnTheGoBanner from '../OnTheGo/OnTheGoBanner';
+import OnTheGoBanner from './OnTheGoBanner';
 import FinancialThumbnailSection from '../FinancialThumbnailSection/FinancialThumbnailSections'
 import DealsSection from '../DealsSection/DealsSections'
 import OnTheGoTab from '../OnTheGoTab/OnTheGoTabs';
