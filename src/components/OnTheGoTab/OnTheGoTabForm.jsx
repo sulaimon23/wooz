@@ -58,7 +58,7 @@ function OnTheGoTabForm() {
             <Container style={{backgroundColor: '#043f7c', paddingTop: '20px'}} direction='row' fluid>
                 <Card style={{backgroundColor: 'transparent', border: 'none'}}>
                     <Card.Body stylexx={{marginTop: '-103px'}}>
-                        <Tabs style={{  backgroundColor: '#043f7c', width: '52.4%', heightx: '50px', marginTop: '-81px', borderBottom: '-1px', borderTop: 'none', borderColor: 'none',  marginLeft: '-1px' , borderTopLeftRadius: '5px', borderTopRightRadius: '5px'}} defaultActiveKey="flights" transition={false} id="noanim-tab-example">
+                        <Tabs style={{  backgroundColor: '#043f7c', width: '52.4%', heightx: '50px', marginTop: '-81px', borderBottom: '-1px', borderTop: 'none', borderColor: 'none',  marginLeft: '-1px' , borderTopLeftRadius: '5px', borderTopRightRadiusx: '5px'}} defaultActiveKey="flights" transition={false} id="noanim-tab-example">
                             <Tab style={{divStyle}} src={FlightIcon} eventKey='flights' title='Flight'>
                                 <Form noValidate validated={validated} onSubmit={handleSubmit} style={{marginTop: '44px', height: '55px'}}>
                                     <Form.Row stylex={{backgroundColor: '#043f7c', width: '100%', paddingTop: '20px'}}>

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Jumbotron, Modal, Nav, Container, Row, Col, Image, Breadcrumb, Button, Card } from 'react-bootstrap';
-import bannerimage from '../../assets/img/bannerimg/onthego.png'
+// import bannerimage from '../../assets/img/bannerimg/onthego.png'
+import bannerimage from '../../assets/video/onthego.gif'
 import play from '../../assets/img/icons/playbutton.png'
 import YouTube from 'react-youtube';
 

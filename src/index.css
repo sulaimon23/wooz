@@ -14,3 +14,23 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+a#noanim-tab-example-tab-buses {
+  border-right: 1px solid;
+  border-bottom: 1px solid
+}
+
+a#noanim-tab-example-tab-flights {
+  border-right: 1px solid;
+  border-bottom: 1px solid
+}
+
+a#noanim-tab-example-tab-ferries {
+  border-right: 1px solid;
+  border-bottom: 1px solid
+}
+
+a#noanim-tab-example-tab-trains {
+  border-right: 1px solid;
+  border-bottom: 1px solid
+}
