@@ -92,12 +92,13 @@ function FerriesTabForm() {
                         backgroundColor: '#ffffff',
                         color: '#ffffff',
                     }}>
-                    <Card.Footer>
-                        <h6 style={{ color: '#ffffff', fontSize: '15px' }}>
+                    <a href="/onthego/bus"><Card.Footer>
+                        <h6 style={{ fontSize: '15px' }}>
                             {' '}
-                            <a href="/onthego/bus">Buses</a>{' '}
+                            Buses{' '}
                         </h6>
                     </Card.Footer>
+                    </a>
                 </Col>
                 <Col
                     sm="3"
@@ -126,16 +127,17 @@ function FerriesTabForm() {
                         // marginRight: '-30px',
                         backgroundColor: '#ffffff',
                     }}>
-                    <Card.Footer
+                    <a href="/onthego/train"><Card.Footer
                         style={{
                             textAlign: 'center',
                             // marginRight: '-30px',
                         }}>
-                        <h6 style={{ color: '#ffffff' }}>
+                        <h6 stylex={{ color: '#ffffff' }}>
                             {' '}
-                            <a href="/onthego/train">Trains</a>{' '}
+                            Trains{' '}
                         </h6>
                     </Card.Footer>
+                    </a>
                 </Col>
             </Row>
             <Container

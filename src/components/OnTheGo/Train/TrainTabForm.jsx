@@ -78,13 +78,11 @@ function TrainTabForm() {
                         // marginRight: '-30px',
                         backgroundColor: '#ffffff',
                     }}>
-                    <Card.Footer style={{ color: '#ffffff' }}>
-                        {/* <span style={{ color: '#ffffff' }}>Flights</span> */}
-                        <h6 style={{ color: '#ffffff', fontSize: '15px' }}>
-                            {' '}
-                            <a href="/onthego">Flights</a>{' '}
-                        </h6>
-                    </Card.Footer>
+                    <a href="/onthego">
+                        <Card.Footer stylex={{ color: '#ffffff' }}>
+                            <h6 style={{ fontSize: '15px' }}> Flights </h6>
+                        </Card.Footer>
+                    </a>
                 </Col>
                 <Col
                     sm="3"
@@ -94,12 +92,11 @@ function TrainTabForm() {
                         backgroundColor: '#ffffff',
                         color: '#ffffff',
                     }}>
-                    <Card.Footer>
-                        <h6 style={{ color: '#ffffff', fontSize: '15px' }}>
-                            {' '}
-                            <a href="/onthego/bus">Buses</a>{' '}
-                        </h6>
-                    </Card.Footer>
+                    <a href="/onthego/bus">
+                        <Card.Footer>
+                            <h6 style={{ fontSize: '15px' }}> Buses </h6>
+                        </Card.Footer>
+                    </a>
                 </Col>
                 <Col
                     sm="3"
