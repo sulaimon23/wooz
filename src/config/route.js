@@ -33,6 +33,7 @@ import CableTv from '../components/Utilities/CableTv/CableTv';
 import Electricity from '../components/Utilities/Electricity/Electricity';
 import Internet from '../components/Utilities/Internet/Internet';
 import AskDoc from '../components/AskDoc/AskDoc';
+import ResetPassword from '../components/ResetPassword/ResetPassword';
 
 export default function RouterComponent() {
     return (
@@ -40,6 +41,7 @@ export default function RouterComponent() {
             <Switch>
                 <AuthLayout path="/signin" component={SignIn} />
                 <AuthLayout path="/signup" component={SignUp} />
+                <AuthLayout path="/resetpassword" component={ResetPassword} />
 
                 <AuthLayout exact={true} path="/" component={Home} />
 

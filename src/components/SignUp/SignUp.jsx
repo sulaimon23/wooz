@@ -28,13 +28,13 @@ const SignupSchema = Yup.object().shape({});
 
 function SignUp() {
     const [validated, setValidated] = useState(false);
-    const [firstName, setFirstName] = useState('emeka');
-    const [lastName, setLastName] = useState('emeka');
-    const [accountType, setAccountType] = useState('staff');
-    const [email, setEmail] = useState('emeka1@gmail.com');
-    const [phone, setPhone] = useState('00001');
-    const [password, setPassword] = useState('emeka');
-    const [confirmPassword, setConfirmPassword] = useState('');
+    const [firstName, setFirstName] = useState('Ayodeji');
+    const [lastName, setLastName] = useState('Moshood');
+    const [accountType, setAccountType] = useState('Staff');
+    const [email, setEmail] = useState('amoshood@fczmedia.com');
+    const [phone, setPhone] = useState('07060460216');
+    const [password, setPassword] = useState('password');
+    const [confirmPassword, setConfirmPassword] = useState('password');
     const [attributes, setAttributes] = useState({ company: 'Google' });
 
     let history = useHistory();
@@ -50,18 +50,21 @@ function SignUp() {
     const handleSignup = async () => {
         const request_data = {
             firstName,
+            phone,
+            accountType,
             lastName,
             email,
             password,
             confirmPassword,
+            attributes,
         };
+
         await axios
             .post('/auth/signup', request_data)
             // .then((response) => response.json())
             .then((response) => {
-                console.log(response.data.user);
-                reactLocalStorage.setObject('user_data', response.data.user);
-                history.push('/')
+                console.log(response);
+                history.push('/signin');
             })
             .catch((error) => {
                 console.log(error, 'error');
@@ -105,13 +108,14 @@ function SignUp() {
                                             </InputGroupText>
                                         </InputGroupAddon>
                                         <Input
+                                            defaultValue={firstName}
                                             onChange={(event) =>
                                                 setFirstName(event.target.value)
                                             }
                                             required
                                             placeholder="Firstname"
-                                            type="email"
-                                            autoComplete="new-email"
+                                            type="text"
+                                            // autoComplete="new-email"
                                         />
                                     </InputGroup>
                                 </FormGroup>
@@ -123,13 +127,14 @@ function SignUp() {
                                             </InputGroupText>
                                         </InputGroupAddon>
                                         <Input
+                                            defaultValue={lastName}
                                             onChange={(event) =>
                                                 setLastName(event.target.value)
                                             }
                                             required
                                             placeholder="Lastname"
-                                            type="email"
-                                            autoComplete="new-email"
+                                            type="text"
+                                            // autoComplete="new-email"
                                         />
                                     </InputGroup>
                                 </FormGroup>
@@ -141,6 +146,7 @@ function SignUp() {
                                             </InputGroupText>
                                         </InputGroupAddon>
                                         <Input
+                                            defaultValue={email}
                                             onChange={(event) =>
                                                 setEmail(event.target.value)
                                             }
@@ -215,7 +221,7 @@ function SignUp() {
                                             width: '100%',
                                         }}
                                         // onClick={this.handleLogin}
-                                        onClick={ handleSignup }
+                                        onClick={handleSignup}
                                         className="my-4"
                                         color="danger"
                                         type="submit">
