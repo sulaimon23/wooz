@@ -186,7 +186,7 @@ const SignIn = () => {
                         <Col xs="6">
                             <a
                                 className="text-light"
-                                href="/forgotpassword"
+                                href="/resetpassword"
                                 // onClick={(e) => e.preventDefault()}
                             >
                                 <small style={{ color: '#043f7c' }}>
