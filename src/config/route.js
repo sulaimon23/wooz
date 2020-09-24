@@ -35,6 +35,7 @@ import Internet from '../components/Utilities/Internet/Internet';
 import AskDoc from '../components/AskDoc/AskDoc';
 import ResetPassword from '../components/ResetPassword/ResetPassword';
 import Profile from '../components/Profile/Profile';
+import Verification from '../components/Verification/Verification';
 
 export default function RouterComponent() {
     return (
@@ -43,6 +44,7 @@ export default function RouterComponent() {
                 <AuthLayout path="/signin" component={SignIn} />
                 <AuthLayout path="/signup" component={SignUp} />
                 <AuthLayout path="/resetpassword" component={ResetPassword} />
+                <AuthLayout path="/verification" component={Verification} />
                 <AuthLayout path="/profile" component={Profile} />
 
                 <AuthLayout exact={true} path="/" component={Home} />
