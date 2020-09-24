@@ -28,16 +28,17 @@ const SignupSchema = Yup.object().shape({});
 
 function SignUp() {
     const [validated, setValidated] = useState(false);
-    const [firstName, setFirstName] = useState('Ayodeji');
-    const [lastName, setLastName] = useState('Moshood');
-    const [accountType, setAccountType] = useState('Staff');
-    const [email, setEmail] = useState('amoshood@fczmedia.com');
-    const [phone, setPhone] = useState('07060460216');
-    const [password, setPassword] = useState('password');
-    const [confirmPassword, setConfirmPassword] = useState('password');
+    const [firstName, setFirstName] = useState('');
+    const [lastName, setLastName] = useState('');
+    const [accountType, setAccountType] = useState('staff');
+    const [email, setEmail] = useState('');
+    const [phone, setPhone] = useState('');
+    const [password, setPassword] = useState('');
+    const [confirmPassword, setConfirmPassword] = useState('');
     const [attributes, setAttributes] = useState({ company: 'Google' });
 
     let history = useHistory();
+    
     const handleSubmit = (event) => {
         const form = event.currentTarget;
         if (form.checkValidity() === false) {
@@ -61,7 +62,6 @@ function SignUp() {
 
         await axios
             .post('/auth/signup', request_data)
-            // .then((response) => response.json())
             .then((response) => {
                 console.log(response);
                 history.push('/signin');
@@ -168,6 +168,7 @@ function SignUp() {
                                             onChange={(event) =>
                                                 setPhone(event.target.value)
                                             }
+                                            defaultValue={password}
                                             required
                                             placeholder="Phone"
                                             type="phone"
@@ -183,6 +184,7 @@ function SignUp() {
                                             </InputGroupText>
                                         </InputGroupAddon>
                                         <Input
+                                            defaultValue={password}
                                             onChange={(event) =>
                                                 setPassword(event.target.value)
                                             }
@@ -201,6 +203,7 @@ function SignUp() {
                                             </InputGroupText>
                                         </InputGroupAddon>
                                         <Input
+                                            defaultValue={password}
                                             onChange={(event) =>
                                                 setConfirmPassword(
                                                     event.target.value,
@@ -224,7 +227,7 @@ function SignUp() {
                                         onClick={handleSignup}
                                         className="my-4"
                                         color="danger"
-                                        type="submit">
+                                        >
                                         Sign up
                                     </Button>
                                 </div>
