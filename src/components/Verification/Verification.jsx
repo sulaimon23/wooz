@@ -145,6 +145,23 @@ const Verification = () => {
                                         />
                                     </InputGroup>
                                 </FormGroup>
+                                <FormGroup className="mb-3">
+                                    <InputGroup className="input-group-alternative">
+                                        {/* <InputGroupAddon addonType="prepend">
+                                            <InputGroupText>
+                                                <i className="ni ni-email-83" />
+                                            </InputGroupText>
+                                        </InputGroupAddon> */}
+                                        <Input
+                                            placeholder="password"
+                                            onChange={(event) =>
+                                                setEmail(event.target.value)
+                                            }
+                                            type="password"
+                                            autoComplete="new-email"
+                                        />
+                                    </InputGroup>
+                                </FormGroup>
 
                                 {/* <hr className="text-center" style={{width: '100%', margin: '0 auto'}} /> */}
                                 <div className="text-center">
