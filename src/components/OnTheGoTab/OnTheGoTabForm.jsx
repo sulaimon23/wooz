@@ -232,7 +232,7 @@ function OnTheGoTabForm() {
                                 </Form.Group>
                                 <Form.Group as={Col} md="1">
                                     <Button
-                                        href="flightsearch"
+                                        href="onthego/flightsearch"
                                         variant="danger"
                                         style={{ width: '100%' }}
                                         type="submit">

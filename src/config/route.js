@@ -34,6 +34,7 @@ import Electricity from '../components/Utilities/Electricity/Electricity';
 import Internet from '../components/Utilities/Internet/Internet';
 import AskDoc from '../components/AskDoc/AskDoc';
 import ResetPassword from '../components/ResetPassword/ResetPassword';
+import Profile from '../components/Profile/Profile';
 
 export default function RouterComponent() {
     return (
@@ -42,6 +43,7 @@ export default function RouterComponent() {
                 <AuthLayout path="/signin" component={SignIn} />
                 <AuthLayout path="/signup" component={SignUp} />
                 <AuthLayout path="/resetpassword" component={ResetPassword} />
+                <AuthLayout path="/profile" component={Profile} />
 
                 <AuthLayout exact={true} path="/" component={Home} />
 
