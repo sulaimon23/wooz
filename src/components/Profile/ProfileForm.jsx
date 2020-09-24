@@ -6,8 +6,8 @@ import DatePicker from '../Calendar'
 // import Stepper from 'react-stepper-horizontal'
 
 import MotorInsuranceInnerTabPanel from '../SearchTabFormSection/MotorInsuranceInnerTabPanel'
-import GoogleMap from './GoogleMap';
-import MultiStepper from '../MultiStepper/MultiStepper'
+// import GoogleMap from './GoogleMap';
+// import MultiStepper from '../MultiStepper/MultiStepper'
 
 function SelectTab() {
     const [validated, setValidated] = useState(false);
@@ -22,8 +22,7 @@ function SelectTab() {
     setValidated(true);
     };
     return (
-        // <div>
-        //     <Container className='p-4' as={Col} lg={12} style={{maxWidth: '100%' }}>
+        
         <div fluid>
             <Container style={{backgroundColor: '#043f7c', paddingTop: '20px'}} direction='row' classNamexx='p-4' fluid>
                 <Card style={{backgroundColor: 'transparent', border: 'none'}}>
