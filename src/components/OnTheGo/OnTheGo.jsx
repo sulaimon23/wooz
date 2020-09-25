@@ -23,6 +23,7 @@ import bannerimage from '../../assets/video/onthego.gif';
 import play from '../../assets/img/icons/playbutton.png';
 
 import fbannerimage from '../../assets/video/ferries.gif';
+import FooterSection from '../FooterSection/FooterSection';
 
 function MyVerticallyCenteredModal(props) {
     return (
@@ -104,13 +105,14 @@ function OnTheGo() {
     return (
         <div
             style={{
-                backgroundImage: `url(${activeTab.backgroundImage})`,
+                
+            }}>
+                
+            <Container className="p-4xx" style={{ maxWidth: '100%', backgroundImage: `url(${activeTab.backgroundImage})`,
                 backgroundPosition: 'center',
                 backgroundSize: 'cover',
                 backgroundRepeat: 'no-repeat',
-                color: 'white',
-            }}>
-            <Container className="p-4xx" style={{ maxWidth: '100%' }}>
+                color: 'white', }}>
                 <br />
                 {/* <Breadcrumb style={{backgroundColor: 'none! important'}} >
                         <Breadcrumb.Item href="/"> <span style={{color: '#636363'}}> Home </span> </Breadcrumb.Item>
@@ -342,7 +344,19 @@ function OnTheGo() {
                     </Card.Body>
                 </Card>
             </Container>
+            <br/>
+            <br/>
+            <DealsSection/>
+            <br/>
+            <br/>
+            <br/>
+            <DealsSection/>
+            <br/>
+            <br/>
+            <br/>
+            <FooterSection/>
         </div>
+        
     );
 }
 
