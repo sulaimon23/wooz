@@ -29,7 +29,7 @@ import DirectionsBusIcon from '@material-ui/icons/DirectionsBus';
 import DirectionsBoatIcon from '@material-ui/icons/DirectionsBoat';
 import TrainIcon from '@material-ui/icons/Train';
 import FlightSearchTabFormSection from '../SearchTabFormSection/FlightSearchTabFormSections';
-const classNames = require("classnames");
+const classNames = require('classnames');
 const divStyle = {
     // color: '#ffffff', display: 'block', padding: '.5rem 1rem', color: 'rgb(255, 255, 255);', textAlign: 'center'
 };
@@ -68,39 +68,39 @@ function OnTheGoTabForm() {
     //    this.props.history.push('/moneymatters/insurance/motorinsurance')
     // }
 
-
     const tabs = [
         {
-            title: "Flights",
-            icon: 'djcdfvd'
+            title: 'Flights',
+            icon: 'djcdfvd',
         },
         {
-            title: "Ferries",
-            icon: 'djcdfvd'
+            title: 'Ferries',
+            icon: 'djcdfvd',
         },
         {
-            title: "Buses",
-            icon: 'djcdfvd'
+            title: 'Buses',
+            icon: 'djcdfvd',
         },
         {
-            title: "Trains",
-            icon: 'djcdfvd'
+            title: 'Trains',
+            icon: 'djcdfvd',
         },
-
-    ]
+    ];
 
     const activeTabStyle = {
         backgroundColor: '#043f7c',
         color: '#fff',
-    }
+    };
+    
     const tabStyle = {
         backgroundColor: '#fff',
-        color: '#043f7c'
-    }
+        color: '#043f7c',
+        borderRight: '1px solid #043f7c',
+    };
 
     const handleOnTabSelect = (index) => {
-        setActiveTab(index)
-    }
+        setActiveTab(index);
+    };
 
     return (
         <div fluid>
@@ -108,21 +108,27 @@ function OnTheGoTabForm() {
                 {tabs.map((item, index) => {
                     return (
                         <Col
-                        key={index}
+                            key={index}
                             sm="3"
                             className="d-none d-lg-block"
-                            style={(activeTab == index) ? activeTabStyle : tabStyle}>
+                            style={
+                                activeTab == index ? activeTabStyle : tabStyle
+                            }>
                             <a onClick={() => handleOnTabSelect(index)}>
-                                <Card.Footer style={{  }}>
-                                    <h6 style={{ fontSize: '15px' }}>
+                                <Card.Footer style={{}}>
+                                    <h6
+                                        style={{
+                                            fontSize: '15px',
+                                            textAlign: 'center',
+                                        }}>
                                         {' '}
                                         {item.title}
                                     </h6>
                                 </Card.Footer>
                             </a>
                         </Col>
-                    )
-                }) }
+                    );
+                })}
             </Row>
             <Container
                 style={{ backgroundColor: '#043f7c', paddingTop: '20px' }}

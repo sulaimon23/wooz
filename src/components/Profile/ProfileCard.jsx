@@ -1,15 +1,30 @@
 import React, { Component, useState, select, Switch } from 'react';
-import { Jumbotron, Modal, Container, Row, Col, Image, Button, ButtonGroup, Card, InputGroup, Form, FormControl, FormCheck } from 'react-bootstrap';
-import PhoneInput from 'react-phone-input-2'
+import {
+    Jumbotron,
+    Modal,
+    Container,
+    Row,
+    Col,
+    Image,
+    Button,
+    ButtonGroup,
+    Card,
+    InputGroup,
+    Form,
+    FormControl,
+    FormCheck,
+} from 'react-bootstrap';
+import PhoneInput from 'react-phone-input-2';
 // import '../Utilities/Data/node_modules/react-phone-input-2/lib/style.css'
-import DatePicker from '../Calendar'
+import DatePicker from '../Calendar';
 // import ButtonToggle from './ButtonToggle'
-import TravelInsuranceImg from '../../assets/img/icons/onthego/travelinsurance.png'
+import TravelInsuranceImg from '../../assets/img/icons/onthego/travelinsurance.png';
 
 function ProfileCard() {
-
     const [validated, setValidated] = useState(false);
-    
+    const [firstName, setFirstName] = useState('');
+    const [lastName, setastName] = useState('');
+
     const handleSubmit = (event) => {
         const form = event.currentTarget;
         if (form.checkValidity() === false) {
@@ -17,62 +32,139 @@ function ProfileCard() {
             event.stopPropagation();
         }
 
-    setValidated(true);
+        setValidated(true);
     };
 
     return (
-        
         <div>
             <Card>
-                <div style={{ backgroundColor: '#ffffff', padding: '20px'}}>
-                    <p style={{color: '#043f7c'}}> <b>Account Information</b> </p>
-                    <hr style={{color: '#043f7c'}}/>
-                    <Form noValidate validated={validated} onSubmit={handleSubmit}>
+                <div style={{ backgroundColor: '#ffffff', padding: '20px' }}>
+                    <p style={{ color: '#043f7c' }}>
+                        {' '}
+                        <b>Account Information</b>{' '}
+                    </p>
+                    <hr style={{ color: '#043f7c' }} />
+                    <Form
+                        noValidate
+                        validated={validated}
+                        onSubmit={handleSubmit}>
                         <Form.Row>
-                            <Form.Group as={Col} md="6" controlId="validationCustom01">
-                                <Form.Label> <h6>First Name</h6></Form.Label>
-                                <Form.Control required type="text" defaultValuexx="Mark" />
-                                <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
+                            <Form.Group
+                                as={Col}
+                                md="6"
+                                controlId="validationCustom01">
+                                <Form.Label>
+                                    {' '}
+                                    <h6>First Name</h6>
+                                </Form.Label>
+                                <Form.Control
+                                    required
+                                    type="text"
+                                    defaultValuexx="Mark"
+                                />
+                                <Form.Control.Feedback>
+                                    Looks good!
+                                </Form.Control.Feedback>
                             </Form.Group>
-                            <Form.Group as={Col} md="6" controlId="validationCustom02">
-                                <Form.Label> <h6>Last Name</h6></Form.Label>
-                                <Form.Control required type="text" defaultValuexx="Otto" />
-                                <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
+                            <Form.Group
+                                as={Col}
+                                md="6"
+                                controlId="validationCustom02">
+                                <Form.Label>
+                                    {' '}
+                                    <h6>Last Name</h6>
+                                </Form.Label>
+                                <Form.Control
+                                    required
+                                    type="text"
+                                    defaultValuexx="Otto"
+                                />
+                                <Form.Control.Feedback>
+                                    Looks good!
+                                </Form.Control.Feedback>
                             </Form.Group>
-                            <Form.Group as={Col} md="6" controlId="validationCustomUsername">
-                                <Form.Label> <h6>Phone Number <span style={{color: 'red'}}>*</span></h6></Form.Label>
-                                <InputGroup >
+                            <Form.Group
+                                as={Col}
+                                md="6"
+                                controlId="validationCustomUsername">
+                                <Form.Label>
+                                    {' '}
+                                    <h6>
+                                        Phone Number{' '}
+                                        <span style={{ color: 'red' }}>*</span>
+                                    </h6>
+                                </Form.Label>
+                                <InputGroup>
                                     <InputGroup.Append>
-                                        <Button style={{borderTopLeftRadius: '3px', borderBottomLeftRadius: '3px'}} variant="secondary">
+                                        <Button
+                                            style={{
+                                                borderTopLeftRadius: '3px',
+                                                borderBottomLeftRadius: '3px',
+                                            }}
+                                            variant="secondary">
                                             {/* <i class="nigeria flag"></i> */}
                                             NGN
                                         </Button>
                                     </InputGroup.Append>
-                                    <Form.Control required type="tel" defaultValuexx="Otto" />
-                                    <Form.Control.Feedback type="invalid"> Enter a valid phone number. </Form.Control.Feedback>
+                                    <Form.Control
+                                        required
+                                        type="tel"
+                                        defaultValuexx="Otto"
+                                    />
+                                    <Form.Control.Feedback type="invalid">
+                                        {' '}
+                                        Enter a valid phone number.{' '}
+                                    </Form.Control.Feedback>
                                 </InputGroup>
                             </Form.Group>
-                            <Form.Group as={Col} md="6" controlId="validationCustom02">
-                                <Form.Label> <h6>Email Address</h6></Form.Label>
-                                <Form.Control required type="email" defaultValuexx="Otto" />
-                                <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
+                            <Form.Group
+                                as={Col}
+                                md="6"
+                                controlId="validationCustom02">
+                                <Form.Label>
+                                    {' '}
+                                    <h6>Email Address</h6>
+                                </Form.Label>
+                                <Form.Control
+                                    required
+                                    type="email"
+                                    defaultValuexx="Otto"
+                                />
+                                <Form.Control.Feedback>
+                                    Looks good!
+                                </Form.Control.Feedback>
                             </Form.Group>
-                            <Form.Group as={Col} md="6" controlId="validationCustom02">
-                                <Form.Label> <h6>Sex <span style={{color: 'red'}}>*</span></h6></Form.Label>
+                            <Form.Group
+                                as={Col}
+                                md="6"
+                                controlId="validationCustom02">
+                                <Form.Label>
+                                    {' '}
+                                    <h6>
+                                        Sex{' '}
+                                        <span style={{ color: 'red' }}>*</span>
+                                    </h6>
+                                </Form.Label>
                                 <Row>
-                                    <Col md='12'>
-                                        <Form.Control as='select'>
+                                    <Col md="12">
+                                        <Form.Control as="select">
                                             <option>Male</option>
                                             <option>Female</option>
                                         </Form.Control>
                                     </Col>
-                                    </Row>
-                                    </Form.Group>
-                            <Form.Group as={Col} md="6" controlId="validationCustom02">
-                                <Form.Label> <h6>Date of Birth</h6></Form.Label>
+                                </Row>
+                            </Form.Group>
+                            <Form.Group
+                                as={Col}
+                                md="6"
+                                controlId="validationCustom02">
+                                <Form.Label>
+                                    {' '}
+                                    <h6>Date of Birth</h6>
+                                </Form.Label>
                                 <Row>
-                                    <Col md='4'>
-                                        <Form.Control as='select'>
+                                    <Col md="4">
+                                        <Form.Control as="select">
                                             <option>Day</option>
                                             <option>01</option>
                                             <option>02</option>
@@ -107,8 +199,8 @@ function ProfileCard() {
                                             <option>31</option>
                                         </Form.Control>
                                     </Col>
-                                    <Col md='4'>
-                                        <Form.Control as='select'>
+                                    <Col md="4">
+                                        <Form.Control as="select">
                                             <option>Month</option>
                                             <option>January</option>
                                             <option>February</option>
@@ -124,8 +216,8 @@ function ProfileCard() {
                                             <option>December</option>
                                         </Form.Control>
                                     </Col>
-                                    <Col md='4'>
-                                        <Form.Control as='select'>
+                                    <Col md="4">
+                                        <Form.Control as="select">
                                             <option>Year</option>
                                             <option>Abia</option>
                                             <option>Adamawa</option>
@@ -139,17 +231,17 @@ function ProfileCard() {
                                         </Form.Control>
                                     </Col>
                                 </Row>
-                                <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
+                                <Form.Control.Feedback>
+                                    Looks good!
+                                </Form.Control.Feedback>
                             </Form.Group>
-                            
                         </Form.Row>
                         <Button variant="success">Save Changes</Button>{' '}
                     </Form>
                 </div>
             </Card>
         </div>
-        
-    )
+    );
 }
 
-export default ProfileCard
+export default ProfileCard;

@@ -1,25 +1,349 @@
-import React, { Component } from 'react';
-import { Jumbotron, Container, Row, Col, Image, Breadcrumb, Button, Card } from 'react-bootstrap';
+import React, { useState } from 'react';
+import {
+    Jumbotron,
+    Nav,
+    Container,
+    Modal,
+    Row,
+    Col,
+    Form,
+    InputGroup,
+    FormControl,
+    Image,
+    Breadcrumb,
+    Button,
+    Card,
+} from 'react-bootstrap';
 import OnTheGoBanner from './OnTheGoBanner';
-import FinancialThumbnailSection from '../FinancialThumbnailSection/FinancialThumbnailSections'
-import DealsSection from '../DealsSection/DealsSections'
+import FinancialThumbnailSection from '../FinancialThumbnailSection/FinancialThumbnailSections';
+import DealsSection from '../DealsSection/DealsSections';
 import OnTheGoTab from '../OnTheGoTab/OnTheGoTabs';
 
-class OnTheGo extends Component {
-    render() {
-        return (
-            <div>
-                {/* <Container className='' style={{ maxWidth: '100%'}}></Container> */}
-                <OnTheGoBanner />
-                <OnTheGoTab />
-                <br/>
-                <DealsSection />
-                <br/>
-                <DealsSection />
-                {/* <FinancialThumbnailSection /> */}
-            </div>
-        );
-    }
+import bannerimage from '../../assets/video/onthego.gif';
+import play from '../../assets/img/icons/playbutton.png';
+
+import fbannerimage from '../../assets/video/ferries.gif';
+
+function MyVerticallyCenteredModal(props) {
+    return (
+        <Modal
+            {...props}
+            size="lg"
+            aria-labelledby="contained-modal-title-vcenter"
+            centered>
+            {/* <iframe width="100%" height="478" src="https://www.youtube.com/embed/m8n2o3Qx504?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> */}
+            <iframe
+                width="100%"
+                height="478"
+                src="https://www.youtube.com/embed/s1q3ALqm2mg?autoplay=1"
+                frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </Modal>
+    );
+}
+
+function OnTheGo() {
+    const [modalShow, setModalShow] = React.useState(false);
+    const [validated, setValidated] = useState(false);
+    const handleSubmit = (event) => {
+        const form = event.currentTarget;
+        if (form.checkValidity() === false) {
+            event.preventDefault();
+            event.stopPropagation();
+        }
+
+        // handleSubmit = (e) => {
+        //     e.preventDefault();
+        //    this.props.history.push('/motorinsurance')
+        // }
+
+        setValidated(true);
+    };
+
+    const tabs = [
+        {
+            title: 'Flights',
+            icon: 'djcdfvd',
+            backgroundImage: bannerimage,
+        },
+        {
+            title: 'Ferries',
+            icon: 'djcdfvd',
+            backgroundImage: fbannerimage,
+        },
+        {
+            title: 'Buses',
+            icon: 'djcdfvd',
+            backgroundImage: bannerimage,
+        },
+        {
+            title: 'Trains',
+            icon: 'djcdfvd',
+            backgroundImage: bannerimage,
+        },
+    ];
+
+    const [activeTab, setActiveTab] = useState(tabs[0]);
+
+    const activeTabStyle = {
+        backgroundColor: '#043f7c',
+        color: '#fff',
+    };
+
+    const tabStyle = {
+        backgroundColor: '#fff',
+        color: '#043f7c',
+        borderRight: '1px solid #043f7c',
+    };
+
+    const handleOnTabSelect = (tab) => {
+        setActiveTab(tab);
+    };
+
+    return (
+        <div
+            style={{
+                backgroundImage: `url(${activeTab.backgroundImage})`,
+                backgroundPosition: 'center',
+                backgroundSize: 'cover',
+                backgroundRepeat: 'no-repeat',
+                color: 'white',
+            }}>
+            <Container className="p-4xx" style={{ maxWidth: '100%' }}>
+                <br />
+                {/* <Breadcrumb style={{backgroundColor: 'none! important'}} >
+                        <Breadcrumb.Item href="/"> <span style={{color: '#636363'}}> Home </span> </Breadcrumb.Item>
+                        <Breadcrumb.Item active href="/onthego"> <span style={{color: '#043f7c'}}>On The Go</span> </Breadcrumb.Item>
+                    </Breadcrumb> */}
+                <Nav className="justify-content-end" activeKey="/home">
+                    <Nav.Item>
+                        <Nav.Link style={{ padding: '.5rem 2.5rem' }} href="#">
+                            Book Trip
+                        </Nav.Link>
+                    </Nav.Item>
+                    <Nav.Item>
+                        <Nav.Link
+                            style={{ padding: '.5rem 2.5rem' }}
+                            eventKey="link-1">
+                            Check In
+                        </Nav.Link>
+                    </Nav.Item>
+                    <Nav.Item>
+                        <Nav.Link
+                            style={{ padding: '.5rem 2.5rem' }}
+                            eventKey="link-2">
+                            Print Boarding Pass
+                        </Nav.Link>
+                    </Nav.Item>
+                    <Nav.Item>
+                        <Nav.Link
+                            style={{ padding: '.5rem 2.5rem' }}
+                            eventKey="link-3">
+                            Explore
+                        </Nav.Link>
+                    </Nav.Item>
+                    {/* <Nav.Item>
+                            <Nav.Link eventKey="disabled" disabled>Disabled</Nav.Link>
+                        </Nav.Item> */}
+                </Nav>
+                <Col lg={12}>
+                    <Row>
+                        <Col md={9}>
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            {/* <h2 style={{ fontWeight: '500px', marginLeft: '-20px'}}>Flights, Traines, Trucks, Ferries &amp; Trains - All in One Search</h2> */}
+
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                        </Col>
+                        <Col md={3}>
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <img
+                                onClick={() => setModalShow(true)}
+                                src={play}
+                                alt=""
+                            />
+                            <MyVerticallyCenteredModal
+                                show={modalShow}
+                                onHide={() => setModalShow(false)}
+                            />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                        </Col>
+                    </Row>
+                </Col>
+                <Row style={{ marginTop: '-66px' }}>
+                    {tabs.map((item, index) => {
+                        return (
+                            <Col
+                                key={index}
+                                sm="3"
+                                className="d-none d-lg-block"
+                                style={
+                                    activeTab.title == item.title
+                                        ? activeTabStyle
+                                        : tabStyle
+                                }>
+                                <a onClick={() => handleOnTabSelect(item)}>
+                                    <Card.Footer style={{}}>
+                                        <h6
+                                            style={{
+                                                fontSize: '15px',
+                                                textAlign: 'center',
+                                            }}>
+                                            {' '}
+                                            {item.title}
+                                        </h6>
+                                    </Card.Footer>
+                                </a>
+                            </Col>
+                        );
+                    })}
+                </Row>
+            </Container>
+            <Container
+                style={{ backgroundColor: '#043f7c', paddingTop: '20px' }}
+                direction="row"
+                fluid>
+                {/* <Row style={{ marginTop: '-66px' }}>
+                    <Col style={{backgroundColor: '#043f7c'}}>
+                        <h6 style={{ Color: '#ffffff' }}>Flights</h6>
+                    </Col>
+                    <Col style={{backgroundColor: '#043f7c'}}>
+                        <h6 style={{ Color: '#ffffff' }}>Buses</h6>
+                    </Col>
+                    <Col style={{backgroundColor: '#043f7c'}}>
+                        <h6 style={{ Color: '#ffffff' }}>Ferries</h6>
+                    </Col>
+                    <Col style={{backgroundColor: '#043f7c'}}>
+                        <h6 style={{ Color: '#ffffff' }}>Trains</h6>
+                    </Col>
+                </Row> */}
+                <Card
+                    style={{ backgroundColor: 'transparent', border: 'none' }}>
+                    <Card.Body>
+                        <Form
+                            noValidate
+                            validated={validated}
+                            onSubmit={handleSubmit}
+                            stylex={{ marginTop: '14px', height: '55px' }}>
+                            <Form.Row
+                                stylex={{
+                                    backgroundColor: '#043f7c',
+                                    width: '100%',
+                                    paddingTop: '20px',
+                                }}>
+                                <InputGroup className="mb-4" as={Col} md="3">
+                                    <InputGroup.Prepend>
+                                        <InputGroup.Text>
+                                            <i class="fa fa-map-marker"></i>
+                                        </InputGroup.Text>
+                                    </InputGroup.Prepend>
+                                    {/* <fromdata /> */}
+                                    <FormControl
+                                        style={{
+                                            borderTopRightRadius: '4px',
+                                            borderBottomRightRadius: '4px',
+                                        }}
+                                        id="inlineFormInputGroup"
+                                        placeholder="From:"
+                                        required
+                                        type="text"
+                                        defaultValue="Murtala Mohammed Airport"
+                                    />
+                                    <Form.Control.Feedback>
+                                        Looks good!
+                                    </Form.Control.Feedback>
+                                </InputGroup>
+                                <InputGroup className="mb-4" as={Col} md="3">
+                                    <InputGroup.Prepend>
+                                        <InputGroup.Text>
+                                            <i class="fa fa-map-marker"></i>
+                                        </InputGroup.Text>
+                                    </InputGroup.Prepend>
+                                    <FormControl
+                                        style={{
+                                            borderTopRightRadius: '4px',
+                                            borderBottomRightRadius: '4px',
+                                        }}
+                                        id="inlineFormInputGroup"
+                                        placeholder="To:"
+                                        required
+                                        type="text"
+                                        defaultValue="London, England"
+                                    />
+                                    <Form.Control.Feedback>
+                                        Looks good!
+                                    </Form.Control.Feedback>
+                                </InputGroup>
+                                <Form.Group
+                                    as={Col}
+                                    md="3"
+                                    controlId="validationCustom02">
+                                    <InputGroup>
+                                        <FormControl placeholder="Depature Date" />
+                                        <FormControl placeholder="+ Add Return" />
+                                    </InputGroup>
+                                    <Form.Control.Feedback>
+                                        Looks good!
+                                    </Form.Control.Feedback>
+                                </Form.Group>
+                                <Form.Group
+                                    as={Col}
+                                    md="2"
+                                    controlId="validationCustom02">
+                                    {/* <Form.Label>Residential Address <span style={{color: 'red'}}>*</span></Form.Label> */}
+                                    <Form.Control
+                                        required
+                                        type="text"
+                                        placeholder="Passengers"
+                                        defaultValuexx="Mark"
+                                    />
+                                    <Form.Control.Feedback>
+                                        Looks good!
+                                    </Form.Control.Feedback>
+                                </Form.Group>
+                                <Form.Group as={Col} md="1">
+                                    <Button
+                                        href="onthego/flightsearch"
+                                        variant="danger"
+                                        style={{ width: '100%' }}
+                                        type="submit">
+                                        {' '}
+                                        Search{' '}
+                                    </Button>
+                                    {/* <Button variant="contained" color="primary" onClick={handleNext}> {activeStep === steps.length - 1 ? 'Finish' : 'Next'} </Button> */}
+                                </Form.Group>
+                            </Form.Row>
+                        </Form>
+                    </Card.Body>
+                </Card>
+            </Container>
+        </div>
+    );
 }
 
 export default OnTheGo;
