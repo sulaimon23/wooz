@@ -13,8 +13,8 @@ class ProfileLeftCard extends Component {
             <div>
                 <Card>
                     <div style={{ backgroundColor: '#ffffff', padding: '20px', border: 'none', borderRadius: '50px'}}>
-                        <p style={{color: '#043f7c'}}> <b>My Profile</b> </p>
-                        <hr style={{color: '#043f7c'}}/>
+                        <p style={{color: '#043f7c', fontSize: '20px'}}> <b>My Profile</b> </p>
+                        {/* <hr style={{color: '#043f7c'}}/> */}
                         <Card body style={{marginLeft: '-20px', marginRight: '-20px', borderRadius: 'initial', border: 'none'}} >
                             <Row >
                                 <Col md='12'>
@@ -24,8 +24,9 @@ class ProfileLeftCard extends Component {
                                 </Col>
                             </Row>
                         </Card>
-                        <p style={{color: '#043f7c'}}> <b>My Orders</b> </p>
-                        <hr style={{color: '#043f7c'}}/>
+                        <hr/>
+                        <p style={{color: '#043f7c', fontSize: '20px'}}> <b>My Orders</b> </p>
+                        {/* <hr style={{color: '#043f7c'}}/> */}
                         <Card body style={{marginLeft: '-20px', marginRight: '-20px', borderRadius: 'initial', border: 'none'}} >
                             <Row >
                                 <Col md='12'>
@@ -35,8 +36,9 @@ class ProfileLeftCard extends Component {
                                 </Col>
                             </Row>
                         </Card>
-                        <p style={{color: '#043f7c'}}> <b>My Wallet</b> </p>
-                        <hr style={{color: '#043f7c'}}/>
+                        <hr/>
+                        <p style={{color: '#043f7c', fontSize: '20px'}}> <b>My Wallet</b> </p>
+                        {/* <hr style={{color: '#043f7c'}}/> */}
                         <Card body style={{marginLeft: '-20px', marginRight: '-20px', borderRadius: 'initial', border: 'none'}} >
                             <Row >
                                 <Col md='12'>

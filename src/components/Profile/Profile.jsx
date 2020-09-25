@@ -22,21 +22,22 @@ class Profile extends Component {
     render() {
         return (
             <div>
-                <br/>
-                <br/>
-                <br/>
+                <br />
+                <br />
+                <br />
+
                 <Container className="" style={{ maxWidth: '100%' }}>
-                    {/* <MultiStep /> */}
+                    <h4>Account Information</h4>{' '}
                     <Col lg={12}>
                         <Row>
                             <Col md={8}>
-                                <Card>
-                                    <ProfileCard />
-                                </Card>
+                                {/* <Card> */}
+                                <ProfileCard />
+                                {/* </Card> */}
                             </Col>
 
                             <Col md={4}>
-                                <ProfileLeftCard/>
+                                <ProfileLeftCard />
                                 {/* <br/>
                                 <TicketCard2/> */}
                             </Col>

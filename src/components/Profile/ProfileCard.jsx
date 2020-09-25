@@ -30,12 +30,12 @@ function ProfileCard() {
                     <Form noValidate validated={validated} onSubmit={handleSubmit}>
                         <Form.Row>
                             <Form.Group as={Col} md="6" controlId="validationCustom01">
-                                <Form.Label> <h6>First Name <span style={{color: 'red'}}>*</span></h6></Form.Label>
+                                <Form.Label> <h6>First Name</h6></Form.Label>
                                 <Form.Control required type="text" defaultValuexx="Mark" />
                                 <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
                             </Form.Group>
                             <Form.Group as={Col} md="6" controlId="validationCustom02">
-                                <Form.Label> <h6>Last Name <span style={{color: 'red'}}>*</span></h6></Form.Label>
+                                <Form.Label> <h6>Last Name</h6></Form.Label>
                                 <Form.Control required type="text" defaultValuexx="Otto" />
                                 <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
                             </Form.Group>
@@ -53,7 +53,7 @@ function ProfileCard() {
                                 </InputGroup>
                             </Form.Group>
                             <Form.Group as={Col} md="6" controlId="validationCustom02">
-                                <Form.Label> <h6>Email Address <span style={{color: 'red'}}>*</span></h6></Form.Label>
+                                <Form.Label> <h6>Email Address</h6></Form.Label>
                                 <Form.Control required type="email" defaultValuexx="Otto" />
                                 <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
                             </Form.Group>
@@ -69,7 +69,7 @@ function ProfileCard() {
                                     </Row>
                                     </Form.Group>
                             <Form.Group as={Col} md="6" controlId="validationCustom02">
-                                <Form.Label> <h6>Date of Birth <span style={{color: 'red'}}>*</span></h6></Form.Label>
+                                <Form.Label> <h6>Date of Birth</h6></Form.Label>
                                 <Row>
                                     <Col md='4'>
                                         <Form.Control as='select'>
@@ -141,7 +141,9 @@ function ProfileCard() {
                                 </Row>
                                 <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
                             </Form.Group>
+                            
                         </Form.Row>
+                        <Button variant="success">Save Changes</Button>{' '}
                     </Form>
                 </div>
             </Card>
