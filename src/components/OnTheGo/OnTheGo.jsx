@@ -21,9 +21,11 @@ import DealsSection from '../DealsSection/DealsSections';
 import OnTheGoTab from '../OnTheGoTab/OnTheGoTabs';
 
 import bannerimage from '../../assets/video/onthego.gif';
+import busbannerimage from '../../assets/video/bus.gif'
+import ferriesbannerimage from '../../assets/video/ferries.gif';
+import trainbannerimage from '../../assets/video/train.gif';
 import play from '../../assets/img/icons/playbutton.png';
 
-import fbannerimage from '../../assets/video/ferries.gif';
 import FooterSection from '../FooterSection/FooterSection';
 
 function MyVerticallyCenteredModal(props) {
@@ -64,7 +66,7 @@ function OnTheGo() {
         ) {
             setBrowser(true);
         }
-        
+
     }, []);
 
     const handleSubmit = (event) => {
@@ -91,17 +93,27 @@ function OnTheGo() {
         {
             title: 'Ferries',
             icon: 'djcdfvd',
-            backgroundImage: fbannerimage,
+            backgroundImage: busbannerimage,
         },
         {
             title: 'Buses',
             icon: 'djcdfvd',
-            backgroundImage: bannerimage,
+            backgroundImage: ferriesbannerimage,
         },
         {
             title: 'Trains',
             icon: 'djcdfvd',
-            backgroundImage: bannerimage,
+            backgroundImage: trainbannerimage,
+        },
+        {
+            title: 'Cruise',
+            icon: 'djcdfvd',
+            backgroundImage: trainbannerimage,
+        },
+        {
+            title: 'Cruise',
+            icon: 'djcdfvd',
+            backgroundImage: trainbannerimage,
         },
     ];
 
@@ -224,8 +236,8 @@ function OnTheGo() {
                         return (
                             <Col
                                 key={index}
-                                sm="3"
-                                className="d-none d-lg-block"
+                                sm="2"
+                                classNamexx="d-none d-lg-block"
                                 style={
                                     activeTab.title == item.title
                                         ? activeTabStyle

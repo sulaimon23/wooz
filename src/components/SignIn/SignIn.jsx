@@ -137,7 +137,7 @@ const SignIn = () => {
                                             </InputGroupText>
                                         </InputGroupAddon>
                                         <Input
-                                        defaultValue={email}
+                                        // defaultValue={email}
                                             placeholder="Email"
                                             onChange={(event) =>
                                                 setEmail(event.target.value)
@@ -155,7 +155,7 @@ const SignIn = () => {
                                             </InputGroupText>
                                         </InputGroupAddon>
                                         <Input
-                                        defaultValue={password}
+                                        // defaultValue={password}
                                             placeholder="Password"
                                             onChange={(event) =>
                                                 setPassword(event.target.value)
