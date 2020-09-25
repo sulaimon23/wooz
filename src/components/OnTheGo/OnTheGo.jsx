@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
     Jumbotron,
     Nav,
@@ -15,6 +15,7 @@ import {
     Card,
 } from 'react-bootstrap';
 import OnTheGoBanner from './OnTheGoBanner';
+import KioskHeaderNav from '../KioskHeaderNav/KioskHeaderNav';
 import FinancialThumbnailSection from '../FinancialThumbnailSection/FinancialThumbnailSections';
 import DealsSection from '../DealsSection/DealsSections';
 import OnTheGoTab from '../OnTheGoTab/OnTheGoTabs';
@@ -47,6 +48,25 @@ function MyVerticallyCenteredModal(props) {
 function OnTheGo() {
     const [modalShow, setModalShow] = React.useState(false);
     const [validated, setValidated] = useState(false);
+    //kiosk browser state
+    const [isBrowser, setBrowser] = useState(false);
+
+    //kiosk header render lifecycle
+    useEffect(() => {
+        if (window.navigator.userAgent) {
+            setBrowser(false);
+        }
+
+        if (
+            typeof window !== undefined &&
+            typeof window.process === 'object' &&
+            window.process.type === 'renderer'
+        ) {
+            setBrowser(true);
+        }
+        
+    }, []);
+
     const handleSubmit = (event) => {
         const form = event.currentTarget;
         if (form.checkValidity() === false) {
@@ -103,16 +123,18 @@ function OnTheGo() {
     };
 
     return (
-        <div
-            style={{
-                
-            }}>
-                
-            <Container className="p-4xx" style={{ maxWidth: '100%', backgroundImage: `url(${activeTab.backgroundImage})`,
-                backgroundPosition: 'center',
-                backgroundSize: 'cover',
-                backgroundRepeat: 'no-repeat',
-                color: 'white', }}>
+        <div style={{}}>
+            {isBrowser && <KioskHeaderNav title="On the Go" />}
+            <Container
+                className="p-4xx"
+                style={{
+                    maxWidth: '100%',
+                    backgroundImage: `url(${activeTab.backgroundImage})`,
+                    backgroundPosition: 'center',
+                    backgroundSize: 'cover',
+                    backgroundRepeat: 'no-repeat',
+                    color: 'white',
+                }}>
                 <br />
                 {/* <Breadcrumb style={{backgroundColor: 'none! important'}} >
                         <Breadcrumb.Item href="/"> <span style={{color: '#636363'}}> Home </span> </Breadcrumb.Item>
@@ -344,19 +366,18 @@ function OnTheGo() {
                     </Card.Body>
                 </Card>
             </Container>
-            <br/>
-            <br/>
-            <DealsSection/>
-            <br/>
-            <br/>
-            <br/>
-            <DealsSection/>
-            <br/>
-            <br/>
-            <br/>
-            <FooterSection/>
+            <br />
+            <br />
+            <DealsSection />
+            <br />
+            <br />
+            <br />
+            <DealsSection />
+            <br />
+            <br />
+            <br />
+            <FooterSection />
         </div>
-        
     );
 }
 
