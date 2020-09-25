@@ -29,7 +29,7 @@ import DirectionsBusIcon from '@material-ui/icons/DirectionsBus';
 import DirectionsBoatIcon from '@material-ui/icons/DirectionsBoat';
 import TrainIcon from '@material-ui/icons/Train';
 import FlightSearchTabFormSection from '../SearchTabFormSection/FlightSearchTabFormSections';
-
+const classNames = require("classnames");
 const divStyle = {
     // color: '#ffffff', display: 'block', padding: '.5rem 1rem', color: 'rgb(255, 255, 255);', textAlign: 'center'
 };
@@ -38,6 +38,7 @@ function OnTheGoTabForm() {
     const [key, setKey] = useState('flights');
 
     const [validated, setValidated] = useState(false);
+    const [activeTab, setActiveTab] = useState(0);
 
     const handleSubmit = (event) => {
         const form = event.currentTarget;
@@ -67,66 +68,61 @@ function OnTheGoTabForm() {
     //    this.props.history.push('/moneymatters/insurance/motorinsurance')
     // }
 
+
+    const tabs = [
+        {
+            title: "Flights",
+            icon: 'djcdfvd'
+        },
+        {
+            title: "Ferries",
+            icon: 'djcdfvd'
+        },
+        {
+            title: "Buses",
+            icon: 'djcdfvd'
+        },
+        {
+            title: "Trains",
+            icon: 'djcdfvd'
+        },
+
+    ]
+
+    const activeTabStyle = {
+        backgroundColor: '#043f7c',
+        color: '#fff',
+    }
+    const tabStyle = {
+        backgroundColor: '#fff',
+        color: '#043f7c'
+    }
+
+    const handleOnTabSelect = (index) => {
+        setActiveTab(index)
+    }
+
     return (
         <div fluid>
             <Row style={{ marginTop: '-66px' }}>
-                <Col
-                    sm="3"
-                    className="d-none d-lg-block"
-                    style={{
-                        textAlign: 'center',
-                        // marginRight: '-30px',
-                        backgroundColor: '#043f7c',
-                    }}>
-                    <a style={{ color: '#ffffff' }} href="/onthego">
-                        <Card.Footer style={{ color: '#ffffff' }}>
-                            {/* <span style={{ color: '#ffffff' }}>Flights</span> */}
-                            <h6 style={{ color: '#ffffff', fontSize: '15px' }}>
-                                {' '}
-                                Flights
-                            </h6>
-                        </Card.Footer>
-                    </a>
-                </Col>
-                <Col
-                    sm="3"
-                    className="d-none d-lg-block"
-                    style={{
-                        textAlign: 'center',
-                        backgroundColor: '#ffffff',
-                    }}>
-                    <a href="/onthego/bus">
-                        <Card.Footer>
-                            <h6 style={{ fontSize: '15px' }}> Buses</h6>
-                        </Card.Footer>
-                    </a>
-                </Col>
-                <Col
-                    sm="3"
-                    className="d-none d-lg-block"
-                    style={{
-                        textAlign: 'center',
-                        backgroundColor: '#ffffff',
-                    }}>
-                    <a href="/onthego/ferries">
-                        <Card.Footer>
-                            <h6 style={{ fontSize: '15px' }}>Ferries</h6>
-                        </Card.Footer>
-                    </a>
-                </Col>
-                <Col
-                    sm="3"
-                    className="d-none d-lg-block"
-                    style={{
-                        textAlign: 'center',
-                        backgroundColor: '#ffffff',
-                    }}>
-                    <a href="/onthego/trains">
-                        <Card.Footer>
-                            <h6 style={{ fontSize: '15px' }}> Trains</h6>
-                        </Card.Footer>
-                    </a>
-                </Col>
+                {tabs.map((item, index) => {
+                    return (
+                        <Col
+                        key={index}
+                            sm="3"
+                            className="d-none d-lg-block"
+                            style={(activeTab == index) ? activeTabStyle : tabStyle}>
+                            <a onClick={() => handleOnTabSelect(index)}>
+                                <Card.Footer style={{  }}>
+                                    <h6 style={{ fontSize: '15px' }}>
+                                        {' '}
+                                        {item.title}
+                                    </h6>
+                                </Card.Footer>
+                            </a>
+                        </Col>
+                    )
+                }) }
             </Row>
             <Container
                 style={{ backgroundColor: '#043f7c', paddingTop: '20px' }}

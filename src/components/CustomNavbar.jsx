@@ -37,41 +37,26 @@ class CustomNavbar extends Component {
             auth: {},
         };
     }
-    componentDidMount() {
-        const auth = reactLocalStorage.getObject('user_data');
-        console.log(auth, 'this is from the nav bar');
 
+    componentDidMount() {
+        console.log('called')
+        const auth = reactLocalStorage.getObject('user_data');
+       console.log(auth, "fkvdjfvkdjfvkdfj")
         if (Object.keys(auth).length != 0) {
             this.setState({ isLoggedIn: true, auth });
         }
     }
 
-    // componentWillReceiveProps(nextProps) {
-    //     console.log(nextProps, 'recive');
-    //     return;
-    //     const { show } = this.props;
-    //     if (nextProps.show !== show) {
-    //         this.setState({ show });
-    //     }
-    // }
-
-    // componentDidUpdate(nextProps) {
-    //     console.log(nextProps, 'did update');
-    // }
-
     toggle() {
         const { isTrue } = this.state;
         this.setState({ isTrue: !isTrue });
     }
+
     handleLogout() {
         reactLocalStorage.setObject('user_data', {});
         this.setState({ isLoggedIn: false });
     }
 
-    // togglemobile () {
-    //     const {isTrue2} = this.state
-    //     this.setState({isTrue2: !isTrue2})
-    // }
 
     render() {
         return (

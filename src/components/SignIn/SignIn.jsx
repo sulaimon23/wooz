@@ -62,8 +62,8 @@ import { useHistory } from 'react-router-dom';
 import FooterSection from '../FooterSection/FooterSection';
 
 const SignIn = () => {
-    const [password, setPassword] = useState('');
-    const [email, setEmail] = useState('');
+    const [email, setEmail] = useState('emekaosuagwu@hotmail.com');
+    const [password, setPassword] = useState('password');
 
     let history = useHistory();
     const handleSignin = async () => {
@@ -74,7 +74,6 @@ const SignIn = () => {
         await axios
             .post('/auth/signin', request_data)
             .then((response) => {
-                console.log(response.data.user);
                 reactLocalStorage.setObject('user_data', response.data.user);
                 history.push('/');
             })
@@ -138,6 +137,7 @@ const SignIn = () => {
                                             </InputGroupText>
                                         </InputGroupAddon>
                                         <Input
+                                        defaultValue={email}
                                             placeholder="Email"
                                             onChange={(event) =>
                                                 setEmail(event.target.value)
@@ -155,6 +155,7 @@ const SignIn = () => {
                                             </InputGroupText>
                                         </InputGroupAddon>
                                         <Input
+                                        defaultValue={password}
                                             placeholder="Password"
                                             onChange={(event) =>
                                                 setPassword(event.target.value)
