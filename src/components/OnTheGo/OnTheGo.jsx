@@ -115,6 +115,11 @@ function OnTheGo() {
             icon: 'djcdfvd',
             backgroundImage: trainbannerimage,
         },
+        {
+            title: 'Cruise',
+            icon: 'djcdfvd',
+            backgroundImage: bannerimage,
+        },
     ];
 
     const [activeTab, setActiveTab] = useState(tabs[0]);
