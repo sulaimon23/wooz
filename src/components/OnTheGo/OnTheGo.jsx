@@ -24,6 +24,8 @@ import bannerimage from '../../assets/video/onthego.gif';
 import busbannerimage from '../../assets/video/bus.gif'
 import ferriesbannerimage from '../../assets/video/ferries.gif';
 import trainbannerimage from '../../assets/video/train.gif';
+import cruisebannerimage from '../../assets/video/cruiseship.gif';
+// import trainbannerimage from '../../assets/video/ship.gif';
 import play from '../../assets/img/icons/playbutton.png';
 
 import FooterSection from '../FooterSection/FooterSection';
@@ -93,12 +95,12 @@ function OnTheGo() {
         {
             title: 'Buses',
             icon: 'djcdfvd',
-            backgroundImage: ferriesbannerimage,
+            backgroundImage: busbannerimage,
         },
         {
             title: 'Ferries',
             icon: 'djcdfvd',
-            backgroundImage: busbannerimage,
+            backgroundImage: ferriesbannerimage,
         },
         
         {
@@ -109,12 +111,12 @@ function OnTheGo() {
         {
             title: 'Cruise',
             icon: 'djcdfvd',
-            backgroundImage: trainbannerimage,
+            backgroundImage: cruisebannerimage,
         },
         {
             title: 'Shipping',
             icon: 'djcdfvd',
-            backgroundImage: trainbannerimage,
+            backgroundImage: ferriesbannerimage,
         },
         
     ];
