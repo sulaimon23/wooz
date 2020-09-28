@@ -25,7 +25,7 @@ import busbannerimage from '../../assets/video/bus.gif'
 import ferriesbannerimage from '../../assets/video/ferries.gif';
 import trainbannerimage from '../../assets/video/train.gif';
 import cruisebannerimage from '../../assets/video/cruiseship.gif';
-// import trainbannerimage from '../../assets/video/ship.gif';
+import shippingbannerimage from '../../assets/video/shipping.jpg';
 import play from '../../assets/img/icons/playbutton.png';
 
 import FooterSection from '../FooterSection/FooterSection';
@@ -116,7 +116,7 @@ function OnTheGo() {
         {
             title: 'Shipping',
             icon: 'djcdfvd',
-            backgroundImage: ferriesbannerimage,
+            backgroundImage: shippingbannerimage,
         },
         
     ];
