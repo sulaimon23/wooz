@@ -294,7 +294,7 @@ class Profile extends Component {
                                                         </label>
                                                         <Input
                                                             className="form-control-alternative"
-                                                            defaultValue="New York"
+                                                            defaultValue="Lagos"
                                                             id="input-city"
                                                             placeholder="City"
                                                             type="text"
@@ -310,7 +310,7 @@ class Profile extends Component {
                                                         </label>
                                                         <Input
                                                             className="form-control-alternative"
-                                                            defaultValue="United States"
+                                                            defaultValue="Nigeria"
                                                             id="input-country"
                                                             placeholder="Country"
                                                             type="text"
@@ -326,6 +326,7 @@ class Profile extends Component {
                                                         </label>
                                                         <Input
                                                             className="form-control-alternative"
+                                                            defaultValue="100001"
                                                             id="input-postal-code"
                                                             placeholder="Postal code"
                                                             type="number"
