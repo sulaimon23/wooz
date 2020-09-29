@@ -44,7 +44,18 @@ import './ButtonCard.css'
 
 const useStyles = makeStyles({
   root: {
-    // minWidth: 275,
+        width: '100%',
+        border: '1px solid rgba(0, 0, 0, 0.12)',
+        borderRadius: '4px',
+        backgroundColor: 'transparent',
+      "&:active ": {
+          backgroundColor: 'rgb(222, 235, 249)',
+          outline: 0
+        },
+      "&:focus": {
+          backgroundColor: 'rgb(222, 235, 249)',
+          outline: 0
+        },
   },
   bullet: {
     display: 'inline-block',
@@ -68,6 +79,7 @@ export default function OutlinedCard() {
   const classes = useStyles();
   const bull = <span className={classes.bullet}>•</span>;
   const [selected, setSelected] = React.useState(false);
+  
 
   return (
     <div style={{ backgroundColor: '#ffffff', paddingxx: '20px', borderRadius: '5px'}}>
@@ -85,7 +97,8 @@ export default function OutlinedCard() {
         <hr className='mb-4' style={{color: '#043f7c'}}/>
         <Row style={{ padding: '10px', marginBottom: '10px', marginTop: '20px', marginLeft: '0px', marginRight: '0px'}}>
             <Col md={4} className='mb-4 MuiToggleButton-root'>
-                <Card classNamexx={classes.root} className='' variant="outlined" style={{padding: '20px', focus: 'blue', cursor: 'pointer', backgroundColor: 'rgb(222, 235, 249)'}}>
+                  {/* <Card className={classes.root} variant="outlined" style={{padding: '20px', focus: 'blue', cursor: 'pointer', backgroundColor: 'rgb(222, 235, 249)'}}> */}
+                  <button className={classes.root} variant="outlined" style={{padding: '20px'}}>
                     <CardContent>
                         <Typography variant="h5" component="h2">
                             First Class
@@ -105,11 +118,12 @@ export default function OutlinedCard() {
                         <br/>
                         <br/>
                         <h4 style={{color: '#000000'}}> &#8358;561,083 </h4>
-                    </CardContent>
-                </Card>
+                      </CardContent>
+                      </button>
+                {/* </Card> */}
             </Col>
-            <Col md={4} className='mb-4 MuiToggleButton-root'>
-                <Card classNamexx={classes.root} className='' variant="outlined" style={{padding: '20px'}}>
+            <Col md={4} className='mb-4'>
+                <button className={classes.root} variant="outlined" style={{padding: '20px'}}>
                     <CardContent>
                         <Typography variant="h5" component="h2">
                             Business Class
@@ -130,10 +144,10 @@ export default function OutlinedCard() {
                         <br/>
                         <h4 style={{color: '#000000'}}> &#8358;285,940 </h4>
                     </CardContent>
-                </Card>
+                </button>
             </Col>
             <Col md={4} className='mb-4'>
-                <Card className={classes.root} variant="outlined" style={{padding: '20px'}}>
+                <button className={classes.root} variant="outlined" style={{padding: '20px'}}>
                     <CardContent>
                         <Typography variant="h5" component="h2">
                         Economy
@@ -153,7 +167,7 @@ export default function OutlinedCard() {
                         
                         <h4 style={{color: '#000000'}}> &#8358;199,145 </h4>
                     </CardContent>
-                </Card>
+                </button>
             </Col>
         </Row>
         <div className="justify-content-md-center" style={{ backgroundColor: 'transparent', paddingLeft: '25px', paddingBottom: '10px', widthxx:'600px'}}>
