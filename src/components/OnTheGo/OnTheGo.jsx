@@ -70,6 +70,7 @@ function OnTheGo() {
         }
 
     }, []);
+    //end kiosk header render lifecycle
 
     const handleSubmit = (event) => {
         const form = event.currentTarget;
