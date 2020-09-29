@@ -55,7 +55,7 @@ class Profile extends Component {
                                     <Col className="order-lg-2" lg="3">
                                         <div className="card-profile-image">
                                             <a
-                                                href="#pablo"
+                                                href="#ayo"
                                                 onClick={(e) =>
                                                     e.preventDefault()
                                                 }>
@@ -102,6 +102,7 @@ class Profile extends Component {
                                             </div>
                                         </div>
                                     </Row>
+                                    <hr className="my-4" />
                                     <div className="text-center">
                                         <h5>
                                             Ayodeji Moshood
@@ -125,7 +126,7 @@ class Profile extends Component {
                       Nick Murphy — writes, performs and records all of his own
                       music.
                     </p> */}
-                                        {/* <a href="#pablo" onClick={e => e.preventDefault()}>
+                                        {/* <a href="#ayo" onClick={e => e.preventDefault()}>
                       Show more
                     </a> */}
                                     </div>
@@ -142,7 +143,7 @@ class Profile extends Component {
                                         <Col className="text-right" xs="4">
                                             <Button
                                                 color="primary"
-                                                href="#pablo"
+                                                href="#ayo"
                                                 onClick={(e) =>
                                                     e.preventDefault()
                                                 }

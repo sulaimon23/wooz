@@ -74,8 +74,10 @@ class CustomNavbar extends Component {
                     style={{
                         backgroundColor: '#043f7c',
                         borderRadius: '3px',
-                        paddingLeft: '13px',
-                        paddingRight: '13px',
+                        paddingLeft: '12px',
+                        paddingTop: '8px',
+                        paddingBottom: '8px',
+                        paddingRight: '12px',
                     }}>
                     <i
                         style={{ color: '#ffffff' }}
