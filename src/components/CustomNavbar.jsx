@@ -96,11 +96,16 @@ class CustomNavbar extends Component {
                 {/* end menu icon */}
 
                 {/* start brand logo */}
-                <Navbar.Brand className="ml-3">
+                {/* <Navbar.Brand className="ml-3">
                     <a href="/">
                         <img src={Logo} style={{ width: '170px' }} alt="" />
                     </a>
-                </Navbar.Brand>
+                </Navbar.Brand> */}
+                <navbarbrand className="ml-3">
+                    <a href="/">
+                        <img src={Logo} style={{ width: '170px' }} alt="" />
+                    </a>
+                </navbarbrand>
                 {/* end brand logo */}
 
                 {/* start responsive navbar */}
@@ -148,7 +153,7 @@ class CustomNavbar extends Component {
                     </Nav>
                     <Nav>
                         {/* start currency */}
-                        <NavDropdown
+                        {/* <NavDropdown
                             className="d-md-block"
                             title="NGN &#x20A6;"
                             id="collasible-nav-dropdown">
@@ -161,9 +166,9 @@ class CustomNavbar extends Component {
                             <NavDropdown.Item href="#action/3.3">
                                 GBP £
                             </NavDropdown.Item>
-                            {/* <NavDropdown.Divider />
-                                <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item> */}
-                        </NavDropdown>
+                            <NavDropdown.Divider />
+                                <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+                        </NavDropdown> */}
                         {/* end currency */}
 
                         {/*  */}
@@ -202,47 +207,8 @@ class CustomNavbar extends Component {
                                     <i className="fa fa-question-circle"></i> SA
                                 </Dropdown.Item>
                                 <Dropdown.Divider />
-                                <Dropdown.Item href="/signin">
-                                    {' '}
-                                    <i className="fa fa-power-off"></i> Logout
-                                </Dropdown.Item>
                             </Dropdown.Menu>
                         </Dropdown>
-
-                        {/* <NavDropdown title="NGN" id="collasible-nav-dropdown">
-                                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                                <NavDropdown.Divider />
-                                <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-                            </NavDropdown> */}
-
-                        {/* <Nav.Link href="#deets"><i className="fa fa-shopping-cart fa-lg" style={{color: "#043f7c"}}></i></Nav.Link>
-                            <Nav.Link eventKey={2} href="#memes">
-                                Hello, Ayodeji
-                            </Nav.Link>
-                            <Dropdown alignRight>
-                                <Dropdown.Toggle variant="transparent" id="dropdown-basic">
-                                    <Image src={img} style={{width: '30px'}} roundedCircle />
-                                </Dropdown.Toggle>
-                                <Dropdown.Menu>
-                                    <Dropdown.Item href="#/action-1"> <i className="fa fa-shopping-bag"></i> Track Orders</Dropdown.Item>
-                                    <Dropdown.Item href="#/action-2"> <i className="fa fa-exchange"></i> Reorder items</Dropdown.Item>
-                                    <Dropdown.Item href="#/action-3"> <i className="fa fa-credit-card"></i> Voucher Credit</Dropdown.Item>
-                                    <Dropdown.Item href="#/action-3"> <i className="fa fa-question-circle"></i> Help</Dropdown.Item>
-                                    <Dropdown.Divider />
-                                    <Dropdown.Item href="/signin"> <i className="fa fa-power-off"></i> Logout</Dropdown.Item>
-                                </Dropdown.Menu>
-                            </Dropdown> */}
-
-                        {/* <NavDropdown >
-                                
-                                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                                <NavDropdown.Divider />
-                                <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-                            </NavDropdown> */}
                     </Nav>
                     {!this.state.isLoggedIn && (
                         <Nav>
@@ -276,7 +242,7 @@ class CustomNavbar extends Component {
                                     className="fa fa-shopping-cart fa-lg"
                                     style={{ color: '#043f7c' }}></i>
                             </Nav.Link>
-                            <Nav.Link eventKey={2}>
+                            <Nav.Link style={{color: '#043f7c'}} eventKey={2}>
                                 Hello, {this.state.auth.firstName};
                             </Nav.Link>
                             <Dropdown alignRight>
@@ -290,6 +256,11 @@ class CustomNavbar extends Component {
                                     />
                                 </Dropdown.Toggle>
                                 <Dropdown.Menu>
+                                    <Dropdown.Item href="profile">
+                                        {' '}
+                                        <i className="fa fa-user"></i>{' '}
+                                        Profile
+                                    </Dropdown.Item>
                                     <Dropdown.Item href="#/action-1">
                                         {' '}
                                         <i className="fa fa-shopping-bag"></i>{' '}

@@ -309,7 +309,7 @@ class ThumbnailSections extends Component {
                                     {/* <i className="fa fa-graduation-cap fa-lg" style={{color: 'blue'}}></i> &nbsp; */}
                                     <img
                                         src={learning}
-                                        style={{ width: '35px' }}
+                                        style={{ width: '30px' }}
                                         alt=""
                                     />{' '}
                                     &nbsp; Learning
@@ -454,7 +454,7 @@ class ThumbnailSections extends Component {
                                     style={{ fontSize: 15, marginTop: '10px' }}>
                                     <img
                                         src={dispatch}
-                                        style={{ width: '35px' }}
+                                        style={{ width: '30px' }}
                                         alt=""
                                     />
                                     &nbsp; Dispatch
