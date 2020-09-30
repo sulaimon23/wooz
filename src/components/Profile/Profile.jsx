@@ -105,7 +105,7 @@ class Profile extends Component {
                                     <hr className="my-4" />
                                     <div className="text-center">
                                         <h5>
-                                            Ayodeji Moshood
+                                            <i>Ayodeji</i> <b>Moshood</b>
                                             {/* <span className="font-weight-light">, 27</span> */}
                                         </h5>
                                         {/* <div className="h5 font-weight-300">
@@ -140,7 +140,7 @@ class Profile extends Component {
                                         <Col xs="8">
                                             <h5 className="mb-0">My account</h5>
                                         </Col>
-                                        <Col className="text-right" xs="4">
+                                        {/* <Col className="text-right" xs="4">
                                             <Button
                                                 color="primary"
                                                 href="#ayo"
@@ -150,7 +150,7 @@ class Profile extends Component {
                                                 size="sm">
                                                 Settings
                                             </Button>
-                                        </Col>
+                                        </Col> */}
                                     </Row>
                                 </CardHeader>
                                 <CardBody>
@@ -333,6 +333,17 @@ class Profile extends Component {
                                                             type="number"
                                                         />
                                                     </FormGroup>
+                                                </Col>
+                                                <Col lg="4">
+                                                    <Button
+                                                        color="primary"
+                                                        href="#ayo"
+                                                        onClick={(e) =>
+                                                            e.preventDefault()
+                                                        }
+                                                        size="sm">
+                                                        Save Changes
+                                                    </Button>
                                                 </Col>
                                             </Row>
                                         </div>

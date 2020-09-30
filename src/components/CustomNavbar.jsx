@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {
+    Badge,
     Navbar,
     Nav,
     NavItem,
@@ -39,9 +40,9 @@ class CustomNavbar extends Component {
     }
 
     componentDidMount() {
-        console.log('called')
+        console.log('called');
         const auth = reactLocalStorage.getObject('user_data');
-       console.log(auth, "fkvdjfvkdjfvkdfj")
+        console.log(auth, 'fkvdjfvkdjfvkdfj');
         if (Object.keys(auth).length != 0) {
             this.setState({ isLoggedIn: true, auth });
         }
@@ -56,7 +57,6 @@ class CustomNavbar extends Component {
         reactLocalStorage.setObject('user_data', {});
         this.setState({ isLoggedIn: false });
     }
-
 
     render() {
         return (
@@ -120,7 +120,7 @@ class CustomNavbar extends Component {
                         <InputGroup className="" style={{ width: '650px' }}>
                             <DropdownButton
                                 as={InputGroup.Prepend}
-                                variant="outline-secondary"
+                                variant="outline-primary"
                                 title="All"
                                 id="input-group-dropdown-1">
                                 <Dropdown.Item href="#">
@@ -143,7 +143,7 @@ class CustomNavbar extends Component {
                                 </Dropdown.Item>
                             </DropdownButton>
                             <FormControl
-                                placeholder="What are you looking for?"
+                                placeholder="    What are you looking for?"
                                 aria-describedby="basic-addon1"></FormControl>
                             <InputGroup.Append>
                                 <Button variant="danger">
@@ -212,6 +212,12 @@ class CustomNavbar extends Component {
                             </Dropdown.Menu>
                         </Dropdown>
                     </Nav>
+                    <Nav.Link href="#">
+                        <i
+                            className="fa fa-shopping-cart fa-lg"
+                            style={{ color: '#043f7c' }}></i>
+                        <Badge variant="danger">3</Badge>
+                    </Nav.Link>
                     {!this.state.isLoggedIn && (
                         <Nav>
                             <Nav.Link eventKey={2} href="/signin">
@@ -239,12 +245,7 @@ class CustomNavbar extends Component {
 
                     {this.state.isLoggedIn && (
                         <>
-                            <Nav.Link href="#deets">
-                                <i
-                                    className="fa fa-shopping-cart fa-lg"
-                                    style={{ color: '#043f7c' }}></i>
-                            </Nav.Link>
-                            <Nav.Link style={{color: '#043f7c'}} eventKey={2}>
+                            <Nav.Link style={{ color: '#043f7c' }} eventKey={2}>
                                 Hello, {this.state.auth.firstName};
                             </Nav.Link>
                             <Dropdown alignRight>
@@ -260,8 +261,7 @@ class CustomNavbar extends Component {
                                 <Dropdown.Menu>
                                     <Dropdown.Item href="profile">
                                         {' '}
-                                        <i className="fa fa-user"></i>{' '}
-                                        Profile
+                                        <i className="fa fa-user"></i> Profile
                                     </Dropdown.Item>
                                     <Dropdown.Item href="#/action-1">
                                         {' '}
